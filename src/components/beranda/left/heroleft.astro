@@ -1,0 +1,55 @@
+---
+import Select from "./car-selection.astro";
+
+---
+<div class="relative w-full max-w-2xl py-8 mb-48">
+  <!-- Main Content -->
+  <div class="space-y-8">
+    <!-- Brand & Model Section -->
+    <div class="space-y-3">
+      <!-- Brand Name -->
+        <h2 
+          class="text-9xl font-bold text-red-600"
+          x-transition:enter="transition transform duration-700"
+          x-transition:enter-start="translate-y-full"
+          x-transition:enter-end="translate-y-0"
+        >
+          CHERY
+        </h2>
+      <!-- Model Name -->
+      <div class="flex items-center gap-3">
+        <div class="w-6 h-[2px] bg-red-600"></div>
+        <h3
+          x-text="currentCar().model"
+          class="text-5xl font-bold text-black"
+          x-transition:enter="transition transform duration-500"
+          x-transition:enter-start="translate-x-4 opacity-0"
+          x-transition:enter-end="translate-x-0 opacity-100"
+        ></h3>
+      </div>
+    </div>
+
+    <!-- Tagline -->
+    <p
+      x-text="currentCar().tagline"
+      class="text-2xl text-gray-800 leading-snug font-medium"
+      x-transition:enter="transition transform duration-500"
+      x-transition:enter-start="translate-y-2 opacity-0"
+      x-transition:enter-end="translate-y-0 opacity-100"
+    ></p>
+    <!-- Car Selection -->
+    <div class="scale-90 position relative right-[100px]">
+      <Select />
+    </div>
+    
+        <!-- CTA Button -->
+        <button
+        class=" font-urbanist group relative overflow-hidden px-10 py-4 bg-red-600 text-white font-bold uppercase tracking-wider"
+      >
+        <span class="relative z-10">Explore Details</span>
+        <div class="absolute inset-0 bg-black transform origin-right scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+      </button>
+
+    </div>  
+  </div>
+</div>

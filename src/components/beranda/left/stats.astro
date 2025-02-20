@@ -1,0 +1,20 @@
+
+    <!-- Stats Grid -->
+    <div class="grid grid-row-3 gap-2 pt-10 border-t border-gray-200">
+        <template x-for="(stat, key) in currentCar().stats">
+          <div 
+            class="group text-center"
+            x-transition:enter="transition transform duration-500"
+            x-transition:enter-start="translate-y-4 opacity-0"
+            x-transition:enter-end="translate-y-0 opacity-100"
+          >
+            <div class="relative">
+              <div class="absolute -inset-1 bg-red-50 scale-0 group-hover:scale-100 transition-transform duration-300 rounded-lg"></div>
+              <div class="relative">
+                <div class="text-2xl font-bold text-red-600 tabular-nums" x-text="stat.value"></div>
+                <div class="text-gray-800 uppercase tracking-wider text-sam" x-text="stat.label"></div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>

@@ -1,0 +1,11 @@
+---
+import Stats from "../left/stats.astro"
+---
+<div class="ml-[750px] relative flex justify-end w-full max-w-none">
+    <Stats />
+    <img
+      x-bind:src="currentCar().image"
+      x-bind:alt="currentCar().model"
+      class="w-[1300px] max-w-none h-auto object-contain"
+    />
+</div>

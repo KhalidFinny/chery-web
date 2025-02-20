@@ -1,0 +1,42 @@
+{
+  "cars": [
+    {
+      "model": "Omoda E5",
+      "tagline": "Drive E-Future",
+      "image": "/Chery-Omoda-E5.webp",
+      "stats": {
+        "acceleration": {
+          "label": "0-100 kph",
+          "value": "7.2 s"
+        },
+        "topSpeed": {
+          "label": "Top Speed",
+          "value": "172 kph"
+        },
+        "horsepower": {
+          "label": "Horsepower",
+          "value": "201 hp"
+        }
+      }
+    },
+    {
+      "model": "Tiggo 8 ProMax",
+      "tagline": "Enjoy Your First Class",
+      "image": "/Tiggo-8-ProMax.webp",
+      "stats": {
+        "acceleration": {
+          "label": "0-100 kph",
+          "value": "8.0 s"
+        },
+        "topSpeed": {
+          "label": "Top Speed",
+          "value": "180 kph"
+        },
+        "horsepower": {
+          "label": "Horsepower",
+          "value": "190 hp"
+        }
+      }
+    }
+  ]
+}
