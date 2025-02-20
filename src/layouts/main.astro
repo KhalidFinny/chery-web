@@ -9,7 +9,7 @@ const { title, description } = Astro.props;
 <!doctype html>
 <html
   lang="en"
-  class="max-[3120px]:font-montserrat max-[8192px]:opacity-0 max-[3120px]:m-0 max-[3120px]:box-border max-[3120px]:p-0 max-[3120px]:opacity-100 max-[324px]:hidden"
+  class="max-[8192px]:opacity-0 max-[3120px]:m-0 max-[3120px]:box-border max-[3120px]:p-0 max-[3120px]:opacity-100 max-[324px]:hidden"
 >
   <head>
     <meta
@@ -46,9 +46,15 @@ const { title, description } = Astro.props;
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
       defer></script></head
   >
-  <body class="h-full min-h-screen overflow-x-hidden">
-    <Header />
-    <Hero />
-    <slot />
-  </body>
+    <body class="overflow-x-hidden h-full min-h-screen" x-data="{ mouseX: 0, mouseY: 0 }" @mousemove="mouseX = $event.clientX; mouseY = $event.clientY">
+      <Header />
+      <div class="relative h-screen">
+        <div class="relative h-screen">
+          <!-- Background Pattern -->
+          <div class="absolute inset-0">
+            <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        </div>  
+      <Hero />
+      <slot />
+    </body>
 </html>

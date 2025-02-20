@@ -3,11 +3,7 @@ import Car from "../../data/main-car.json";
 import HeroLeft from "./left/heroleft.astro";
 import HeroRight from "./right/heroright.astro";
 ---
-<section class="font-montserrat mx-auto max-w-screen-xl py-2 px-8">
-  <!-- Sporty Background Elements -->
-  <div class="absolute top-10 left-0 w-64 h-64 bg-red-500 opacity-20 blur-3xl rounded-full"></div>
-  <div class="absolute bottom-10 right-0 w-96 h-96 bg-red-700 opacity-10 blur-3xl rounded-full"></div>
-  <div class="absolute inset-0 bg-[url('/assets/sporty-lines.svg')] bg-cover opacity-10"></div>
+<section class="relative px-10 mx-auto py-10">
   
   <!-- Hero Section -->
   <div
@@ -19,12 +15,11 @@ import HeroRight from "./right/heroright.astro";
       prevCar() { this.currentCarIndex = (this.currentCarIndex - 1 + this.cars.length) % this.cars.length; },
       setCar(index) { this.currentCarIndex = index; }
     }`
-    class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10"
+    class="grid relative z-10 grid-cols-2 gap-1 items-center"
   >
     <div>
       <HeroLeft />
     </div>
-
     <HeroRight />
-
+  </div>
 </section>

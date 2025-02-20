@@ -1,11 +1,17 @@
----
-import Stats from "../left/stats.astro"
----
-<div class="ml-[750px] relative flex justify-end w-full max-w-none">
-    <Stats />
+
+<div class="ml-[600px] mb-[450px] flex justify-end w-full max-w-none bg bg-transparent">
+  <template x-for="(car, index) in cars" :key="car.model">
     <img
-      x-bind:src="currentCar().image"
-      x-bind:alt="currentCar().model"
-      class="w-[1300px] max-w-none h-auto object-contain"
+      x-bind:src="car.image"
+      x-bind:alt="car.model"
+      class="w-[1300px] max-w-none h-auto object-contain absolute"
+      x-show="currentCarIndex === index"
+      x-transition:enter="transition transform ease-in-out duration-500"
+      x-transition:enter-start="opacity-0 translate-x-full"  
+      x-transition:enter-end="opacity-100 translate-x-0" 
+      x-transition:leave="transition transform ease-in-out duration-500"
+      x-transition:leave-start="opacity-100 translate-x-0"
+      x-transition:leave-end="opacity-0 translate-x-full"
     />
+  </template>
 </div>

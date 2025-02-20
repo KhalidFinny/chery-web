@@ -1,32 +1,27 @@
-<div class="relative flex items-center justify-center space-x-8 py-8 mr-2">
+<div class="flex ml-20 relative">
   <!-- Left Arrow -->
-  <button 
-    @click="prevCar()" 
-    class="group relative w-12 h-12 flex items-center justify-center"
-  >
-    <div class="absolute inset-0 bg-red-50 transform rotate-45 transition-transform duration-300 group-hover:scale-110"></div>
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 relative" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-    </svg>
+  <button @click="prevCar()" class="relative flex justify-center items-center w-12 h-12 group">
+    <div class="absolute inset-0 bg-red-100 rounded-full transition-transform duration-300 transform rotate-45 group-hover:scale-110"></div>
+    <i class="fa-solid fa-chevron-left relative text-red-600 text-lg"></i>
   </button>
 
-  <!-- Car Models -->
-  <div class="flex space-x-12">
+  <!-- Car Models (Wider Area) -->
+  <div class="flex justify-between items-center min-w-[600px] px-6">
     <template x-for="(car, index) in cars">
       <div 
         @click="setCar(index)"
-        class="relative cursor-pointer transform transition-all duration-300 hover:scale-105"
-        :class="index === currentCarIndex ? 'translate-y-0' : 'translate-y-2 opacity-50'"
+        class="relative flex flex-col items-center cursor-pointer transition-all duration-300 transform hover:scale-105"
+        :class="index === currentCarIndex ? 'opacity-100' : 'opacity-50'"
       >
         <span
-          class="text-xl font-bold transition-all duration-300"
+          class="text-lg font-medium whitespace-nowrap transition-all duration-300"
           :class="index === currentCarIndex ? 'text-red-600' : 'text-gray-400'"
           x-text="car.model"
         ></span>
-        
+
         <!-- Active Indicator -->
         <div 
-          class="absolute -bottom-2 left-0 w-full h-0.5 bg-red-600 transform origin-left transition-transform duration-300"
+          class="absolute bottom-0 mt-1 w-10 h-0.5 bg-red-600 transition-transform duration-300 rounded-full"
           :class="index === currentCarIndex ? 'scale-x-100' : 'scale-x-0'"
         ></div>
       </div>
@@ -34,13 +29,8 @@
   </div>
 
   <!-- Right Arrow -->
-  <button 
-    @click="nextCar()" 
-    class="group relative w-12 h-12 flex items-center justify-center"
-  >
-    <div class="absolute inset-0 bg-red-50 transform rotate-45 transition-transform duration-300 group-hover:scale-110"></div>
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600 relative" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg>
+  <button @click="nextCar()" class="relative flex justify-center items-center w-12 h-12 group">
+    <div class="absolute inset-0 bg-red-100 rounded-full transition-transform duration-300 transform rotate-45 group-hover:scale-110"></div>
+    <i class="fa-solid fa-chevron-right relative text-red-600 text-lg"></i>
   </button>
 </div>
