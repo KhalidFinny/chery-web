@@ -1,0 +1,89 @@
+{
+    "katalog": [
+      {
+        "model": "Chery Omoda E5",
+        "image": "/Chery-Omoda-E5.webp",
+        "detail": {
+          "Harga": {
+            "value": "7.2 s"
+          },
+          "Button": {
+            "value": "<a href='https://chery.co.id/id/model/omoda/tipe/omoda-e5'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "OMODA 5",
+        "image": "/Chery-Omoda-E5.webp",
+        "detail": {
+          "Harga": {
+            "value": "7.2 s"
+          },
+          "Button": {
+            "value": "<a href='https://chery.co.id/id/model/omoda/tipe/omoda-5'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "Chery Tiggo 8 ProMax",
+        "image": "/Tiggo-8-ProMax.webp",
+        "detail": {
+          "Harga": {
+            "value": "7.2 s"
+          },
+          "Button": {
+            "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-8-pro-max'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "Chery Tiggo 8 Pro",
+        "image": "/Chery-Omoda-E5.webp",
+        "detail": {
+          "Harga": {
+            "value": "7.2 s"
+          },
+          "Button": {
+            "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-8-pro'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "Chery Tiggo 8",
+        "image": "/Chery-Omoda-E5.webp",
+        "detail": {
+          "Harga": {
+            "value": "7.2 s"
+          },
+          "Button": {
+            "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-8'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "Chery Tiggo Cross",
+        "image": "/Chery-Omoda-E5.webp",
+        "detail": {
+          "Harga": {
+            "value": "7.2 s"
+          },
+          "Button": {
+            "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-cross'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "J6",
+        "image": "/Chery-J6.webp",
+        "detail": {
+          "Harga": {
+            "value": "7.2 s"
+          },
+          "Button": {
+            "value": "<a href='https://chery.co.id/id/model/omoda/tipe/j6'>Learn More</a>"
+          }
+        }
+      }     
+    ]
+  }
+  

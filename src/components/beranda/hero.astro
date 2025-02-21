@@ -1,25 +1,44 @@
 ---
 import Car from "../../data/main-car.json";
-import HeroLeft from "./left/heroleft.astro";
-import HeroRight from "./right/heroright.astro";
+import HeroLeft from "../beranda/left/heroleft.astro";
+import HeroRight from "../beranda/right/heroright.astro";
+import HeroAbout from "../beranda/about/about.astro";
+import Katalog from "../katalog/katalog.astro";
 ---
-<section class="relative px-10 mx-auto py-10">
-  
+<section class="relative px-10 pt-10 mx-auto">
   <!-- Hero Section -->
   <div
     x-data=`{
       cars: ${JSON.stringify(Car.cars)},
       currentCarIndex: 0,
+      visibleCars() {
+        const count = this.cars.length;
+        const current = this.currentCarIndex;
+        const prev = (current - 1 + count) % count;
+        const prevTwo = (current - 2 + count) % count;
+        const next = (current + 1) % count;
+        const nextTwo = (current + 2) % count;
+        return [prevTwo, prev, current, next, nextTwo];
+      },
       currentCar() { return this.cars[this.currentCarIndex]; },
-      nextCar() { this.currentCarIndex = (this.currentCarIndex + 1) % this.cars.length; },
-      prevCar() { this.currentCarIndex = (this.currentCarIndex - 1 + this.cars.length) % this.cars.length; },
-      setCar(index) { this.currentCarIndex = index; }
+      nextCar() { 
+        this.currentCarIndex = (this.currentCarIndex + 1) % this.cars.length;
+      },
+      prevCar() { 
+        this.currentCarIndex = (this.currentCarIndex - 1 + this.cars.length) % this.cars.length;
+      },
+      setCar(index) { 
+        this.currentCarIndex = index;
+      }
     }`
-    class="grid relative z-10 grid-cols-2 gap-1 items-center"
+    class="grid relative z-10 grid-cols-2 gap-4 items-center"
   >
     <div>
       <HeroLeft />
     </div>
-    <HeroRight />
+    <div>
+      <HeroRight />
+    </div>
   </div>
 </section>
+

@@ -1,36 +1,41 @@
 <header
-  x-data="{ selectedPage: window.location.pathname }"
-  class="font-montserrat flex gap-24 justify-between items-center px-32 py-8 text-xl font-semibold text-gray-400 fixed z-50 w-full"
+  x-data="{
+    selectedPage: window.location.hash || window.location.pathname,
+    setPage(page) {
+      this.selectedPage = page;
+    }
+  }"
+  class="flex fixed z-50 gap-24 justify-between items-center px-32 py-8 w-full text-xl font-semibold text-gray-600 font-urbanist"
 >
   <a 
     href="/" 
-    @click="selectedPage = '/'" 
-    :class="selectedPage === '/' ? 'text-red-500' : 'hover:text-red-500'"
+    @click="setPage('/')" 
+    :class="'hover:text-red-500'"
     class="duration-300"
   >Beranda</a>
 
   <a 
-    href="/katalog" 
-    @click="selectedPage = '/katalog'" 
-    :class="selectedPage === '/katalog' ? 'text-red-500' : 'hover:text-red-500'"
+    href="#about" 
+    @click="setPage('#about')" 
+    :class="'hover:text-red-500'"
     class="duration-300"
-  >Katalog</a>
+  >About</a>
 
-  <a href="">
+  <a href="/">
     <img src="logo.webp" alt="chery logo" class="mx-auto w-auto h-[60px]" />
   </a>
 
   <a 
+    href="#katalog" 
+    @click="setPage('#katalog')" 
+    :class="'hover:text-red-500'"
+    class="duration-300"
+  >Katalog</a>
+
+  <a 
     href="/kontak" 
-    @click="selectedPage = '/kontak'" 
+    @click="setPage('/kontak')" 
     :class="selectedPage === '/kontak' ? 'text-red-500' : 'hover:text-red-500'"
     class="duration-300"
   >Kontak</a>
-
-  <a 
-    href="/galeri" 
-    @click="selectedPage = '/galeri'" 
-    :class="selectedPage === '/galeri' ? 'text-red-500' : 'hover:text-red-500'"
-    class="duration-300"
-  >Galeri</a>
 </header>

@@ -1,5 +1,17 @@
 ---
 import Main from "../layouts/main.astro";
+import Hero from "../components/beranda/hero.astro";
+import HeroAbout from "../components/beranda/about/about.astro";
+import Katalog from "../components/katalog/katalog.astro";
+import Header from "../shared/header.astro";
 ---
-
-<Main title="Malang" description="Chery Web" />
+<Header/>
+<Main title="Malang" description="Chery Web" >
+    <Hero/>
+<Main/>
+<Main>
+    <HeroAbout/>
+<Main/>
+<Main>
+    <Katalog/>
+</Main>

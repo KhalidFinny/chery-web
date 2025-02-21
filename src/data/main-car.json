@@ -41,21 +41,22 @@
     {
       "model": "J6",
       "tagline": "The Future Of mobility",
-      "image": "/Tiggo-8-ProMax.webp",
+      "image": "/Chery-J6.webp",
       "stats": {
         "acceleration": {
           "label": "0-100 kph",
-          "value": "7.3s s"
+          "value": "-"
         },
         "topSpeed": {
           "label": "Top Speed",
-          "value": "175 kph"
+          "value": "-"
         },
         "horsepower": {
           "label": "Horsepower",
-          "value": "250 hp"
+          "value": "-"
         }
       }
     }
+    
   ]
 }

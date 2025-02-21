@@ -2,7 +2,6 @@
 import "../styles/global.css";
 import "../styles/sizes.css";
 import Header from "../shared/header.astro";
-import Hero from "../components/beranda/hero.astro";
 const { title, description } = Astro.props;
 ---
 
@@ -47,14 +46,11 @@ const { title, description } = Astro.props;
       defer></script></head
   >
     <body class="overflow-x-hidden h-full min-h-screen" x-data="{ mouseX: 0, mouseY: 0 }" @mousemove="mouseX = $event.clientX; mouseY = $event.clientY">
-      <Header />
       <div class="relative h-screen">
-        <div class="relative h-screen">
           <!-- Background Pattern -->
           <div class="absolute inset-0">
             <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        </div>  
-      <Hero />
+        </div>
       <slot />
     </body>
 </html>

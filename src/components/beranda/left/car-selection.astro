@@ -1,16 +1,15 @@
-<div class="flex ml-20 relative">
+<div class="flex relative ml-20">
   <!-- Left Arrow -->
-  <button @click="prevCar()" class="relative flex justify-center items-center w-12 h-12 group">
+  <button @click="prevCar()" class="flex relative justify-center items-center w-12 h-12 group">
     <div class="absolute inset-0 bg-red-100 rounded-full transition-transform duration-300 transform rotate-45 group-hover:scale-110"></div>
-    <i class="fa-solid fa-chevron-left relative text-red-600 text-lg"></i>
+    <i class="relative text-lg text-red-600 fa-solid fa-chevron-left"></i>
   </button>
-
   <!-- Car Models (Wider Area) -->
-  <div class="flex justify-between items-center min-w-[600px] px-6">
+  <div class="flex justify-between items-center min-w-[500px] px-6">
     <template x-for="(car, index) in cars">
-      <div 
+      <div
         @click="setCar(index)"
-        class="relative flex flex-col items-center cursor-pointer transition-all duration-300 transform hover:scale-105"
+        class="flex relative flex-col items-center transition-all duration-300 transform cursor-pointer hover:scale-105"
         :class="index === currentCarIndex ? 'opacity-100' : 'opacity-50'"
       >
         <span
@@ -18,19 +17,17 @@
           :class="index === currentCarIndex ? 'text-red-600' : 'text-gray-400'"
           x-text="car.model"
         ></span>
-
         <!-- Active Indicator -->
-        <div 
-          class="absolute bottom-0 mt-1 w-10 h-0.5 bg-red-600 transition-transform duration-300 rounded-full"
+        <div
+          class="absolute bottom-0 mt-1 w-10 h-0.5 bg-red-600 rounded-full transition-transform duration-300"
           :class="index === currentCarIndex ? 'scale-x-100' : 'scale-x-0'"
         ></div>
       </div>
     </template>
   </div>
-
   <!-- Right Arrow -->
-  <button @click="nextCar()" class="relative flex justify-center items-center w-12 h-12 group">
+  <button @click="nextCar()" class="flex relative justify-center items-center w-12 h-12 group">
     <div class="absolute inset-0 bg-red-100 rounded-full transition-transform duration-300 transform rotate-45 group-hover:scale-110"></div>
-    <i class="fa-solid fa-chevron-right relative text-red-600 text-lg"></i>
+    <i class="relative text-lg text-red-600 fa-solid fa-chevron-right"></i>
   </button>
 </div>

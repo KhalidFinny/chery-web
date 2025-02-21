@@ -2,12 +2,12 @@
 import Select from "./car-selection.astro";
 import Stats from "../left/stats.astro"
 ---
-<div class="relative pt-32 w-full max-w-2xl space-y-8">
+<div class="relative pt-32 space-y-8 w-full max-w-2xl">
       <!-- Brand & Model Section in Card -->
-      <div class=" py-6">
+      <div class="py-6">
         <!-- Brand Name -->
         <h2
-          class="text-9xl font-extrabold text-red-600 transform -translate-y-4"
+          class="text-9xl font-extrabold text-red-600 transform -translate-y-4 text-montserrat"
           x-transition:enter="transition transform duration-700"
           x-transition:enter-start="translate-y-full"
           x-transition:enter-end="translate-y-0"
@@ -15,7 +15,7 @@ import Stats from "../left/stats.astro"
         </h2>
         <h3
         x-text="currentCar().model"
-        class="text-5xl font-bold text-black transform ml-3"
+        class="ml-3 text-5xl font-bold text-black transform"
         x-transition:enter="transition transform duration-500"
         x-transition:enter-start="translate-x-4 opacity-0"
         x-transition:enter-end="translate-x-0 opacity-100"
@@ -24,7 +24,7 @@ import Stats from "../left/stats.astro"
       <div class="relative p-6">
         <p
           x-text="currentCar().tagline"
-          class=" font-urbanist relative text-3xl font-semibold leading-snug text-gray-800"
+          class="relative text-3xl font-semibold leading-snug text-gray-800 font-urbanist"
           x-transition:enter="transition transform duration-500"
           x-transition:enter-start="translate-y-2 opacity-0"
           x-transition:enter-end="translate-y-0 opacity-100"
@@ -32,7 +32,7 @@ import Stats from "../left/stats.astro"
       </div>
 
       <!-- Car Selection with Border -->
-      <div class="relative p-4 bg- rounded-lg border-2 border-red-300 border-dashed">
+      <div class="relative p-4 rounded-lg border-2 border-red-300 border-dashed bg-">
         <div class="scale-90 relative right-[100px]"> 
           <Select />
         </div>
@@ -49,7 +49,7 @@ import Stats from "../left/stats.astro"
         <button class="relative group">
           <div class="absolute inset-0 bg-black rounded-full transition-transform duration-300 transform group-hover:scale-105"></div>
           <span class="inline-block relative px-10 py-4 font-bold tracking-wider text-white uppercase bg-red-600 rounded-full transition-all duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1">
-            Explore Details
+            Discover More
           </span>
         </button>
       </div>
