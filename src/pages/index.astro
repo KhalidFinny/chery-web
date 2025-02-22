@@ -3,15 +3,19 @@ import Main from "../layouts/main.astro";
 import Hero from "../components/beranda/hero.astro";
 import HeroAbout from "../components/beranda/about/about.astro";
 import Katalog from "../components/katalog/katalog.astro";
-import Header from "../shared/header.astro";
+import Footer from "../shared/footer.astro";
 ---
-<Header/>
-<Main title="Malang" description="Chery Web" >
-    <Hero/>
-<Main/>
-<Main>
-    <HeroAbout/>
-<Main/>
-<Main>
-    <Katalog/>
+<Main title="Malang" description="Chery Web">
+    <section class="relative px-10 pt-10 mx-auto">
+        <Hero />
+    </section>
+    <section class="relative px-10 pt-32 mx-auto" id="about">
+        <HeroAbout />
+    </section>
+    <section class="relative px-10 pt-10 mx-auto" id="katalog">
+        <Katalog />
+    </section relative px-10 pt-10 mx-auto>
+    <section>
+        <Footer />
+    </section>
 </Main>
