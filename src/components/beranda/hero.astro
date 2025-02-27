@@ -32,7 +32,7 @@ import HeroRight from "../beranda/right/heroright.astro";
   <!-- Background images with loop and transition -->
   <template x-for="(car, index) in cars" :key="index">
     <div
-      class="absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-500 ease-in-out blur-sm sm:blur-none"
+      class="absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-500 ease-in-out blur-sm sm:blur-sm"
       x-bind:style="`background-image: url('${car.background}')`"
       x-show="currentCarIndex === index"
       x-transition:enter="transition ease-in-out duration-500"
@@ -45,7 +45,7 @@ import HeroRight from "../beranda/right/heroright.astro";
   </template>
   
   <!-- Optional overlay for better text contrast -->
-  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+  <div class="absolute inset-0 blur-2xl bg-black bg-opacity-50"></div>
   <!-- Content container -->
   <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center text-center sm:text-left">
     <div class="absolute top-0 left-0 w-20 sm:w-32 h-1 bg-red-600 transform -rotate-45 origin-top-left"></div>
@@ -55,16 +55,6 @@ import HeroRight from "../beranda/right/heroright.astro";
     <div class="relative px-4 sm:px-0">
       <HeroRight />
     </div>
-<!-- CTA Button -->
-<div class="relative w-full flex justify-center mt-20">
-  <a 
-    href="#katalog" 
-    class="w-full max-w-[250px] text-center py-3 font-bold text-white bg-red-600 rounded-lg transition-all duration-300 hover:bg-red-700"
-  >
-    Jelajahi Lebih Lanjut →
-  </a>
-</div>
-
   </div>
 </div>
 
