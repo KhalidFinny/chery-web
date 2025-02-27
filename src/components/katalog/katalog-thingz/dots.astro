@@ -1,0 +1,11 @@
+      <div class="flex justify-center mt-96 space-x-3">
+        <template x-for="(item, index) in katalog" :key="index">
+          <button
+            @click="currentIndex = index"
+            class="w-2 h-2 rounded-full transition-all duration-300"
+            :class="currentIndex === index ? 'bg-red-600 w-6' : 'bg-gray-300 hover:bg-gray-400'"
+          ></button>
+        </template>
+      </div>
+    </div>
+  </div>

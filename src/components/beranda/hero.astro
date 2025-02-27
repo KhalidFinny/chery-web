@@ -3,38 +3,68 @@ import Car from "../../data/main-car.json";
 import HeroLeft from "../beranda/left/heroleft.astro";
 import HeroRight from "../beranda/right/heroright.astro";
 ---
-  <!-- Hero Section -->
-  <div
-    x-data=`{
-      cars: ${JSON.stringify(Car.cars)},
-      currentCarIndex: 0,
-      visibleCars() {
-        const count = this.cars.length;
-        const current = this.currentCarIndex;
-        const prev = (current - 1 + count) % count;
-        const prevTwo = (current - 2 + count) % count;
-        const next = (current + 1) % count;
-        const nextTwo = (current + 2) % count;
-        return [prevTwo, prev, current, next, nextTwo];
-      },
-      currentCar() { return this.cars[this.currentCarIndex]; },
-      nextCar() { 
-        this.currentCarIndex = (this.currentCarIndex + 1) % this.cars.length;
-      },
-      prevCar() { 
-        this.currentCarIndex = (this.currentCarIndex - 1 + this.cars.length) % this.cars.length;
-      },
-      setCar(index) { 
-        this.currentCarIndex = index;
-      }
-    }`
-    class="grid relative z-10 grid-cols-2 gap-4 items-center"
-  >
-    <div>
+<div
+  x-data=`{
+    cars: ${JSON.stringify(Car.cars)},
+    currentCarIndex: 0,
+    visibleCars() {
+      const count = this.cars.length;
+      const current = this.currentCarIndex;
+      const prev = (current - 1 + count) % count;
+      const prevTwo = (current - 2 + count) % count;
+      const next = (current + 1) % count;
+      const nextTwo = (current + 2) % count;
+      return [prevTwo, prev, current, next, nextTwo];
+    },
+    currentCar() { return this.cars[this.currentCarIndex]; },
+    nextCar() {
+      this.currentCarIndex = (this.currentCarIndex + 1) % this.cars.length;
+    },
+    prevCar() {
+      this.currentCarIndex = (this.currentCarIndex - 1 + this.cars.length) % this.cars.length;
+    },
+    setCar(index) {
+      this.currentCarIndex = index;
+    }
+  }`
+  class="relative min-h-screen px-4 sm:px-10"
+>
+  <!-- Background images with loop and transition -->
+  <template x-for="(car, index) in cars" :key="index">
+    <div
+      class="absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-500 ease-in-out blur-sm sm:blur-none"
+      x-bind:style="`background-image: url('${car.background}')`"
+      x-show="currentCarIndex === index"
+      x-transition:enter="transition ease-in-out duration-500"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in-out duration-500"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+    ></div>
+  </template>
+  
+  <!-- Optional overlay for better text contrast -->
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+  <!-- Content container -->
+  <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center text-center sm:text-left">
+    <div class="absolute top-0 left-0 w-20 sm:w-32 h-1 bg-red-600 transform -rotate-45 origin-top-left"></div>
+    <div class="relative px-4 sm:px-0">
       <HeroLeft />
     </div>
-    <div>
+    <div class="relative px-4 sm:px-0">
       <HeroRight />
     </div>
+<!-- CTA Button -->
+<div class="relative w-full flex justify-center mt-20">
+  <a 
+    href="#katalog" 
+    class="w-full max-w-[250px] text-center py-3 font-bold text-white bg-red-600 rounded-lg transition-all duration-300 hover:bg-red-700"
+  >
+    Jelajahi Lebih Lanjut →
+  </a>
+</div>
+
   </div>
+</div>
 

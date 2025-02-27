@@ -1,20 +1,35 @@
-
-    <!-- Stats Grid -->
-    <div class="grid grid-cols-3 gap-6 pt-2 border-t border-gray-200">
-        <template x-for="(stat, key) in currentCar().stats">
-          <div 
-            class="text-center group"
-            x-transition:enter="transition transform duration-500"
-            x-transition:enter-start="translate-y-4 opacity-0"
-            x-transition:enter-end="translate-y-0 opacity-100"
-          >
-            <div class="relative">
-              <div class="absolute -inset-1 bg-red-50 rounded-lg transition-transform duration-300 scale-0 group-hover:scale-100"></div>
-              <div class="relative">
-                <div class="text-2xl font-bold tabular-nums text-red-600" x-text="stat.value"></div>
-                <div class="tracking-wider text-gray-800 text-sam" x-text="stat.label"></div>
-              </div>
-            </div>
-          </div>
-        </template>
+<!-- Desktop Version (Default) -->
+<div class="hidden md:grid grid-cols-3 gap-6 pt-2 border-t border-white">
+  <template x-for="(stat, key) in currentCar().stats">
+    <div 
+      class="text-center group"
+      x-transition:enter="transition transform duration-500"
+      x-transition:enter-start="translate-y-4 opacity-0"
+      x-transition:enter-end="translate-y-0 opacity-100"
+    >
+      <div class="relative">
+        <div class="absolute -inset-1 bg-red-600 rounded-lg transition-transform duration-300 scale-0 group-hover:scale-100"></div>
+        <div class="relative">
+          <div class="text-2xl font-bold tabular-nums text-white" x-text="stat.value"></div>
+          <div class="tracking-wider text-white text-sm" x-text="stat.label"></div>
+        </div>
       </div>
+    </div>
+  </template>
+</div>
+
+<!-- Mobile Version -->
+<div class="md:hidden flex justify-center gap-4 pt-2 border-t border-white overflow-x-auto px-2">
+  <template x-for="(stat, key) in currentCar().stats">
+    <div 
+      class="text-center flex flex-col items-center min-w-[80px]"
+      x-transition:enter="transition transform duration-500"
+      x-transition:enter-start="translate-y-4 opacity-0"
+      x-transition:enter-end="translate-y-0 opacity-100"
+    >
+      <div class="text-lg font-bold tabular-nums text-white" x-text="stat.value"></div>
+      <div class="tracking-wide text-white text-xs font-medium" x-text="stat.label"></div>
+    </div>
+  </template>
+</div>
+

@@ -1,12 +1,11 @@
 ---
-// Import necessary styles and components
 import "../styles/global.css";
 import "../styles/sizes.css";
 import Header from "../shared/header.astro";
 const { title, description } = Astro.props;
 ---
 <!doctype html>
-<html lang="en" class="max-[8192px]:opacity-0 max-[3120px]:m-0 max-[3120px]:box-border max-[3120px]:p-0 max-[3120px]:opacity-100 max-[324px]:hidden">
+<html lang="en" class="scroll-smooth max-[8192px]:opacity-0 max-[3120px]:m-0 max-[3120px]:box-border max-[3120px]:p-0 max-[3120px]:opacity-100 max-[324px]:hidden">
   <head>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
     <meta charset="UTF-8" />
@@ -28,12 +27,29 @@ const { title, description } = Astro.props;
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   </head>
-  <body class="relative min-h-screen overflow-x-hidden" x-data="{ mouseX: 0, mouseY: 0 }" @mousemove="mouseX = $event.clientX; mouseY = $event.clientY">
-    <!-- Background Pattern -->
+  <body class="relative min-h-screen overflow-x-hidden scroll-smooth" x-data="{ mouseX: 0, mouseY: 0 }" @mousemove="mouseX = $event.clientX; mouseY = $event.clientY">
     <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
     <Header />
     <main>
       <slot />
     </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          document.querySelectorAll("a[href^='#']").forEach(anchor => {
+              anchor.addEventListener("click", function(event) {
+                  event.preventDefault();
+                  const targetId = this.getAttribute("href");
+                  const targetElement = document.querySelector(targetId);
+                  if (targetElement) {
+                      window.scrollTo({
+                          top: targetElement.offsetTop - 80, // Adjust for navbar height
+                          behavior: "smooth"
+                      });
+                  }
+              });
+          });
+      });
+    </script>
   </body>
 </html>

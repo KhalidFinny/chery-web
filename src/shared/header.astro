@@ -1,41 +1,71 @@
 <header
   x-data="{
     selectedPage: window.location.hash || window.location.pathname,
+    open: false,
+    hiddenNav: false,
+    lastScroll: window.scrollY,
     setPage(page) {
       this.selectedPage = page;
+      this.open = false; // Close menu on selection (mobile)
+      this.smoothScroll(page);
+    },
+    checkScroll() {
+      let currentScroll = window.scrollY;
+      this.hiddenNav = currentScroll > this.lastScroll && currentScroll > 100; // Hide on scroll down
+      this.lastScroll = currentScroll;
+    },
+    smoothScroll(target) {
+      if (target.startsWith('#')) {
+        let element = document.querySelector(target);
+        if (element) {
+          window.scrollTo({ top: element.offsetTop - 80, behavior: 'smooth' }); // Offset to account for navbar height
+        }
+      }
     }
   }"
-  class="flex fixed z-50 gap-24 justify-between items-center px-32 py-8 w-full text-xl font-semibold text-gray-600 font-urbanist"
+  x-init="window.addEventListener('scroll', checkScroll)"
+  @mouseover="hiddenNav = false"
+  x-show="!hiddenNav || open"
+  x-transition
+  class="fixed top-0 left-0 z-50 flex justify-between items-center px-4 md:px-32 py-4 w-full text-xl font-semibold text-gray-600 font-urbanist bg-white shadow-md shadow-red-200 transition-all duration-300"
+  style="scroll-behavior: smooth;"
 >
-  <a 
-    href="/" 
-    @click="setPage('/')" 
-    :class="'hover:text-red-500'"
-    class="duration-300"
-  >Beranda</a>
-
-  <a 
-    href="#about" 
-    @click="setPage('#about')" 
-    :class="'hover:text-red-500'"
-    class="duration-300"
-  >About</a>
-
+  <!-- Logo -->
   <a href="/">
-    <img src="logo.webp" alt="chery logo" class="mx-auto w-auto h-[60px]" />
+    <img src="logo.webp" alt="chery logo" class="w-auto h-[50px] md:h-[60px]" />
   </a>
 
-  <a 
-    href="#katalog" 
-    @click="setPage('#katalog')" 
-    :class="'hover:text-red-500'"
-    class="duration-300"
-  >Katalog</a>
+  <!-- Desktop Navigation -->
+  <nav class="hidden md:flex gap-12">
+    <a href="/" @click="setPage('#beranda')" class="hover:text-red-500 duration-300">Beranda</a>
+    <a href="#about" @click="setPage('#about')" class="hover:text-red-500 duration-300">About</a>
+    <a href="#katalog" @click="setPage('#katalog')" class="hover:text-red-500 duration-300">Katalog</a>
+    <a href="/kontak" @click="setPage('/kontak')" class="hover:text-red-500 duration-300">Galeri</a>
+  </nav>
 
-  <a 
-    href="/kontak" 
-    @click="setPage('/kontak')" 
-    :class="selectedPage === '/kontak' ? 'text-red-500' : 'hover:text-red-500'"
-    class="duration-300"
-  >Kontak</a>
+  <!-- Mobile Menu Button -->
+  <button @click="open = !open" class="md:hidden focus:outline-none">
+    <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+    </svg>
+  </button>
+
+  <!-- Mobile Navigation -->
+  <div 
+    x-show="open"
+    x-transition
+    class="fixed inset-0 bg-white flex flex-col items-center space-y-8 text-2xl pt-24 shadow-lg md:hidden"
+  >
+    <a href="/" @click="setPage('/')" class="hover:text-red-500 duration-300">Beranda</a>
+    <a href="#about" @click="setPage('#about')" class="hover:text-red-500 duration-300">About</a>
+    <a href="#katalog" @click="setPage('#katalog')" class="hover:text-red-500 duration-300">Katalog</a>
+    <a href="/kontak" @click="setPage('/kontak')" class="hover:text-red-500 duration-300">Galeri</a>
+    
+    <!-- Close Button -->
+    <button @click="open = false" class="absolute top-6 right-6">
+      <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
 </header>

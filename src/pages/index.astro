@@ -3,19 +3,29 @@ import Main from "../layouts/main.astro";
 import Hero from "../components/beranda/hero.astro";
 import HeroAbout from "../components/beranda/about/about.astro";
 import Katalog from "../components/katalog/katalog.astro";
+import Galeri from "../components/galeri/galeri.astro";
 import Footer from "../shared/footer.astro";
+import Whatsapp from "../components/whatsapp.astro";
 ---
+
 <Main title="Malang" description="Chery Web">
-    <section class="relative px-10 pt-10 mx-auto">
+
+    <section class="relative pt-10 mx-auto shadow-red-400 shadow-lg" id="beranda">
         <Hero />
     </section>
-    <section class="relative px-10 pt-32 mx-auto" id="about">
+    <section class="relative  pt-32 mt-28 mx-auto " id="about">
         <HeroAbout />
     </section>
-    <section class="relative px-10 pt-10 mx-auto" id="katalog">
+    <section class="relative  pt-10 mx-auto" id="katalog">
         <Katalog />
-    </section relative px-10 pt-10 mx-auto>
+    </section>
+    <section>
+        <Galeri />
+    </section>
     <section>
         <Footer />
+    </section>
+    <section>
+        <Whatsapp />
     </section>
 </Main>

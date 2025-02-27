@@ -1,11 +1,11 @@
 {
     "katalog": [
       {
-        "model": "Chery Omoda E5",
-        "image": "/Chery-Omoda-E5.webp",
+        "model": "CHERY Omoda E5",
+        "image": "/omoda-e5-3.webp",
         "detail": {
           "Harga": {
-            "value": "7.2 s"
+            "value": "Rp 435.500.000"
           },
           "Button": {
             "value": "<a href='https://chery.co.id/id/model/omoda/tipe/omoda-e5'>Learn More</a>"
@@ -13,11 +13,23 @@
         }
       },
       {
-        "model": "OMODA 5",
-        "image": "/Chery-Omoda-E5.webp",
+        "model": "CHERY Omoda 5 GT",
+        "image": "/Omoda-5-GT.webp",
         "detail": {
           "Harga": {
-            "value": "7.2 s"
+            "value": "Rp 468.800.000"
+          },
+          "Button": {
+            "value": "<a href='https://chery.co.id/id/model/omoda/tipe/omoda-5-gt'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "CHERY Omoda 5",
+        "image": "/Omoda-5.webp",
+        "detail": {
+          "Harga": {
+            "value": "Rp 356.800.000"
           },
           "Button": {
             "value": "<a href='https://chery.co.id/id/model/omoda/tipe/omoda-5'>Learn More</a>"
@@ -25,11 +37,11 @@
         }
       },
       {
-        "model": "Chery Tiggo 8 ProMax",
-        "image": "/Tiggo-8-ProMax.webp",
+        "model": "CHERY Tiggo 8ProMax",
+        "image": "/T8-Promax.webp",
         "detail": {
           "Harga": {
-            "value": "7.2 s"
+            "value": "Rp 588.000.000"
           },
           "Button": {
             "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-8-pro-max'>Learn More</a>"
@@ -37,23 +49,23 @@
         }
       },
       {
-        "model": "Chery Tiggo 8 Pro",
-        "image": "/Chery-Omoda-E5.webp",
+        "model": "CHERY Tiggo 7Pro",
+        "image": "/Tiggo-7-Pro.webp",
         "detail": {
           "Harga": {
-            "value": "7.2 s"
+            "value": "Rp 416.000.000"
           },
           "Button": {
-            "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-8-pro'>Learn More</a>"
+            "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-7-pro'>Learn More</a>"
           }
         }
       },
       {
-        "model": "Chery Tiggo 8",
-        "image": "/Chery-Omoda-E5.webp",
+        "model": "CHERY Tiggo 8",
+        "image": "/T8.webp",
         "detail": {
           "Harga": {
-            "value": "7.2 s"
+            "value": "Rp 367.000.000"
           },
           "Button": {
             "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-8'>Learn More</a>"
@@ -61,11 +73,11 @@
         }
       },
       {
-        "model": "Chery Tiggo Cross",
-        "image": "/Chery-Omoda-E5.webp",
+        "model": "CHERY Tiggo Cross",
+        "image": "/Tiggo-Cross.webp",
         "detail": {
           "Harga": {
-            "value": "7.2 s"
+            "value": "Rp 269.500.000"
           },
           "Button": {
             "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-cross'>Learn More</a>"
@@ -73,17 +85,41 @@
         }
       },
       {
-        "model": "J6",
-        "image": "/Chery-J6.webp",
+        "model": "CHERY Tiggo 5X",
+        "image": "/Chery-Tiggo-5X.webp",
         "detail": {
           "Harga": {
-            "value": "7.2 s"
+            "value": "Rp 279.000.000"
+          },
+          "Button": {
+            "value": "<a href='/Tiggo-5X-FLYER.pdf'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "CHERY J6",
+        "image": "/J6.webp",
+        "detail": {
+          "Harga": {
+            "value": "Rp515.500.000"
           },
           "Button": {
             "value": "<a href='https://chery.co.id/id/model/omoda/tipe/j6'>Learn More</a>"
           }
         }
-      }     
+      },
+      {
+        "model": "CHERY Jaecoo J7",
+        "image": "/Chery-J7-Jaecoo.webp",
+        "detail": {
+          "Harga": {
+            "value": "Rp 509.000.000"
+          },
+          "Button": {
+            "value": "<a href='/Brochure-Jaecoo-A3.pdf'>Learn More</a>"
+          }
+        }
+      }             
     ]
   }
   

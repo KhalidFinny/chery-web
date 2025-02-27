@@ -1,58 +1,70 @@
 ---
 import Select from "./car-selection.astro";
 import Stats from "../left/stats.astro"
+import "../../../styles/animation-hero.css";
 ---
-<div class="relative pt-32 space-y-8 w-full max-w-2xl">
-      <!-- Brand & Model Section in Card -->
-      <div class="py-6">
-        <!-- Brand Name -->
-        <h2
-          class="text-9xl font-extrabold text-red-600 transform -translate-y-4 text-montserrat"
-          x-transition:enter="transition transform duration-700"
-          x-transition:enter-start="translate-y-full"
-          x-transition:enter-end="translate-y-0"
-        >CHERY
-        </h2>
-        <h3
-        x-text="currentCar().model"
-        class="ml-3 text-5xl font-bold text-black transform"
-        x-transition:enter="transition transform duration-500"
-        x-transition:enter-start="translate-x-4 opacity-0"
-        x-transition:enter-end="translate-x-0 opacity-100"
-      >
-        </h3>
-      <div class="relative p-6">
-        <p
-          x-text="currentCar().tagline"
-          class="relative text-3xl font-semibold leading-snug text-gray-800 font-urbanist"
-          x-transition:enter="transition transform duration-500"
-          x-transition:enter-start="translate-y-2 opacity-0"
-          x-transition:enter-end="translate-y-0 opacity-100"
-        ></p>
-      </div>
 
-      <!-- Car Selection with Border -->
-      <div class="relative p-4 rounded-lg border-2 border-red-300 border-dashed bg-">
-        <div class="scale-90 relative right-[100px]"> 
-          <Select />
-        </div>
-      </div>
-
-      <!-- Bottom Section with Stats and CTA -->
-      <div class="flex gap-6 justify-between items-end">
-        <!-- Stats in Card -->
-        <div class="flex-1 p-4 bg-red-50 rounded-lg transform rotate-1">
-          <Stats />
-        </div>
-
-        <!-- CTA Button with Playful Animation -->
-        <button class="relative group">
-          <div class="absolute inset-0 bg-black rounded-full transition-transform duration-300 transform group-hover:scale-105"></div>
-          <span class="inline-block relative px-10 py-4 font-bold tracking-wider text-white uppercase bg-red-600 rounded-full transition-all duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1">
-            Discover More
-          </span>
-        </button>
-      </div>
+<!-- Desktop Version -->
+<div 
+  class="hidden sm:block relative pt-20 sm:pt-32 space-y-1 w-full max-w-xl sm:max-w-2xl px-4 sm:px-0"
+  x-intersect="$el.classList.add('opacity-100'); $el.classList.remove('opacity-0')"
+  class="opacity-0 transition-opacity duration-700"
+>
+  <!-- Brand & Model Section -->
+  <div class="py-4 sm:py-7 overflow-hidden" x-intersect="$el.classList.add('animate-fade-in')">
+    <h2 class="text-6xl sm:text-9xl font-extrabold text-red-500 text-montserrat transition-transform duration-700 hover:scale-95">
+      <span class="hover:text-red-400 transition-colors duration-300">CHERY</span>
+    </h2>
+    <h3 x-text="currentCar().model" class="ml-2 sm:ml-3 text-3xl sm:text-5xl font-bold text-white hover:text-red-600 transition-colors duration-300"></h3>
+    <div class="relative p-4 sm:p-6 overflow-hidden">
+      <p x-text="currentCar().tagline" class="relative text-xl sm:text-3xl font-semibold leading-snug text-white font-urbanist typewriter-text"></p>
     </div>
+  </div>
+
+  <!-- Car Selection -->
+  <div class="relative p-3 sm:p-4 rounded-lg border-2 border-red-500 transform hover:rotate-1 duration-300">
+    <div class="scale-75 sm:scale-90 relative right-[30px] sm:right-[50px]">
+      <Select />
+    </div>
+  </div>
+
+  <!-- Stats & CTA -->
+  <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-between items-center sm:items-end">
+    <div class="flex-1 p-3 sm:p-4 border-2 border-red-500 rounded-lg transform rotate-1 transition-all duration-300 hover:rotate-0 hover:shadow-md">
+      <Stats />
+    </div>
+    <button class="relative group">
+      <div class="absolute inset-0 bg-red-700 rounded-full transition-transform duration-300 group-hover:scale-105"></div>
+      <a href="#katalog">
+        <span class="inline-block relative px-6 sm:px-10 py-3 sm:py-4 font-bold tracking-wider text-white uppercase bg-red-600 rounded-full transition-all duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:shadow-lg">
+          <span class="inline-block group-hover:animate-pulse">Discover More</span>
+          <span class="ml-1 sm:ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+        </span>
+      </a>
+    </button>
+  </div>
+</div>
+
+<!-- Mobile Version -->
+<div 
+  class="sm:hidden flex flex-col items-center w-full px-6 space-y-6 pt-16"
+  x-intersect="$el.classList.add('opacity-100'); $el.classList.remove('opacity-0')"
+  class="opacity-0 transition-opacity duration-700"
+>
+  <!-- Brand & Model -->
+  <h2 class="text-7xl font-extrabold text-red-500 text-montserrat">
+    <span class="hover:text-red-400 transition-colors duration-300">CHERY</span>
+  </h2>
+  <h3 x-text="currentCar().model" class="text-3xl font-bold text-white text-center"></h3>
+  <p x-text="currentCar().tagline" class="text-xl text-center font-medium text-white"></p>
+
+  <!-- Car Selection -->
+  <div class="w-full border-2 border-red-500 rounded-lg p-4">
+    <Select />
+  </div>
+
+  <!-- Stats -->
+  <div class="w-full">
+    <Stats />
   </div>
 </div>

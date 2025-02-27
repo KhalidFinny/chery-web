@@ -1,33 +1,47 @@
-<div class="flex relative ml-20">
+<!-- Desktop Version (Default) -->
+<div class="hidden md:flex relative ml-5 md:ml-10 lg:ml-20">
   <!-- Left Arrow -->
-  <button @click="prevCar()" class="flex relative justify-center items-center w-12 h-12 group">
-    <div class="absolute inset-0 bg-red-100 rounded-full transition-transform duration-300 transform rotate-45 group-hover:scale-110"></div>
-    <i class="relative text-lg text-red-600 fa-solid fa-chevron-left"></i>
+  <button @click="prevCar()" class="flex relative justify-center items-center w-[50px] md:w-[100px] lg:w-[200px] h-[30px] group">
+    <div class="absolute inset-0 bg-red-500 rounded-full transition-transform duration-300 group-hover:scale-110"></div>
+    <i class="relative text-lg text-white fa-solid fa-chevron-left"></i>
   </button>
-  <!-- Car Models (Wider Area) -->
-  <div class="flex justify-between items-center min-w-[500px] px-6">
+
+  <!-- Car Models -->
+  <div class="flex justify-between items-center min-w-[250px] md:min-w-[400px] lg:min-w-[500px] px-3 md:px-6">
     <template x-for="(car, index) in cars">
       <div
         @click="setCar(index)"
         class="flex relative flex-col items-center transition-all duration-300 transform cursor-pointer hover:scale-105"
-        :class="index === currentCarIndex ? 'opacity-100' : 'opacity-50'"
       >
         <span
-          class="text-lg font-medium whitespace-nowrap transition-all duration-300"
-          :class="index === currentCarIndex ? 'text-red-600' : 'text-gray-400'"
+          class="text-sm md:text-lg font-medium whitespace-nowrap transition-all duration-300"
+          :class="index === currentCarIndex ? 'text-red-500' : 'text-white'"
           x-text="car.model"
         ></span>
         <!-- Active Indicator -->
         <div
-          class="absolute bottom-0 mt-1 w-10 h-0.5 bg-red-600 rounded-full transition-transform duration-300"
+          class="absolute bottom-0 mt-1 w-6 md:w-10 h-0.5 bg-red-600 rounded-full transition-transform duration-300"
           :class="index === currentCarIndex ? 'scale-x-100' : 'scale-x-0'"
         ></div>
       </div>
     </template>
   </div>
+
   <!-- Right Arrow -->
-  <button @click="nextCar()" class="flex relative justify-center items-center w-12 h-12 group">
-    <div class="absolute inset-0 bg-red-100 rounded-full transition-transform duration-300 transform rotate-45 group-hover:scale-110"></div>
-    <i class="relative text-lg text-red-600 fa-solid fa-chevron-right"></i>
+  <button @click="nextCar()" class="flex relative justify-center items-center w-[50px] md:w-[100px] lg:w-[200px] h-[30px] group">
+    <div class="absolute inset-0 bg-red-500 rounded-full transition-transform duration-300 transform group-hover:scale-110"></div>
+    <i class="relative text-lg text-white fa-solid fa-chevron-right"></i>
   </button>
+</div>
+
+<!-- Mobile Car Selector -->
+<div class="sm:hidden flex overflow-x-auto space-x-4 p-2">
+  <template x-for="(car, index) in cars">
+    <button 
+      @click="setCar(index)"
+      class="px-4 py-2 bg-red-600 text-white rounded-lg whitespace-nowrap transition-transform duration-300 hover:scale-105"
+      :class="index === currentCarIndex ? 'bg-red-800' : ''"
+      x-text="car.model">
+    </button>
+  </template>
 </div>

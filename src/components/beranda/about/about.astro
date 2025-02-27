@@ -1,12 +1,37 @@
-<div class="grid grid-cols-12 gap-8 container px-4 mx-auto max-w-6xl bg-transparent min-h-screen mt-20">
-  <!-- Left Column (Text Content) -->
+<div class="grid grid-cols-12 gap-8 container px-10 mx-auto max-w-6xl bg-transparent min-h-screen">
   <div class="col-span-8">
     <div class="w-16 h-1 bg-red-600"></div>
-    <h2 class="font-urbanist text-6xl font-bold mt-8 mb-12 tracking-tight">
-      About<span class="text-red-600">.</span>
-    </h2>
-    <!-- Text Content -->
-    <div class="font-['Montserrat'] space-y-6 text-lg leading-relaxed">
+    
+    <div class="flex items-center justify-between mt-8">
+      <h2 class="font-urbanist text-6xl font-bold tracking-tight">
+        About<span class="text-red-600">.</span>
+      </h2>
+      
+      <div class="flex space-x-4">
+        <a href="https://wa.me/6281333292628" target="_blank" rel="noopener noreferrer">
+        <button 
+          x-data="{ hover: false }" 
+          @mouseover="hover = true" 
+          @mouseout="hover = false" 
+          class="font-['Montserrat'] font-bold text-lg px-6 py-3 bg-red-600 text-white border-2 border-red-600 rounded-sm tracking-tight transition-all duration-300 ease-in-out hover:bg-transparent hover:text-red-600 flex items-center space-x-2"
+        >
+          <i class="fab fa-whatsapp"></i>
+          <span>Contact</span>
+        </button>
+      </a>
+        <button 
+          x-data="{ hover: false }" 
+          @mouseover="hover = true" 
+          @mouseout="hover = false" 
+          class="font-['Montserrat'] font-bold text-lg px-6 py-3 bg-black text-white border-2 border-black rounded-sm tracking-tight transition-all duration-300 ease-in-out hover:bg-transparent hover:text-black flex items-center space-x-2"
+        >
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Location</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="font-['Montserrat'] space-y-6 text-lg leading-relaxed mt-8">
       <p class="first-letter:text-4xl first-letter:font-bold first-letter:text-red-600 first-letter:mr-2 first-letter:float-left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
@@ -15,29 +40,8 @@
       <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
     </div>
-    <!-- Buttons Section -->
-    <div class="mt-10 flex space-x-4">
-      <button 
-        x-data="{ hover: false }" 
-        @mouseover="hover = true" 
-        @mouseout="hover = false" 
-        class="font-['Montserrat'] font-bold text-lg px-6 py-3 bg-red-600 text-white border-2 border-red-600 rounded-sm tracking-tight transition-all duration-300 ease-in-out hover:bg-transparent hover:text-red-600 flex items-center space-x-2"
-      >
-        <i class="fab fa-whatsapp"></i>
-        <span>Contact</span>
-      </button>
-      <button 
-        x-data="{ hover: false }" 
-        @mouseover="hover = true" 
-        @mouseout="hover = false" 
-        class="font-['Montserrat'] font-bold text-lg px-6 py-3 bg-black text-white border-2 border-black rounded-sm tracking-tight transition-all duration-300 ease-in-out hover:bg-transparent hover:text-black flex items-center space-x-2"
-      >
-        <i class="fas fa-map-marker-alt"></i>
-        <span>Location</span>
-      </button>
-    </div>
   </div>
-  <!-- Right Column (Image Section) -->
+
   <div class="col-span-4 flex flex-col items-center">
     <div class="relative aspect-[3/4] overflow-hidden mb-8 w-full border-2 border-black">
       <img src="/Placeholder.jpg" alt="Profile picture" class="object-cover w-full h-full" />

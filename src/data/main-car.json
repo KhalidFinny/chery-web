@@ -3,18 +3,19 @@
     {
       "model": "OMODA E5",
       "tagline": "Drive E-Future",
-      "image": "/Chery-Omoda-E5.webp",
+      "image": "/omoda-e5-3.webp",
+      "background": "/e5.png",
       "stats": {
         "acceleration": {
-          "label": "0-100 kph",
+          "label": "0-100 kmh",
           "value": "7.2 s"
         },
         "topSpeed": {
-          "label": "Top Speed",
-          "value": "172 kph"
+          "label": "Kecepatan Maksimal",
+          "value": "172 kmh"
         },
-        "horsepower": {
-          "label": "Horsepower",
+        "Tenaga Kuda": {
+          "label": "Tenaga Kuda",
           "value": "201 hp"
         }
       }
@@ -22,41 +23,62 @@
     {
       "model": "TIGGO 8 PROMAX",
       "tagline": "Enjoy Your First Class",
-      "image": "/Tiggo-8-ProMax.webp",
+      "image": "/T8-Promax.webp",
+      "background": "/t8pm.png",
       "stats": {
         "acceleration": {
-          "label": "0-100 kph",
+          "label": "0-100 kmh",
           "value": "8.0 s"
         },
         "topSpeed": {
-          "label": "Top Speed",
-          "value": "180 kph"
+          "label": "Kecepatan Maksimal",
+          "value": "180 kmh"
         },
-        "horsepower": {
-          "label": "Horsepower",
+        "Tenaga Kuda": {
+          "label": "Tenaga Kuda",
           "value": "190 hp"
         }
       }
     },
     {
       "model": "J6",
-      "tagline": "The Future Of mobility",
-      "image": "/Chery-J6.webp",
+      "tagline": "The Future of Mobility",
+      "image": "/J6.webp",
+      "background": "/j6.png",
       "stats": {
         "acceleration": {
-          "label": "0-100 kph",
-          "value": "-"
+          "label": "0-100 kmh",
+          "value": "6.5 s"
         },
         "topSpeed": {
-          "label": "Top Speed",
-          "value": "-"
+          "label": "Kecepatan Maksimal",
+          "value": "150 kmh"
         },
-        "horsepower": {
-          "label": "Horsepower",
-          "value": "-"
+        "Tenaga Kuda": {
+          "label": "Tenaga Kuda",
+          "value": "181 hp"
+        }
+      }
+    },
+    {
+      "model": "Jaecoo J7",
+      "tagline": "Smart Energy Powerfull Journey",
+      "image": "/jaecoo-7-2024.webp",
+      "background": "/J7.webp",
+      "stats": {
+        "acceleration": {
+          "label": "0-100 kmh",
+          "value": "8.5 s"
+        },
+        "topSpeed": {
+          "label": "Kecepatan Maksimal",
+          "value": "180 kmh"
+        },
+        "Tenaga Kuda": {
+          "label": "Tenaga Kuda",
+          "value": "194 hp"
         }
       }
     }
-    
   ]
 }

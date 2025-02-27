@@ -1,44 +1,69 @@
-<footer class="bg-white text-gray-900 py-12 px-4 sm:px-6 lg:px-8 w-full mt-16 border-t border-red-600/30">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Location -->
-      <div class="space-y-2">
-        <h3 class="font-urbanist text-xl font-medium tracking-wide text-red-600">Location</h3>
-        <p class="font-urbanist text-base font-light">
-          Chery Malang, Malang, Jawa Timur, Indonesia<br>
-          Geolocation: 7° 58' 40" S, 112° 37' 41" E
-        </p>
-        <a 
-          href="https://www.google.com/maps?q=7.9777778,-112.6280556" 
-          target="_blank" 
-          class="font-urbanist text-base font-light text-red-600 hover:text-red-800 underline transition-colors duration-300 ease-in-out"
-        >
-          View on Google Maps
-        </a>
+<footer class="bg-white border-t-4 border-red-600 py-8 sm:py-16 px-4 sm:px-8 w-full mt-16">
+  <div class="max-w-6xl mx-auto">
+    <!-- Grid layout with improved responsive behavior -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8">
+      <!-- Left column - Location information -->
+      <div class="sm:col-span-1 lg:col-span-4 space-y-4 sm:space-y-6 order-1">
+        <h3 class="uppercase text-sm font-bold tracking-widest text-gray-900 pb-2 border-b border-gray-200">Location</h3>
+        <div class="font-light text-sm leading-relaxed">
+          <p class="mb-1">Chery Malang</p>
+          <p class="mb-1">Jl. Ahmad Yani No.186, Purwodadi</p>
+          <p class="mb-1">Kec. Blimbing, Kota Malang</p>
+          <p class="mb-1">Jawa Timur 65126</p>
+          <p class="text-xs text-gray-500 mt-3">7° 58' 40" S, 112° 37' 41" E</p>
+        </div>
       </div>
-  
-      <!-- Contact -->
-      <div class="space-y-2">
-        <h3 class="font-urbanist text-xl font-medium tracking-wide text-red-600">Contact</h3>
-        <a 
-          href="https://wa.me/081333292628" 
-          target="_blank" 
-          class="font-urbanist text-base font-light text-gray-900 hover:text-red-600 transition-colors duration-300 ease-in-out"
-        >
-          081333292628
-        </a>
+
+      <!-- Middle column - Map (full width on mobile) -->
+      <div class="sm:col-span-2 lg:col-span-4 h-64 sm:h-auto order-3 lg:order-2">
+        <h3 class="uppercase text-sm font-bold tracking-widest text-gray-900 pb-2 border-b border-gray-200 mb-4">Map</h3>
+        <div class="w-full h-48 sm:h-56 bg-gray-100 relative overflow-hidden">
+          <iframe 
+            class="absolute inset-0 w-full h-full border-0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.3813654529354!2d112.6522703!3d-7.9462361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6281ca12ee0c3%3A0x714c9708e9d70ad!2sJl.%20Ahmad%20Yani%20No.186%2C%20Purwodadi%2C%20Kec.%20Blimbing%2C%20Kota%20Malang%2C%20Jawa%20Timur%2065126!5e0!3m2!1sen!2sid!4v1708938015721!5m2!1sen!2sid" 
+            allowfullscreen="" 
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
-  
-      <!-- Additional Info (e.g., Copyright or Social Links) -->
-      <div class="space-y-2">
-        <h3 class="font-urbanist text-xl font-medium tracking-wide text-red-600">About Us</h3>
-        <p class="font-urbanist text-base font-light">Explore Chery’s premium vehicles in Malang.</p>
+
+      <!-- Right column - Contact information -->
+      <div class="sm:col-span-1 lg:col-span-4 space-y-4 sm:space-y-6 order-2 lg:order-3">
+        <h3 class="uppercase text-sm font-bold tracking-widest text-gray-900 pb-2 border-b border-gray-200">Contact</h3>
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <div class="mr-3 mt-1">
+              <div class="w-4 h-4 bg-red-600"></div>
+            </div>
+            <div>
+              <p class="text-sm font-medium uppercase tracking-wide">SHINTA</p>
+              <a 
+                href="https://wa.me/081333292628" 
+                class="text-sm font-light hover:text-red-600 transition-colors duration-300 ease-in-out flex items-center mt-1"
+              >
+                <span>081333292628</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pt-4 sm:pt-8">
+          <h3 class="uppercase text-sm font-bold tracking-widest text-gray-900 pb-2 border-b border-gray-200 mb-2">About</h3>
+          <p class="text-sm font-light leading-relaxed">Explore Chery's premium vehicles in Malang. Experience premium engineering and design.</p>
+        </div>
       </div>
     </div>
-  
-    <!-- Footer Bottom (centered, subtle) -->
-    <div class="mt-8 text-center">
-      <p class="font-urbanist text-sm font-light text-gray-500">
-        © 2025 Chery. All rights reserved.
-      </p>
+    
+    <!-- Copyright section -->
+    <div class="mt-8 sm:mt-16 pt-6 border-t border-gray-200">
+      <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+        <p class="text-xs font-light text-gray-500 order-2 sm:order-1">© 2025 Chery Malang</p>
+        <div class="flex space-x-6 order-1 sm:order-2">
+          <div class="w-3 h-3 bg-red-600"></div>
+          <div class="w-3 h-3 bg-gray-900"></div>
+          <div class="w-3 h-3 bg-gray-400"></div>
+        </div>
+      </div>
     </div>
-  </footer>
+  </div>
+</footer>
