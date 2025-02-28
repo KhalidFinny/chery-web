@@ -1,0 +1,12 @@
+
+<!-- Mobile Car Selector -->
+<div class="sm:hidden flex overflow-x-auto space-x-4 p-2">
+    <template x-for="(car, index) in cars">
+      <button 
+        @click="setCar(index)"
+        class="px-4 py-2 bg-red-600 text-white rounded-lg whitespace-nowrap transition-transform duration-300 hover:scale-105"
+        :class="index === currentCarIndex ? 'bg-red-800' : ''"
+        x-text="car.model">
+      </button>
+    </template>
+  </div>

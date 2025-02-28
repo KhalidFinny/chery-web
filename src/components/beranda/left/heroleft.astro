@@ -2,15 +2,14 @@
 import Select from "./car-selection.astro";
 import Stats from "../left/stats.astro"
 import "../../../styles/animation-hero.css";
+import LeftMobile from "./left-mobile.astro";
 ---
-
-<!-- Desktop Version -->
 <div 
   class="hidden sm:block relative pt-20 sm:pt-32 space-y-1 w-full max-w-xl sm:max-w-2xl px-4 sm:px-0"
   x-intersect="$el.classList.add('opacity-100'); $el.classList.remove('opacity-0')"
   class="opacity-0 transition-opacity duration-700"
 >
-  <!-- Brand & Model Section -->
+  <!-- Brand & Model -->
   <div class="py-4 sm:py-7 overflow-hidden" x-intersect="$el.classList.add('animate-fade-in')">
     <h2 class="text-6xl sm:text-9xl font-extrabold text-red-500 text-montserrat transition-transform duration-700 hover:scale-95">
       <span class="hover:text-red-400 transition-colors duration-300">CHERY</span>
@@ -28,53 +27,22 @@ import "../../../styles/animation-hero.css";
     </div>
   </div>
 
-  <!-- Stats & CTA -->
+  <!-- Stats -->
   <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-between items-center sm:items-end">
     <div class="flex-1 p-3 sm:p-4 border-2 border-red-500 rounded-lg transform rotate-1 transition-all duration-300 hover:rotate-0 hover:shadow-md">
       <Stats />
     </div>
+
+    <!-- Button -->
     <button class="relative group">
       <div class="absolute inset-0 bg-red-700 rounded-full transition-transform duration-300 group-hover:scale-105"></div>
       <a href="#katalog">
         <span class="inline-block relative px-6 sm:px-10 py-3 sm:py-4 font-bold tracking-wider text-white uppercase bg-red-600 rounded-full transition-all duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:shadow-lg">
-          <span class="inline-block group-hover:animate-pulse">Discover More</span>
-          <span class="ml-1 sm:ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+          <span class="inline-block group-hover:animate-pulse">Jelajahi Lebih Lanjut</span>
         </span>
       </a>
     </button>
   </div>
 </div>
-
-<!-- Mobile Version -->
-<div 
-  class="sm:hidden flex flex-col items-center w-full px-6 space-y-6 pt-16"
-  x-intersect="$el.classList.add('opacity-100'); $el.classList.remove('opacity-0')"
-  class="opacity-0 transition-opacity duration-700"
->
-  <!-- Brand & Model -->
-  <h2 class="text-7xl font-extrabold text-red-500 text-montserrat">
-    <span class="hover:text-red-400 transition-colors duration-300">CHERY</span>
-  </h2>
-  <h3 x-text="currentCar().model" class="text-3xl font-bold text-white text-center"></h3>
-  <p x-text="currentCar().tagline" class="text-xl text-center font-medium text-white"></p>
-
-  <!-- Car Selection -->
-  <div class="w-full border-2 border-red-500 rounded-lg p-4">
-    <Select />
-  </div>
-
-  <!-- Stats -->
-  <div class="w-full">
-    <Stats />
-  </div>
-  <!-- CTA Button -->
-<div class="relative w-full flex justify-center mt-20">
-  <a 
-    href="#katalog" 
-    class="w-full max-w-[250px] text-center py-3 font-bold text-white bg-red-600 rounded-lg transition-all duration-300 hover:bg-red-700"
-  >
-    Jelajahi Lebih Lanjut →
-  </a>
-</div>
-
+<LeftMobile />
 </div>

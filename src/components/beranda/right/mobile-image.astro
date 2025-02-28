@@ -1,0 +1,18 @@
+
+<!-- Mobile Version -->
+<div class="md:hidden flex justify-center items-center w-full bg-transparent overflow-hidden">
+    <template x-for="(car, index) in cars" :key="car.model">
+      <img
+        x-bind:src="car.image"
+        x-bind:alt="car.model"
+        class="w-[95%] max-w-[450px] h-auto object-contain absolute"
+        x-show="currentCarIndex === index"
+        x-transition:enter="transition transform ease-in-out duration-300"
+        x-transition:enter-start="translate-x-full"
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave="transition transform ease-in-out duration-300"
+        x-transition:leave-start="translate-x-0"
+        x-transition:leave-end="-translate-x-full"
+      />
+    </template>
+  </div>

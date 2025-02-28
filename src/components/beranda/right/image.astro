@@ -1,0 +1,20 @@
+---
+import MobileImage from "./mobile-image.astro"
+---
+<div class="hidden md:flex ml-[200px] mb-[300px] justify-end w-full max-w-none bg-transparent">
+  <template x-for="(car, index) in cars" :key="car.model">
+    <img
+      x-bind:src="car.image"
+      x-bind:alt="car.model"
+      class="w-[950px] max-w-none h-auto object-contain absolute"
+      x-show="currentCarIndex === index"
+      x-transition:enter="transition transform ease-in-out duration-500"
+      x-transition:enter-start="opacity-0 translate-x-full"  
+      x-transition:enter-end="opacity-100 translate-x-0" 
+      x-transition:leave="transition transform ease-in-out duration-500"
+      x-transition:leave-start="opacity-100 translate-x-0"
+      x-transition:leave-end="opacity-0 translate-x-full"
+    />
+  </template>
+</div>
+<MobileImage />

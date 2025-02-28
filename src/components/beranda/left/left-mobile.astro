@@ -1,0 +1,34 @@
+---
+import Select from "./car-selection.astro";
+import Stats from "../left/stats.astro"
+---
+<div 
+  class="sm:hidden flex flex-col items-center w-full px-6 space-y-6 pt-16"
+  x-intersect="$el.classList.add('opacity-100'); $el.classList.remove('opacity-0')"
+  class="opacity-0 transition-opacity duration-700"
+>
+  <!-- Brand & Model -->
+  <h2 class="text-7xl font-extrabold text-red-500 text-montserrat">
+    <span class="hover:text-red-400 transition-colors duration-300">CHERY</span>
+  </h2>
+  <h3 x-text="currentCar().model" class="text-3xl font-bold text-white text-center"></h3>
+  <p x-text="currentCar().tagline" class="text-xl text-center font-medium text-white"></p>
+
+  <!-- Car Selection -->
+  <div class="w-full border-2 border-red-500 rounded-lg p-4">
+    <Select />
+  </div>
+
+  <!-- Stats -->
+  <div class="w-full">
+    <Stats />
+  </div>
+  <!-- Button -->
+<div class="relative w-full flex justify-center mt-20">
+  <a 
+    href="#katalog" 
+    class="w-full max-w-[250px] text-center py-3 font-bold text-white bg-red-600 rounded-lg transition-all duration-300 hover:bg-red-700"
+  >
+    Jelajahi Lebih Lanjut
+  </a>
+</div>
