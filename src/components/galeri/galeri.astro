@@ -1,0 +1,115 @@
+---
+const promoItems = [
+  { 
+    id: 1, 
+    title: "Promo Tiggo Cross", 
+    description: "Promo Tiggo Cross",
+    imagePath: "/promo.jpg"
+  },
+  { 
+    id: 2, 
+    title: "Pricelist 2025 Per 13 Februari", 
+    description: "Pricelist Chery Per 13 Februari 2025",
+    imagePath: "/Pricelist.jpg"
+  }
+];
+
+// Define your brochure items (PDFs) with **predefined image thumbnails**
+const brochureItems = [
+  {
+    id: 1,
+    title: "Omoda E5",
+    pdfPath: "/OMODA-E5.pdf",
+    thumbnailPath: "/T8-Promax.webp"
+  },
+  {
+    id: 2,
+    title: "Technical Specifications",
+    year: "2025",
+    fileSize: "1.8 MB",
+    pdfPath: "/brochures/tech-specs.pdf",
+    thumbnailPath: "/thumbnails/tech-specs.jpg"
+  },
+  {
+    id: 3,
+    title: "Price List",
+    year: "2025",
+    fileSize: "1.2 MB",
+    pdfPath: "/brochures/price-list.pdf",
+    thumbnailPath: "/thumbnails/price-list.jpg"
+  },
+];
+
+const usePlaceholders = true;
+---
+
+<div class="container mx-auto px-4 py-8" x-data="{ activeTab: 'promo' }">
+  <div class="flex items-center justify-center py-4 px-4 md:px-10 md:py-8 flex-wrap">
+    <button 
+      type="button" 
+      @click="activeTab = 'promo'" 
+      :class="activeTab === 'promo' ? 'text-white bg-blue-700 border-blue-600' : 'text-blue-700 bg-white border-blue-600 hover:text-white hover:bg-blue-700'"
+      class="focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 border transition-colors duration-200">
+      Promo
+    </button>
+    <button 
+      type="button" 
+      @click="activeTab = 'brosur'" 
+      :class="activeTab === 'brosur' ? 'text-white bg-gray-800 border-gray-800' : 'text-gray-900 bg-white border-gray-200 hover:border-gray-400 hover:bg-gray-100'"
+      class="focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 border transition-colors duration-200">
+      Brosur
+    </button>
+  </div>
+
+  <div class="px-4 md:px-10">
+    <!-- Promo Images Gallery -->
+    <div x-show="activeTab === 'promo'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100">
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
+        {promoItems.map((item) => (
+          <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+            <img
+              class="w-auto h-full object-cover aspect-auto transition-all duration-300 group-hover:scale-105"
+              src={item.imagePath}
+              alt={item.title}
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+              <div class="p-4 text-white">
+                <h3 class="text-lg font-semibold">{item.title}</h3>
+                <p class="text-sm opacity-90">{item.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Brosur (PDF) Gallery -->
+    <div x-show="activeTab === 'brosur'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-95" x-transition:enter-end="opacity-100 transform scale-100">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {brochureItems.map((item) => (
+              <a href={item.pdfPath} target="_blank" class="group block rounded-lg bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300">
+                <div class="relative w-full pt-[56.25%] bg-gray-100 rounded-t-lg overflow-hidden">
+                  <!-- Landscape Thumbnail Fix: Force Image to Center & Cover -->
+                  <img 
+                    class="absolute inset-0 w-full h-full object-cover" 
+                    src={item.thumbnailPath} 
+                    alt={item.title} 
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-4">
+                  <h3 class="font-medium text-gray-900 group-hover:text-blue-700 transition-colors">{item.title}</h3>
+                  <div class="flex items-center mt-2 text-xs text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                    </svg>
+                    <span>{item.year} • {item.fileSize}</span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+    </div>
+  </div>
+</div>

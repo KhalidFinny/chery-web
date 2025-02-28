@@ -1,134 +1,115 @@
 ---
 import katalog from '../../data/catalogue.json';
 ---
-<section class="relative py-16 mx-auto">
+<section class="relative py-8 mx-auto">
+  <!-- Decorative elements -->
+  <div class="col-span-8 mx-20">
+    <div class="w-16 h-1 bg-red-600"></div>
+  
+    <div class="flex flex-col mt-8 space-y-4 py-3">
+      <h2 class="font-urbanist text-6xl font-bold tracking-tight">
+        Wujudkan Impianmu<span class="text-red-600">.</span>
+      </h2>
+    </div>
+  </div>
+  
   <div
     x-data=`{
       katalog: ${JSON.stringify(katalog.katalog)},
       currentIndex: 0,
+      showDetails: false,
       touchStartX: 0,
       touchEndX: 0,
       next() { 
         this.currentIndex = (this.currentIndex + 1) % this.katalog.length; 
+        this.showDetails = false;
       },
       prev() { 
         this.currentIndex = (this.currentIndex - 1 + this.katalog.length) % this.katalog.length; 
+        this.showDetails = false;
       },
-      handleSwipe(e) {
+      handleSwipe() {
         if (this.touchEndX < this.touchStartX - 50) {
           this.next(); // Swipe left
-          e.preventDefault();
         }
         if (this.touchEndX > this.touchStartX + 50) {
           this.prev(); // Swipe right
-          e.preventDefault();
         }
       }
     }`
-    @touchstart.prevent="touchStartX = $event.changedTouches[0].screenX"
-    @touchend.prevent="touchEndX = $event.changedTouches[0].screenX; handleSwipe($event)"
-    class="relative bg-white rounded-2xl shadow-red-200 shadow-md md:min-w-[500px] min-w-full min-h-[500px] overflow-hidden"
+    @touchstart="touchStartX = $event.changedTouches[0].screenX"
+    @touchend="touchEndX = $event.changedTouches[0].screenX; handleSwipe()"
+    class="relative bg-white rounded-2xl shadow-red-200 shadow-md md:min-w-[500px] min-w-full min-h-[500px]"
   >
-    <!-- Simple Slide Container -->
-    <div 
-      class="h-full w-full"
-      :style="`transform: translateX(-${currentIndex * 100}%); transition: transform 0.3s ease-out;`"
+  <template x-for="(item, index) in katalog" :key="index">
+    <div
+      x-show="currentIndex === index"
+      x-cloak
+      x-transition:enter="transition-transform duration-300"
+      x-transition:enter-start="translate-x-full"
+      x-transition:enter-end="translate-x-0"
+      x-transition:leave="transition-transform duration-300"
+      x-transition:leave-start="translate-x-0"
+      x-transition:leave-end="-translate-x-full"
+      class="flex flex-col md:flex-row items-center justify-between absolute inset-0 px-4 py-20 md:p-8"
     >
-      <template x-for="(item, index) in katalog" :key="index">
-        <div class="absolute inset-0 w-full h-full p-4 md:p-8" :style="`left: ${index * 100}%`">
-          <!-- Content layout that works well in both portrait and landscape -->
-          <div class="flex flex-col md:flex-row items-center justify-between h-full">      
-            <!-- Image Container -->
-            <div class="w-full md:w-1/2 md:pr-8 z-10 pointer-events-auto flex justify-center">
-              <div class="md:ml-20 ml-0 relative shadow-red-200 hover:shadow-lg transition-shadow duration-300 ease-in-out max-w-sm">
-                <img
-                  :src="item.image"
-                  :alt="item.model"
-                  class="max-h-[200px] md:max-h-[500px] w-full object-contain rounded-lg shadow-md"
-                />
-                <div class="absolute -top-2 -left-2 w-4 h-4 bg-red-600 rounded-full"></div>
-              </div>
-            </div>
-            
-            <!-- Text container -->
-            <div class="w-full md:w-1/2 md:pl-8 pt-4 md:pt-0 flex flex-col space-y-2 md:space-y-6 z-10 pointer-events-auto text-center md:text-left">
-              <h2 class="font-urbanist text-3xl md:text-6xl font-bold tracking-wide text-gray-900" x-text="item.model"></h2>
-              <div class="text-lg md:text-xl font-medium text-red-600 tracking-widest font-urbanist">
-                Starting from
-                <span class="text-xl md:text-2xl font-bold ml-1" x-text="item.detail.Harga.value"></span>
-              </div>
-              <div class="flex items-center justify-center md:justify-start space-x-3 md:space-x-4 mt-2 md:mt-4 relative">
-                <a href="https://wa.me/6281333292628" target="_blank" rel="noopener noreferrer">
-                  <button
-                    class="font-urbanist text-sm md:text-base px-4 md:px-6 py-2 md:py-3 bg-red-600 text-white rounded-full tracking-wide hover:bg-red-700 hover:shadow-md z-20 relative"
-                  >
-                    Buy Now
-                  </button>
-                </a>
-                <button
-                  @click="window.open(item.detail.Button.value.match(/href='([^']+)'/)[1], '_blank')"
-                  class="font-urbanist text-sm md:text-base px-4 md:px-6 py-2 md:py-3 bg-gray-200 text-gray-900 rounded-full tracking-wide hover:bg-gray-300 hover:shadow-md z-20 relative"
-                >
-                  <i class="fas fa-info-circle mr-2"></i>
-                  Learn More
-                </button>
-              </div>
-            </div>
-          </div>
+      
+      <!-- Image Container - Left side on desktop, Top on mobile -->
+      <div class="w-full md:w-1/2 md:pr-8 z-10 pointer-events-auto">
+        <div class="md:ml-20 ml-0 relative shadow-red-200 hover:shadow-lg transition-shadow duration-300 ease-in-out">
+          <img
+            :src="item.image"
+            :alt="item.model"
+            class="max-h-[250px] md:max-h-[500px] w-full object-contain rounded-lg shadow-md transition-transform duration-500 ease-in-out hover:scale-105"
+          />
+          <div class="absolute -top-2 -left-2 w-4 h-4 bg-red-600 rounded-full"></div>
         </div>
-      </template>
-    </div>
-
-    <!-- Landscape-specific styles with media query -->
-    <style>
-      @media (orientation: landscape) and (max-width: 1024px) {
-        .landscape-adjust {
-          flex-direction: row !important;
-          align-items: center;
-        }
-        .landscape-adjust > div {
-          width: 50%;
-        }
-        .landscape-adjust img {
-          max-height: 180px !important;
-        }
-        .landscape-adjust h2 {
-          font-size: 1.5rem !important;
-        }
-      }
-    </style>
-
-    <!-- Navigation buttons - visible only on desktop -->
-    <div class="absolute inset-y-0 left-0 right-0 flex items-center justify-between pointer-events-none px-2 md:px-4 z-10 hidden md:flex">
-      <button 
-        @click.prevent="prev()" 
-        class="pointer-events-auto bg-white text-red-600 w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 shadow-md"
-      >
-        <i class="fas fa-chevron-left text-xl"></i>
-      </button>
-      <button 
-        @click.prevent="next()" 
-        class="pointer-events-auto bg-white text-red-600 w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 shadow-md"
-      >
-        <i class="fas fa-chevron-right text-xl"></i>
-      </button>
-    </div>
-    
-    <!-- Simplified dots indicator with less animation -->
-    <div class="absolute bottom-2 left-0 right-0">
-      <div class="flex justify-center space-x-2">
-        <template x-for="(item, index) in katalog" :key="index">
+      </div>
+      <!-- Text container - Right side on desktop, Bottom on mobile -->
+      <div class="w-full md:w-1/2 md:pl-8 pt-6 md:pt-0 flex flex-col space-y-4 md:space-y-6 z-10 pointer-events-auto text-center md:text-left">
+        <h2 class="font-urbanist text-4xl md:text-6xl font-bold tracking-wide text-gray-900" x-text="item.model"></h2>
+        <div class="text-lg md:text-xl font-medium text-red-600 tracking-widest font-urbanist">
+          Starting from
+          <span class="text-xl md:text-2xl font-bold ml-1" x-text="item.detail.Harga.value"></span>
+        </div>
+        <div class="flex items-center justify-center md:justify-start space-x-4 mt-4 relative">
+          <a href="https://wa.me/6281333292628" target="_blank" rel="noopener noreferrer">
+            <button
+              @click="console.log('Buy Now clicked')"
+              class="font-urbanist text-sm md:text-base px-4 md:px-6 py-2 md:py-3 bg-red-600 text-white rounded-full tracking-wide transition-all duration-300 ease-in-out hover:bg-red-700 hover:shadow-md z-20 relative"
+            >
+              Buy Now
+            </button>
+          </a>
           <button
-            @click.prevent="currentIndex = index"
-            class="w-2 h-2 rounded-full transition-colors duration-200"
-            :class="currentIndex === index ? 'bg-red-600 w-4' : 'bg-gray-300'"
-          ></button>
-        </template>
+            @click="window.open(item.detail.Button.value.match(/href='([^']+)'/)[1], '_blank')"
+            class="font-urbanist text-sm md:text-base px-4 md:px-6 py-2 md:py-3 bg-gray-200 text-gray-900 rounded-full tracking-wide transition-all duration-300 ease-in-out hover:bg-gray-300 hover:shadow-md z-20 relative"
+          >
+            <i class="fas fa-info-circle mr-2"></i>
+            Learn More
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <!-- Simple decorative elements -->
+  </template>
+    <!-- Navigation buttons - visible only on desktop -->
+ <!-- Navigation buttons - now visible on mobile too -->
+<div class="absolute inset-y-0 left-0 right-0 flex items-center justify-between pointer-events-none px-2 md:px-4 z-10">
+  <button 
+    @click="prev()" 
+    class="pointer-events-auto bg-white bg-opacity-80 text-red-600 w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-md"
+  >
+    <i class="fas fa-chevron-left text-lg md:text-xl"></i>
+  </button>
+  <button 
+    @click="next()" 
+    class="pointer-events-auto bg-white bg-opacity-80 text-red-600 w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-md"
+  >
+    <i class="fas fa-chevron-right text-lg md:text-xl"></i>
+  </button>
+</div>
+
+  <!-- Additional decorative elements -->
   <div class="absolute top-1/4 right-0 w-8 md:w-16 h-8 md:h-16 bg-red-50 rounded-full opacity-50"></div>
   <div class="absolute bottom-1/3 left-0 w-12 md:w-24 h-12 md:h-24 bg-gray-50 rounded-full opacity-60"></div>
 </section>

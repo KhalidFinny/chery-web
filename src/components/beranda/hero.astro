@@ -29,20 +29,25 @@ import Image from "../beranda/right/image.astro";
   }`
   class="relative min-h-screen px-4 sm:px-10"
 >
-  <!-- Background images with loop and transition -->
-  <template x-for="(car, index) in cars" :key="index">
-    <div
-      class="absolute inset-0 w-full h-full  bg-cover bg-center transition-all duration-500 ease-in-out blur-sm sm:blur-sm "
-      x-bind:style="`background-image: url('${car.background}')`"
-      x-show="currentCarIndex === index"
-      x-transition:enter="transition ease-in-out duration-500"
-      x-transition:enter-start="opacity-0"
-      x-transition:enter-end="opacity-100"
-      x-transition:leave="transition ease-in-out duration-500"
-      x-transition:leave-start="opacity-100"
-      x-transition:leave-end="opacity-0"
-    ></div>
-  </template>
+<template x-for="(car, index) in cars" :key="index">
+  <div
+    class="absolute inset-0 w-full h-full bg-gray-300 transition-all duration-500 ease-in-out blur-sm sm:blur-sm"
+    x-data="{ loaded: false }"
+    :class="loaded ? 'bg-cover bg-center' : 'bg-gray-300'"
+    x-show="currentCarIndex === index"
+    x-transition:enter="transition ease-in-out duration-500"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in-out duration-500"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    x-init="
+      let img = new Image();
+      img.src = car.background;
+      img.onload = () => { loaded = true; $el.style.backgroundImage = `url('${car.background}')`; }
+    "
+  ></div>
+</template>
   <!-- Content container -->
   <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center text-center sm:text-left">
     <div class="absolute top-0 left-0 w-20 sm:w-32 h-1 bg-red-600 transform -rotate-45 origin-top-left"></div>
