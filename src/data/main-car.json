@@ -1,42 +1,42 @@
 {
   "cars": [
     {
-      "model": "OMODA E5",
-      "tagline": "Drive E-Future",
-      "image": "/omoda-e5-3.webp",
-      "background": "/e5.png",
+      "model": "TIGGO 8",
+      "tagline": "Power in Every Movement",
+      "image": "/T8.webp",
+      "background": "/T8bg.webp",
       "stats": {
         "acceleration": {
           "label": "0-100 kmh",
-          "value": "7.2 s"
+          "value": "8.9 s"
         },
         "topSpeed": {
           "label": "Kecepatan Maksimal",
-          "value": "172 kmh"
+          "value": "186 kmh"
         },
         "Tenaga Kuda": {
           "label": "Tenaga Kuda",
-          "value": "201 hp"
+          "value": "200 hp"
         }
       }
     },
     {
-      "model": "TIGGO 8 PROMAX",
-      "tagline": "Enjoy Your First Class",
-      "image": "/T8-Promax.webp",
-      "background": "/t8pm.png",
+      "model": "TIGGO CROSS",
+      "tagline": "Cross Wonderful Life",
+      "image": "/Tiggo-Cross.webp",
+      "background": "/Tcbg.webp",
       "stats": {
         "acceleration": {
           "label": "0-100 kmh",
-          "value": "8.0 s"
+          "value": "9.7 s"
         },
         "topSpeed": {
           "label": "Kecepatan Maksimal",
-          "value": "180 kmh"
+          "value": "190 kmh"
         },
         "Tenaga Kuda": {
           "label": "Tenaga Kuda",
-          "value": "190 hp"
+          "value": "115 hp"
         }
       }
     },
@@ -44,7 +44,7 @@
       "model": "J6",
       "tagline": "The Future of Mobility",
       "image": "/J6.webp",
-      "background": "/j6.png",
+      "background": "/j6-2.webp",
       "stats": {
         "acceleration": {
           "label": "0-100 kmh",
@@ -61,7 +61,7 @@
       }
     },
     {
-      "model": "Jaecoo J7",
+      "model": "JAECOO J7",
       "tagline": "Smart Energy Powerfull Journey",
       "image": "/jaecoo-7-2024.webp",
       "background": "/J7.webp",

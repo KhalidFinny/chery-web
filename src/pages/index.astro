@@ -19,13 +19,14 @@ import Whatsapp from "../components/whatsapp.astro";
     <section class="relative  pt-10 mx-auto" id="katalog">
         <Katalog />
     </section>
-    <section>
+    <section class="relative pt-20 mx-auto" id="detail">
         <Galeri />
     </section>
     <section class="relative pt-10 mx-auto">
         <Footer />
     </section>
-    <section>
-        <Whatsapp />
-    </section>
+
 </Main>
+<section class="fixed bottom-0 right-0 z-50 p-4">
+    <Whatsapp />
+</section>
