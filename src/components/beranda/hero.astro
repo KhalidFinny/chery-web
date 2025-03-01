@@ -27,36 +27,35 @@ import Image from "../beranda/right/image.astro";
       this.currentCarIndex = index;
     }
   }`
-  class="relative min-h-screen px-4 sm:px-10"
+  class="relative min-h-screen w-full max-w-screen-2xl mx-auto px-4 lg:px-12 flex flex-col lg:flex-row items-center"
 >
-<template x-for="(car, index) in cars" :key="index">
-  <div
-    class="absolute inset-0 w-full h-full bg-gray-300 transition-all duration-500 ease-in-out blur-sm sm:blur-sm"
-    x-data="{ loaded: false }"
-    :class="loaded ? 'bg-cover bg-center' : 'bg-gray-300'"
-    x-show="currentCarIndex === index"
-    x-transition:enter="transition ease-in-out duration-500"
-    x-transition:enter-start="opacity-0"
-    x-transition:enter-end="opacity-100"
-    x-transition:leave="transition ease-in-out duration-500"
-    x-transition:leave-start="opacity-100"
-    x-transition:leave-end="opacity-0"
-    x-init="
-      let img = new Image();
-      img.src = car.background;
-      img.onload = () => { loaded = true; $el.style.backgroundImage = `url('${car.background}')`; }
-    "
-  ></div>
-</template>
+  <template x-for="(car, index) in cars" :key="index">
+    <div
+      class="absolute inset-0 w-full h-full bg-gray-300 transition-all duration-500 ease-in-out blur-sm sm:blur-sm"
+      x-data="{ loaded: false }"
+      :class="loaded ? 'bg-cover bg-center' : 'bg-gray-300'"
+      x-show="currentCarIndex === index"
+      x-transition:enter="transition ease-in-out duration-500"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition ease-in-out duration-500"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+      x-init="
+        let img = new Image();
+        img.src = car.background;
+        img.onload = () => { loaded = true; $el.style.backgroundImage = `url('${car.background}')`; }
+      "
+    ></div>
+  </template>
+
   <!-- Content container -->
-  <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center text-center sm:text-left">
-    <div class="absolute top-0 left-0 w-20 sm:w-32 h-1 bg-red-600 transform -rotate-45 origin-top-left"></div>
-    <div class="relative px-4 sm:px-0">
+  <div class="relative z-10 flex flex-col lg:flex-row w-full items-center justify-between text-center lg:text-left">
+    <div class="relative w-full lg:w-1/2 px-4 lg:px-0">
       <HeroLeft />
     </div>
-    <div class="relative px-4 py-20 sm:px-0">
+    <div class="relative w-full lg:w-1/2 px-4 py-10 lg:px-0">
       <Image />
     </div>
   </div>
 </div>
-
