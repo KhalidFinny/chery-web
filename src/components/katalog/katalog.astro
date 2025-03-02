@@ -45,7 +45,7 @@ import Nav from './katalog-thingz/nav.astro';
   @touchend="touchEndX = $event.changedTouches[0].screenX; touchEndY = $event.changedTouches[0].screenY; handleSwipe()"
   class="relative bg-white rounded-2xl shadow-red-200 shadow-md md:min-w-[500px] min-w-full min-h-[500px] overflow-hidden"
 >
-  <!-- Slide Content -->
+
   <template x-for="(item, index) in katalog" :key="index">
     <div
       x-show="currentIndex === index"
