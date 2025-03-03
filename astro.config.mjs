@@ -1,7 +1,5 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import basicSsl from '@vitejs/plugin-basic-ssl';
-
 import node from "@astrojs/node";
 
 export default defineConfig({
@@ -9,7 +7,7 @@ export default defineConfig({
   output: "server",
 
   vite: {
-    plugins: [basicSsl()]
+    plugins: []
   },
 
   adapter: node({
