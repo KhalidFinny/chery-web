@@ -10,10 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@main
 
-      - name: Deploy Using SSH
+      - name: Deploy Using ssh
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -21,39 +20,11 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: 2233
           script: |
-            # Navigate to the project directory
             cd /github/chery-web
-
-            # Pull the latest changes from the repository
             sudo git pull
             sudo git status
-
-            # Remove the existing build directory
+            
             sudo rm -rf dist
-
-            # Ensure Node.js and npm are available
-            if ! command -v node &> /dev/null; then
-              echo "Node.js is not installed. Installing Node.js..."
-              curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-              sudo apt-get install -y nodejs
-            fi
-
-            if ! command -v npm &> /dev/null; then
-              echo "npm is not installed. Installing npm..."
-              sudo apt-get install -y npm
-            fi
-
-            # Ensure PM2 is installed globally
-            if ! command -v pm2 &> /dev/null; then
-              echo "PM2 is not installed. Installing PM2..."
-              sudo npm install -g pm2
-            fi
-
-            # Install dependencies
-            npm install
-
-            # Build the project
+            npm i
             npm run build
-
-            # Restart the application using PM2
             pm2 restart all
