@@ -8,7 +8,7 @@
             "value": "IDR 435.500.000"
           },
           "Button": {
-            "value": "<a href='https://chery.co.id/id/model/omoda/tipe/omoda-e5'>Learn More</a>"
+            "value": "<a href='/omodae5'>Learn More</a>"
           }
         }
       },
@@ -20,7 +20,7 @@
             "value": "IDR 468.800.000"
           },
           "Button": {
-            "value": "<a href='https://chery.co.id/id/model/omoda/tipe/omoda-5-gt'>Learn More</a>"
+            "value": "<a href='/omoda5gt'>Learn More</a>"
           }
         }
       },
@@ -32,7 +32,7 @@
             "value": "IDR 356.800.000"
           },
           "Button": {
-            "value": "<a href='https://chery.co.id/id/model/omoda/tipe/omoda-5'>Learn More</a>"
+            "value": "<a href='/omoda5'></a>"
           }
         }
       },
@@ -44,7 +44,7 @@
             "value": "IDR 588.000.000"
           },
           "Button": {
-            "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-8-pro-max'>Learn More</a>"
+            "value": "<a href='/tiggo8pm'>Learn More</a>"
           }
         }
       },
@@ -56,7 +56,7 @@
             "value": "IDR 416.000.000"
           },
           "Button": {
-            "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-7-pro'>Learn More</a>"
+            "value": "<a href='/tiggo7pro'>Learn More</a>"
           }
         }
       },
@@ -68,7 +68,7 @@
             "value": "IDR 367.000.000"
           },
           "Button": {
-            "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-8'>Learn More</a>"
+            "value": "<a href='/tiggo8'>Learn More</a>"
           }
         }
       },
@@ -80,7 +80,7 @@
             "value": "IDR 269.500.000"
           },
           "Button": {
-            "value": "<a href='https://chery.co.id/id/model/tiggo/tipe/tiggo-cross'>Learn More</a>"
+            "value": "<a href='/tiggocross'>Learn More</a>"
           }
         }
       },
@@ -92,7 +92,7 @@
             "value": "IDR 279.000.000"
           },
           "Button": {
-            "value": "<a href='/Tiggo-5X-FLYER.pdf'>Learn More</a>"
+            "value": "<a href='/tiggo5x'>Learn More</a>"
           }
         }
       },
@@ -104,7 +104,7 @@
             "value": "IDR515.500.000"
           },
           "Button": {
-            "value": "<a href='https://chery.co.id/id/model/omoda/tipe/j6'>Learn More</a>"
+            "value": "<a href='/j6'>Learn More</a>"
           }
         }
       },
@@ -116,7 +116,7 @@
             "value": "IDR 509.000.000"
           },
           "Button": {
-            "value": "<a href='/Brochure-Jaecoo-A3.pdf'>Learn More</a>"
+            "value": "<a href='/jaecooj7'>Learn More</a>"
           }
         }
       }             
