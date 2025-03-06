@@ -1,1 +1,55 @@
+---
+import omodae5 from "../data/omodae5.json";
+const article = omodae5.articles.find(a => a.id === 7) || {
+    mainTitle: "",
+    images: [],
+    youtubeEmbed: null
+  };
+import Main from "../layouts/main.astro";
+---
 
+<Main title="Pelajari Lebih Lanjut" description="Jelajahi detail mobil">  
+    <div class="container mx-auto px-4 py-20">
+                <h1 class="text-4xl sm:text-6xl mt-10 sm:mt-20 font-bold text-red-500 text-start border-b-4 border-red-600 pb-4">
+                    {article.mainTitle}
+                </h1>
+            </div>
+        </section>
+
+        <section class="main-content container mx-auto px-4 py-2">
+            <div class="flex flex-col md:flex-row md:flex-wrap gap-8 justify-center">
+               
+                {article.images?.slice(0, 6).map((img, index) => (
+                    <div class="w-full md:w-full flex-shrink-0">
+                        <img
+                            src={img.url}
+                            alt={img.altText}
+                            class="w-full h-auto object-cover rounded-lg shadow-md"
+                        />
+                        <p class="text-2xl font-medium text-gray-800 text-center mt-4">
+                            {img.description}
+                        </p>
+                    </div>
+                ))}
+            </div>
+
+            <h1 class="mt-16 text-4xl font-bold text-gray-900 text-center border-b-4 ">
+                Video <span class="text-red-600">Preview</span> 
+                <span class="block w-full h-1 bg-red-600 mt-4"></span>
+            </h1>
+            {article.youtubeEmbed && (
+                <div class="mt-16 w-full max-w-5xl mx-auto flex justify-center">
+                    <div class="w-[640px] h-[480px] rounded-lg overflow-hidden align-center border-4 border-red-600">
+                        <iframe
+                            src={article.youtubeEmbed.url}
+                            title={article.youtubeEmbed.title}
+                            class="w-full h-full"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            )}
+        </section>
+    </div>
+</Main>
