@@ -77,6 +77,84 @@
         "url": "https://www.youtube.com/embed/ClX8Fq5nxHU?si=Zyas5pxtHhRQ8uCF",
         "title": "Video preview Chery Omoda E5"
       }
+    },
+    {
+      "id": 2,
+      "mainTitle": "Chery Omoda 5",
+      "titleImage": {
+        "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/hero-banner-desktop.webp",
+        "altText": "Chery Omoda E5",
+        "subtitle": "Mobil Listrik Masa Depan",
+        "description": "Chery Omoda E5 menggabungkan desain inovatif, teknologi cerdas, dan performa tinggi dalam satu kendaraan."
+      },
+      "exteriorImages": [
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/exterior/x-future-tech-front.webp",
+          "altText": "Chery Omoda E5",
+          "subtitle": "Tampak depan X-Future",
+          "description": "Tiap elemen di desain sedemikian rupa untuk memancarkan aura yang dinamis dan modern."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/exterior/light-shadow-streamline-body.webp",
+          "altText": "Tampilan Belakang",
+          "subtitle": "Desain Sporty nan Futuristik",
+          "description": "Light shadow streamline body design."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-struktur-kuat.webp",
+          "altText": "Struktur Kuat",
+          "subtitle": "Konstruksi Rangka Kuat",
+          "description": "Material bodi ringan namun tetap kokoh dan aman."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-tingkat-keamanan-tinggi.webp",
+          "altText": "Keamanan Tinggi",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik di kelasnya."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/highlight-feature-image-desktop.webp",
+          "altText": "Eco-Charging",
+          "subtitle": "Teknologi Baterai Next-Gen",
+          "description": "Nikmati petualangan seru dengan jarak tempuh 430 km dan torsi instan yang mencapai 340 nm."
+        }
+      ],
+      "interiorImages": [
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/interior/leather-steering-wheel.webp",
+          "altText": "Interior Modern",
+          "subtitle": "Kabin Luas dan Mewah",
+          "description": "Desain interior ergonomis dengan material premium."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-infotainment.webp",
+          "altText": "Infotainment",
+          "subtitle": "Layar Infotainment Canggih",
+          "description": "Dilengkapi layar sentuh besar dengan fitur konektivitas lengkap."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-teknologi-cerdas.webp",
+          "altText": "Teknologi Cerdas",
+          "subtitle": "Sistem Operasi Berbasis AI",
+          "description": "Membantu pengendara dengan fitur otomatisasi pintar."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/special-offer-image-desktop.webp",
+          "altText": "Kenyamanan dan Garansi",
+          "subtitle": "Garansi Eksklusif",
+          "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-performance.webp",
+          "altText": "Performa Kendaraan",
+          "subtitle": "Kinerja Optimal",
+          "description": "204 HP, akselerasi 0-100 km/jam dalam 7 detik, jarak tempuh 450 km."
+        }
+      ],
+      "youtubeEmbed": {
+        "url": "https://www.youtube.com/embed/ClX8Fq5nxHU?si=Zyas5pxtHhRQ8uCF",
+        "title": "Video preview Chery Omoda E5"
+      }
     }
   ]
 }
