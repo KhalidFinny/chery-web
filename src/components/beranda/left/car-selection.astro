@@ -1,11 +1,10 @@
 ---
 import MobileSelector from "./mobile-selector.astro"
 ---
-<div class="hidden md:flex relative ml-5 md:ml-10 lg:ml-20">
+<div class="hidden md:flex relative ml-7 md:mr-5 lg:mr-10">
   <!-- Left Arrow -->
   <button @click="prevCar()" class="flex relative justify-center items-center w-[50px] md:w-[100px] lg:w-[200px] h-[30px] group">
-    <div class="absolute inset-0 bg-red-500 rounded-full transition-transform duration-300 group-hover:scale-110"></div>
-    <i class="relative text-lg text-white fa-solid fa-chevron-left"></i>
+    <i class="relative text-lg text-red-500 fa-solid fa-chevron-left"></i>
   </button>
 
   <!-- Car Models -->
@@ -16,7 +15,7 @@ import MobileSelector from "./mobile-selector.astro"
         class="flex relative flex-col items-center transition-all duration-300 transform cursor-pointer hover:scale-105"
       >
         <span
-          class="text-sm md:text-lg font-medium whitespace-nowrap transition-all duration-300"
+            class="text-sm md:text-lg font-medium whitespace-nowrap transition-all duration-300 mr-4 md:mr-4"
           :class="index === currentCarIndex ? 'text-red-500' : 'text-white'"
           x-text="car.model"
         ></span>
@@ -30,10 +29,8 @@ import MobileSelector from "./mobile-selector.astro"
   </div>
 
   <!-- Right Arrow -->
-  <button @click="nextCar()" class="flex relative justify-center items-center w-[50px] md:w-[100px] lg:w-[200px] h-[30px] group">
-    <div class="absolute inset-0 bg-red-500 rounded-full transition-transform duration-300 transform group-hover:scale-110"></div>
-    <i class="relative text-lg text-white fa-solid fa-chevron-right"></i>
+  <button @click="nextCar()" class="flex relative justify-center items-center w-[50px] md:w-[100px] lg:w-[100px] h-[30px] group ml-1 md:ml-5 lg:ml-36">
+    <i class="relative text-xl  text-red-500 fa-solid fa-chevron-right"></i>
   </button>
 </div>
 <MobileSelector />
-

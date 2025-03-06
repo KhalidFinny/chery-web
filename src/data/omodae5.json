@@ -1,405 +1,82 @@
 {
-    "articles": [
-      {
-        "id": 1,
-        "mainTitle": "Chery Omoda E5",
-        "images": [
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-top.webp",
-            "altText": "Chery Omoda E5",
-            "description": "Drive E Future"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-desain-lintas-batas.webp",
-            "altText": "The future",
-            "description": "Chery Omoda E5 dengan desain lintas batas"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-teknologi-cerdas.webp",
-            "altText": "Teknologi",
-            "description": "Teknologi Cerdas"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-eco-charging-yang-cerdas.webp",
-            "altText": "Eco-Charging yang Cepat",
-            "description": "Eco-Charging yang Cepat"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-tingkat-keamanan-tinggi.webp",
-            "altText": "Tingkat Keamanan Tinggi",
-            "description": "Tingkat Keamanan Tinggi"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-struktur-kuat.webp",
-            "altText": "Electronic controller system kelas dunia yang dapat diandalkan dengan berbagai fitur yang memudahkan berkendara.y",
-            "description": "Electronic controller system kelas dunia yang dapat diandalkan dengan berbagai fitur yang memudahkan berkendara."
-          }
-        ],
-        "youtubeEmbed": {
-          "url": "https://www.youtube.com/embed/ClX8Fq5nxHU?si=Zyas5pxtHhRQ8uCF",
-          "title": "Video preview Chery Omoda E5"
-        }
+  "articles": [
+    {
+      "id": 1,
+      "mainTitle": "Chery Omoda E5",
+      "titleImage": {
+        "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/hero-banner-desktop.webp",
+        "altText": "Chery Omoda E5",
+        "subtitle": "Mobil Listrik Masa Depan",
+        "description": "Chery Omoda E5 menggabungkan desain inovatif, teknologi cerdas, dan performa tinggi dalam satu kendaraan."
       },
-      {
-        "id": 2,
-        "mainTitle": "Chery Omoda 5",
-        "images": [
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/chery-omoda-5-top.webp",
-            "altText": "Cross Future",
-            "description": "Cross Future"
-          },
-          {
-            "url": "https://cherymalang.id/wp-content/uploads/2024/11/chery-omoda-5-front-1.jpeg",
-            "altText": "Futuristic Design & Intelligent Technology",
-            "description": "Futuristic Design & Intelligent Technology"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Dynamic-T-shape-DRL-with-sequential-LED-sign.webp",
-            "altText": "Dynamic T-shape DRL with sequential LED sign",
-            "description": "Dynamic T-shape DRL with sequential LED sign"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Sporty-rear-upper-spoiler.webp",
-            "altText": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler",
-            "description": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Intelligent-voice-control.webp",
-            "altText": "Intelligent voice control “Halo Chery..”",
-            "description": "Intelligent voice control “Halo Chery..”"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Perforated-seat-with-ventilation.webp",
-            "altText": "Sporty and Dynamic Cabin Design",
-            "description": "Sporty and Dynamic Cabin Design"
-          }
-        ],
-        "youtubeEmbed": {
-          "url": "https://www.youtube.com/embed/example2",
-          "title": "Exploring the City's Hidden Gems"
+      "exteriorImages": [
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/exterior/x-future-tech-front.webp",
+          "altText": "Chery Omoda E5",
+          "subtitle": "Tampak depan X-Future",
+          "description": "Tiap elemen di desain sedemikian rupa untuk memancarkan aura yang dinamis dan modern."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/exterior/light-shadow-streamline-body.webp",
+          "altText": "Tampilan Belakang",
+          "subtitle": "Desain Sporty nan Futuristik",
+          "description": "Light shadow streamline body design."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-struktur-kuat.webp",
+          "altText": "Struktur Kuat",
+          "subtitle": "Konstruksi Rangka Kuat",
+          "description": "Material bodi ringan namun tetap kokoh dan aman."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-tingkat-keamanan-tinggi.webp",
+          "altText": "Keamanan Tinggi",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik di kelasnya."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/highlight-feature-image-desktop.webp",
+          "altText": "Eco-Charging",
+          "subtitle": "Teknologi Baterai Next-Gen",
+          "description": "Nikmati petualangan seru dengan jarak tempuh 430 km dan torsi instan yang mencapai 340 nm."
         }
-      },
-      {
-        "id": 3,
-        "mainTitle": "Chery Omoda 5",
-        "images": [
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/chery-omoda-5-top.webp",
-            "altText": "Cross Future",
-            "description": "Cross Future"
-          },
-          {
-            "url": "https://cherymalang.id/wp-content/uploads/2024/11/chery-omoda-5-front-1.jpeg",
-            "altText": "Futuristic Design & Intelligent Technology",
-            "description": "Futuristic Design & Intelligent Technology"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Dynamic-T-shape-DRL-with-sequential-LED-sign.webp",
-            "altText": "Dynamic T-shape DRL with sequential LED sign",
-            "description": "Dynamic T-shape DRL with sequential LED sign"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Sporty-rear-upper-spoiler.webp",
-            "altText": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler",
-            "description": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Intelligent-voice-control.webp",
-            "altText": "Intelligent voice control “Halo Chery..”",
-            "description": "Intelligent voice control “Halo Chery..”"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Perforated-seat-with-ventilation.webp",
-            "altText": "Sporty and Dynamic Cabin Design",
-            "description": "Sporty and Dynamic Cabin Design"
-          }
-        ],
-        "youtubeEmbed": {
-          "url": "https://www.youtube.com/embed/example2",
-          "title": "Exploring the City's Hidden Gems"
+      ],
+      "interiorImages": [
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/interior/leather-steering-wheel.webp",
+          "altText": "Interior Modern",
+          "subtitle": "Kabin Luas dan Mewah",
+          "description": "Desain interior ergonomis dengan material premium."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-infotainment.webp",
+          "altText": "Infotainment",
+          "subtitle": "Layar Infotainment Canggih",
+          "description": "Dilengkapi layar sentuh besar dengan fitur konektivitas lengkap."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-teknologi-cerdas.webp",
+          "altText": "Teknologi Cerdas",
+          "subtitle": "Sistem Operasi Berbasis AI",
+          "description": "Membantu pengendara dengan fitur otomatisasi pintar."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/special-offer-image-desktop.webp",
+          "altText": "Kenyamanan dan Garansi",
+          "subtitle": "Garansi Eksklusif",
+          "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-performance.webp",
+          "altText": "Performa Kendaraan",
+          "subtitle": "Kinerja Optimal",
+          "description": "204 HP, akselerasi 0-100 km/jam dalam 7 detik, jarak tempuh 450 km."
         }
-      },
-      {
-        "id": 4,
-        "mainTitle": "Chery Omoda 5",
-        "images": [
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/chery-omoda-5-top.webp",
-            "altText": "Cross Future",
-            "description": "Cross Future"
-          },
-          {
-            "url": "https://cherymalang.id/wp-content/uploads/2024/11/chery-omoda-5-front-1.jpeg",
-            "altText": "Futuristic Design & Intelligent Technology",
-            "description": "Futuristic Design & Intelligent Technology"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Dynamic-T-shape-DRL-with-sequential-LED-sign.webp",
-            "altText": "Dynamic T-shape DRL with sequential LED sign",
-            "description": "Dynamic T-shape DRL with sequential LED sign"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Sporty-rear-upper-spoiler.webp",
-            "altText": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler",
-            "description": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Intelligent-voice-control.webp",
-            "altText": "Intelligent voice control “Halo Chery..”",
-            "description": "Intelligent voice control “Halo Chery..”"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Perforated-seat-with-ventilation.webp",
-            "altText": "Sporty and Dynamic Cabin Design",
-            "description": "Sporty and Dynamic Cabin Design"
-          }
-        ],
-        "youtubeEmbed": {
-          "url": "https://www.youtube.com/embed/example2",
-          "title": "Exploring the City's Hidden Gems"
-        }
-      },
-      {
-        "id": 5,
-        "mainTitle": "Chery Omoda 5",
-        "images": [
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/chery-omoda-5-top.webp",
-            "altText": "Cross Future",
-            "description": "Cross Future"
-          },
-          {
-            "url": "https://cherymalang.id/wp-content/uploads/2024/11/chery-omoda-5-front-1.jpeg",
-            "altText": "Futuristic Design & Intelligent Technology",
-            "description": "Futuristic Design & Intelligent Technology"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Dynamic-T-shape-DRL-with-sequential-LED-sign.webp",
-            "altText": "Dynamic T-shape DRL with sequential LED sign",
-            "description": "Dynamic T-shape DRL with sequential LED sign"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Sporty-rear-upper-spoiler.webp",
-            "altText": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler",
-            "description": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Intelligent-voice-control.webp",
-            "altText": "Intelligent voice control “Halo Chery..”",
-            "description": "Intelligent voice control “Halo Chery..”"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Perforated-seat-with-ventilation.webp",
-            "altText": "Sporty and Dynamic Cabin Design",
-            "description": "Sporty and Dynamic Cabin Design"
-          }
-        ],
-        "youtubeEmbed": {
-          "url": "https://www.youtube.com/embed/example2",
-          "title": "Exploring the City's Hidden Gems"
-        }
-      },
-      {
-        "id": 6,
-        "mainTitle": "Chery Omoda 5",
-        "images": [
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/chery-omoda-5-top.webp",
-            "altText": "Cross Future",
-            "description": "Cross Future"
-          },
-          {
-            "url": "https://cherymalang.id/wp-content/uploads/2024/11/chery-omoda-5-front-1.jpeg",
-            "altText": "Futuristic Design & Intelligent Technology",
-            "description": "Futuristic Design & Intelligent Technology"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Dynamic-T-shape-DRL-with-sequential-LED-sign.webp",
-            "altText": "Dynamic T-shape DRL with sequential LED sign",
-            "description": "Dynamic T-shape DRL with sequential LED sign"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Sporty-rear-upper-spoiler.webp",
-            "altText": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler",
-            "description": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Intelligent-voice-control.webp",
-            "altText": "Intelligent voice control “Halo Chery..”",
-            "description": "Intelligent voice control “Halo Chery..”"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Perforated-seat-with-ventilation.webp",
-            "altText": "Sporty and Dynamic Cabin Design",
-            "description": "Sporty and Dynamic Cabin Design"
-          }
-        ],
-        "youtubeEmbed": {
-          "url": "https://www.youtube.com/embed/example2",
-          "title": "Exploring the City's Hidden Gems"
-        }
-      },
-      {
-        "id": 7,
-        "mainTitle": "Chery Omoda 5",
-        "images": [
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/chery-omoda-5-top.webp",
-            "altText": "Cross Future",
-            "description": "Cross Future"
-          },
-          {
-            "url": "https://cherymalang.id/wp-content/uploads/2024/11/chery-omoda-5-front-1.jpeg",
-            "altText": "Futuristic Design & Intelligent Technology",
-            "description": "Futuristic Design & Intelligent Technology"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Dynamic-T-shape-DRL-with-sequential-LED-sign.webp",
-            "altText": "Dynamic T-shape DRL with sequential LED sign",
-            "description": "Dynamic T-shape DRL with sequential LED sign"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Sporty-rear-upper-spoiler.webp",
-            "altText": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler",
-            "description": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Intelligent-voice-control.webp",
-            "altText": "Intelligent voice control “Halo Chery..”",
-            "description": "Intelligent voice control “Halo Chery..”"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Perforated-seat-with-ventilation.webp",
-            "altText": "Sporty and Dynamic Cabin Design",
-            "description": "Sporty and Dynamic Cabin Design"
-          }
-        ],
-        "youtubeEmbed": {
-          "url": "https://www.youtube.com/embed/example2",
-          "title": "Exploring the City's Hidden Gems"
-        }
-      },
-      {
-        "id": 8,
-        "mainTitle": "Chery Omoda 5",
-        "images": [
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/chery-omoda-5-top.webp",
-            "altText": "Cross Future",
-            "description": "Cross Future"
-          },
-          {
-            "url": "https://cherymalang.id/wp-content/uploads/2024/11/chery-omoda-5-front-1.jpeg",
-            "altText": "Futuristic Design & Intelligent Technology",
-            "description": "Futuristic Design & Intelligent Technology"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Dynamic-T-shape-DRL-with-sequential-LED-sign.webp",
-            "altText": "Dynamic T-shape DRL with sequential LED sign",
-            "description": "Dynamic T-shape DRL with sequential LED sign"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Sporty-rear-upper-spoiler.webp",
-            "altText": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler",
-            "description": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Intelligent-voice-control.webp",
-            "altText": "Intelligent voice control “Halo Chery..”",
-            "description": "Intelligent voice control “Halo Chery..”"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Perforated-seat-with-ventilation.webp",
-            "altText": "Sporty and Dynamic Cabin Design",
-            "description": "Sporty and Dynamic Cabin Design"
-          }
-        ],
-        "youtubeEmbed": {
-          "url": "https://www.youtube.com/embed/example2",
-          "title": "Exploring the City's Hidden Gems"
-        }
-      },
-      {
-        "id": 9,
-        "mainTitle": "Chery Omoda 5",
-        "images": [
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/chery-omoda-5-top.webp",
-            "altText": "Cross Future",
-            "description": "Cross Future"
-          },
-          {
-            "url": "https://cherymalang.id/wp-content/uploads/2024/11/chery-omoda-5-front-1.jpeg",
-            "altText": "Futuristic Design & Intelligent Technology",
-            "description": "Futuristic Design & Intelligent Technology"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Dynamic-T-shape-DRL-with-sequential-LED-sign.webp",
-            "altText": "Dynamic T-shape DRL with sequential LED sign",
-            "description": "Dynamic T-shape DRL with sequential LED sign"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Sporty-rear-upper-spoiler.webp",
-            "altText": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler",
-            "description": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Intelligent-voice-control.webp",
-            "altText": "Intelligent voice control “Halo Chery..”",
-            "description": "Intelligent voice control “Halo Chery..”"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Perforated-seat-with-ventilation.webp",
-            "altText": "Sporty and Dynamic Cabin Design",
-            "description": "Sporty and Dynamic Cabin Design"
-          }
-        ],
-        "youtubeEmbed": {
-          "url": "https://www.youtube.com/embed/example2",
-          "title": "Exploring the City's Hidden Gems"
-        }
-      },
-      {
-        "id": 10,
-        "mainTitle": "Chery Omoda 5",
-        "images": [
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/chery-omoda-5-top.webp",
-            "altText": "Cross Future",
-            "description": "Cross Future"
-          },
-          {
-            "url": "https://cherymalang.id/wp-content/uploads/2024/11/chery-omoda-5-front-1.jpeg",
-            "altText": "Futuristic Design & Intelligent Technology",
-            "description": "Futuristic Design & Intelligent Technology"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Dynamic-T-shape-DRL-with-sequential-LED-sign.webp",
-            "altText": "Dynamic T-shape DRL with sequential LED sign",
-            "description": "Dynamic T-shape DRL with sequential LED sign"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Sporty-rear-upper-spoiler.webp",
-            "altText": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler",
-            "description": "Sporty rear upper spoiler, integrated Tail light with Rear spoiler"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Intelligent-voice-control.webp",
-            "altText": "Intelligent voice control “Halo Chery..”",
-            "description": "Intelligent voice control “Halo Chery..”"
-          },
-          {
-            "url": "https://situswebsite.com/wp-content/uploads/2023/02/Chery-Omoda-5-Perforated-seat-with-ventilation.webp",
-            "altText": "Sporty and Dynamic Cabin Design",
-            "description": "Sporty and Dynamic Cabin Design"
-          }
-        ],
-        "youtubeEmbed": {
-          "url": "https://www.youtube.com/embed/example2",
-          "title": "Exploring the City's Hidden Gems"
-        }
+      ],
+      "youtubeEmbed": {
+        "url": "https://www.youtube.com/embed/ClX8Fq5nxHU?si=Zyas5pxtHhRQ8uCF",
+        "title": "Video preview Chery Omoda E5"
       }
-    ]
-  }
-  
+    }
+  ]
+}

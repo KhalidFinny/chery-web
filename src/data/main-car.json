@@ -1,6 +1,46 @@
 {
   "cars": [
     {
+      "model": "Selamat Datang",
+      "tagline": "Jelajahi Mobil Impianmu Disini",
+      "image": "/Hero.png",
+      "background": "/bgchery.webp",
+      "stats": {
+        "acceleration": {
+          "label": "-",
+          "value": "-"
+        },
+        "topSpeed": {
+          "label": "-",
+          "value": "-"
+        },
+        "Tenaga Kuda": {
+          "label": "-",
+          "value": "-"
+        }
+      }
+    },
+    {
+      "model": "OMODA E5",
+      "tagline": "Drive E Future",
+      "image": "/omoda-e5-3.webp",
+      "background": "/e5.png",
+      "stats": {
+        "acceleration": {
+          "label": "0-100 kmh",
+          "value": "7,2 s"
+        },
+        "topSpeed": {
+          "label": "Kecepatan Maksimal",
+          "value": "175 kmh"
+        },
+        "Tenaga Kuda": {
+          "label": "Tenaga Kuda",
+          "value": "201 hp"
+        }
+      }
+    },
+    {
       "model": "TIGGO 8",
       "tagline": "Power in Every Movement",
       "image": "/T8.webp",
