@@ -1,7 +1,7 @@
 ---
 // Astro Component for Car Showcase
-import { articles } from '../data/omodae5.json';
-const car = articles[0];
+import { articles } from '../data/articles.json';
+const car = articles[1];
 import Main from "../layouts/main.astro";
 import Footer from "../shared/footer.astro";
 
@@ -9,6 +9,8 @@ const exteriorFeatures = [
   { img: car.exteriorImages[0], points: ["LED Daytime Running Lights", "Lampu Highbeam dan Lowbeam LED dengan Cornering System"], imgRight: false },
   { img: car.exteriorImages[1], points: ["Sleek Sporty Profile", "Lampu Belakang dan center Height Mounting Stop Light LED"], imgRight: true },
   { img: car.exteriorImages[4], points: ["Kapasitas Baterai 61,06 kWh", "Jarak Tempuh 430 Km"], imgRight: false },
+  { img: car.exteriorImages[2], points: ["Kapasitas Baterai 61,06 kWh", "Jarak Tempuh 430 Km"], imgRight: false },
+  { img: car.exteriorImages[3], points: ["Kapasitas Baterai 61,06 kWh", "Jarak Tempuh 430 Km"], imgRight: false },
 ];
 
 const performanceSpecs = [
@@ -48,8 +50,8 @@ const warrantyItems = [
           <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Rasakan Berkendara Premium</span>
         </h2>
         {exteriorFeatures.map((feature, index) => (
-          <div class="flex flex-col lg:flex-row items-center mb-20 gap-12">
-            <div class={`lg:w-1/2 space-y-5 ${feature.imgRight ? 'order-1' : 'order-1 lg:order-2'}`}>
+          <div class={`flex flex-col lg:flex-row items-center mb-20 gap-12 ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''}`}>
+            <div class="lg:w-1/2 space-y-5">
               <h3 class="text-2xl font-bold text-red-500">{feature.img.subtitle}</h3>
               <p class="text-gray-300 text-lg max-w-lg">{feature.img.description}</p>
               {feature.points.map(point => (
@@ -59,7 +61,7 @@ const warrantyItems = [
                 </div>
               ))}
             </div>
-            <div class={`lg:w-1/2 relative ${feature.imgRight ? 'order-2' : 'order-2 lg:order-1'}`}>
+            <div class="lg:w-1/2 relative">
               <div class="absolute -inset-4 bg-gradient-to-r from-red-600 to-red-800 rounded-lg opacity-20 blur-lg"></div>
               <img src={feature.img.url} alt={feature.img.altText} class="relative rounded-lg w-full h-80 object-cover shadow-xl transform transition duration-500 hover:scale-105" />
             </div>

@@ -6,9 +6,13 @@ aria-label="Main Navigation"
     hiddenNav: false,
     lastScroll: window.scrollY,
     setPage(page) {
-      this.selectedPage = page;
-      this.open = false; // Close menu on selection (mobile)
-      this.smoothScroll(page);
+      if (window.location.pathname !== '/' && !page.startsWith('#')) {
+        window.location.href = page;
+      } else {
+        this.selectedPage = page;
+        this.open = false; // Close menu on selection (mobile)
+        this.smoothScroll(page);
+      }
     },
     checkScroll() {
       let currentScroll = window.scrollY;

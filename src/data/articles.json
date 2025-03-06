@@ -6,7 +6,7 @@
       "titleImage": {
         "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/hero-banner-desktop.webp",
         "altText": "Chery Omoda E5",
-        "subtitle": "Mobil Listrik Masa Depan",
+        "subtitle": "DriDrive E Future",
         "description": "Chery Omoda E5 menggabungkan desain inovatif, teknologi cerdas, dan performa tinggi dalam satu kendaraan."
       },
       "exteriorImages": [
@@ -23,10 +23,10 @@
           "description": "Light shadow streamline body design."
         },
         {
-          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-struktur-kuat.webp",
-          "altText": "Struktur Kuat",
-          "subtitle": "Konstruksi Rangka Kuat",
-          "description": "Material bodi ringan namun tetap kokoh dan aman."
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/exterior/futuristic-aluminium-velg.webp",
+          "altText": "Velg Aluminimu",
+          "subtitle": "Velg Aluminium",
+          "description": "Memberi kesan futuristik pada mobil."
         },
         {
           "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-tingkat-keamanan-tinggi.webp",
@@ -82,20 +82,20 @@
       "id": 2,
       "mainTitle": "Chery Omoda 5",
       "titleImage": {
-        "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/hero-banner-desktop.webp",
-        "altText": "Chery Omoda E5",
+        "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/hero-banner-desktop.webp",
+        "altText": "Chery Omoda 5",
         "subtitle": "Mobil Listrik Masa Depan",
         "description": "Chery Omoda E5 menggabungkan desain inovatif, teknologi cerdas, dan performa tinggi dalam satu kendaraan."
       },
       "exteriorImages": [
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/exterior/x-future-tech-front.webp",
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/highlight-specs-image-desktop.webp",
           "altText": "Chery Omoda E5",
           "subtitle": "Tampak depan X-Future",
           "description": "Tiap elemen di desain sedemikian rupa untuk memancarkan aura yang dinamis dan modern."
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/exterior/light-shadow-streamline-body.webp",
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/gallery/exterior/diamond-front-grill.webp",
           "altText": "Tampilan Belakang",
           "subtitle": "Desain Sporty nan Futuristik",
           "description": "Light shadow streamline body design."
@@ -113,7 +113,7 @@
           "description": "Dilengkapi fitur ADAS dan pengamanan terbaik di kelasnya."
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/highlight-feature-image-desktop.webp",
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/gallery/exterior/led-tail-light.webp",
           "altText": "Eco-Charging",
           "subtitle": "Teknologi Baterai Next-Gen",
           "description": "Nikmati petualangan seru dengan jarak tempuh 430 km dan torsi instan yang mencapai 340 nm."
