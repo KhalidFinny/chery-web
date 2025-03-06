@@ -22,8 +22,7 @@ const warrantyItems = [
   { icon: "fa-battery-full", title: "Gratis 7kW", desc: "AC Charger" },
   { icon: "fa-plug", title: "Gratis Portable", desc: "Portable Charger" },
   { icon: "fa-wrench", title: "Gratis Servis", desc: "Hingga 75.000Km  atau 5 Tahun *Tergantung mana yang tercapai dulu " },
-  { icon: "fa-wrench", title: "Garansi Kendaraan", desc: "Hingga 160.000Km  atau 6 Tahun *Tergantung mana yang tercapai dulu " },
-  { icon: "fa-shield-alt", title: "Asuransi", desc: "Termasuk asuransi kendaraan selama 1 tahun" },
+  { icon: "fa-shield-alt", title: "Garansi Kendaraan", desc: "Hingga 160.000Km  atau 6 Tahun *Tergantung mana yang tercapai dulu " },
 ];
 ---
 <Main>
@@ -32,13 +31,13 @@ const warrantyItems = [
     <!-- Hero Section - Bigger and Centered -->
     <section class="container mx-auto py-40 px-4">
       <div class="flex flex-col items-center justify-center text-center mb-12">
-        <h1 class="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400 mb-6">{car.mainTitle}</h1>
-        <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-4">{car.titleImage.subtitle}</p>
-        <p class="text-gray-400 max-w-2xl mx-auto">{car.titleImage.description}</p>
+      <h1 class="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400 mb-6">{car.mainTitle}</h1>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-4">{car.titleImage.subtitle}</p>
+      <p class="text-gray-400 max-w-2xl mx-auto">{car.titleImage.description}</p>
       </div>
       <div class="relative max-w-5xl mx-auto">
-        <div class="absolute -inset-6 bg-gradient-to-r from-red-600 to-red-800 rounded-lg opacity-30 blur-lg"></div>
-        <img src={car.titleImage.url} alt={car.titleImage.altText} class="relative rounded-lg w-full object-cover h-[500px] shadow-2xl transform hover:scale-[1.02] transition duration-500" />
+      <div class="absolute -inset-6 bg-gradient-to-r from-red-600 to-red-800 rounded-lg opacity-30 blur-lg"></div>
+      <img src={car.titleImage.url} alt={car.titleImage.altText} class="relative rounded-lg w-full object-cover h-64 md:h-[500px] shadow-2xl transform hover:scale-[1.02] transition duration-500" />
       </div>
     </section>
 
@@ -118,7 +117,7 @@ const warrantyItems = [
     ], currentIndex: 0, next() { this.currentIndex = (this.currentIndex + 1) % this.slides.length }, prev() { this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length }, init() { setInterval(() => this.next(), 5000) } }">
       <div class="container mx-auto px-4">
         <h2 class="text-5xl font-bold text-center mb-12 relative">
-          <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400 mb-10">Kenyamanan yang Tiada Tara</span>
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400 mb-10">Kenyamanan Premium</span>
         </h2>
         <div class="relative h-72 lg:h-[500px] rounded-xl overflow-hidden shadow-2xl mb-10">
           <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-10"></div>
