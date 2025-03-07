@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import "../styles/sizes.css";
+import Header from "../shared/header.astro";
 import Whatsapp from "../components/whatsapp.astro";
 const { title, description } = Astro.props;
 ---
@@ -31,6 +32,8 @@ const { title, description } = Astro.props;
   </head>
   <body class="relative min-h-screen w-full overflow-auto">
     <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    
+    <Header />
     
     <main class="max-w-full">
       <slot />

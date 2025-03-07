@@ -4,7 +4,6 @@ import { articles } from '../data/articles.json';
 const car = articles[5];
 import Main from "../layouts/main.astro";
 import Footer from "../shared/footer.astro";
-import Header from "../shared/header.astro";
 
 
 const exteriorFeatures = [
@@ -30,7 +29,6 @@ const warrantyItems = [
 ];
 ---
 <Main title={car.mainTitle} description={car.titleImage.subtitle}>
-    <Header />
     <div class="bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen overflow-x-hidden shadow-md shadow-red-600">
   
       <!-- Hero Section - Bigger and Centered -->
