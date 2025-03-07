@@ -350,7 +350,7 @@
           "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/safety/adas.png",
           "altText": "ADAS",
           "subtitle": "Sistem Keamanan Canggih",
-          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik. di kelasnya."
+          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik."
         }
       ],
       "interiorImages": [
@@ -428,7 +428,7 @@
           "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/safety/adas.webp",
           "altText": "ADAS",
           "subtitle": "Sistem Keamanan Canggih",
-          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik.."
+          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik."
         }
       ],
       "interiorImages": [
@@ -466,6 +466,318 @@
       "youtubeEmbed": {
         "url": "https://www.youtube.com/embed/nDxTjXvTDDM?si=4S1to32KgLv5D2Biw",
         "title": "Video preview Tiggo 7 Pro"
+      }
+    },
+    {
+      "id": 7,
+      "mainTitle": "CHERY TIGGO CROSS",
+      "titleImage": {
+        "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-cross/highlighted-specs-image-deskstop.webp",
+        "altText": "cherry tiggo Cross",
+        "subtitle": "KUASAI TIAP MEDAN DENGAN TENAGA PENUH",
+        "description": "Bukan sekedar SUV, TIGGO Cross adalah perpaduan jiwa penjelajah dan teknologi modern."
+      },
+      "exteriorImages": [
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-cross/exterior/tiger-concept.webp",
+          "altText": "Tiggo series",
+          "subtitle": "Tiger Concept",
+          "description": "Penampilan yang selalu siap untuk beraksi."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-cross/exterior/three-stream-dynamic-line.webp",
+          "altText": "Grill depan",
+          "subtitle": "Garis Dinamis",
+          "description": "Three Stream Ready To Go."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-cross/exterior/rhomboid-star-diamond-grill.webp",
+          "altText": "Sunroof Elektrik",
+          "subtitle": "Rhomboid Star Diamond Grill",
+          "description": "Tetap Elegant dan Fiesty"
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-cross/exterior/tiger-stripes-led-rear-lamp.webp",
+          "altText": "Lampu belakang",
+          "subtitle": "Desain Lampu Belakang Tiger Stripes",
+          "description": "Desain Lampu Belakang Tiger Stripes LED"
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-cross/safety/15-adas.webp",
+          "altText": "ADAS",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Dilengkapi 15 fitur ADAS dan pengamanan terbaik."
+        }
+      ],
+      "interiorImages": [
+        {
+          "url": "",
+          "altText": "Interior Modern",
+          "subtitle": "Kabin Luas dan Mewah",
+          "description": "Desain interior ergonomis dengan material premium."
+        },
+        {
+          "url": "",
+          "altText": "Infotainment",
+          "subtitle": "Layar Infotainment Canggih",
+          "description": "Dilengkapi layar sentuh besar dengan fitur konektivitas lengkap."
+        },
+        {
+          "url": "",
+          "altText": "Teknologi Cerdas",
+          "subtitle": "Sistem Operasi Berbasis AI",
+          "description": "Membantu pengendara dengan fitur otomatisasi pintar."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-cross/exterior/three-stream-dynamic-line.webp",
+          "altText": "Kenyamanan dan Garansi",
+          "subtitle": "Garansi Eksklusif",
+          "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
+        },
+        {
+          "url": "",
+          "altText": "Performa Kendaraan",
+          "subtitle": "Kinerja Optimal",
+          "description": "204 HP, akselerasi 0-100 km/jam dalam 7 detik, jarak tempuh 450 km."
+        }
+      ],
+      "youtubeEmbed": {
+        "url": "https://www.youtube.com/embed/iiTMs7OCs5A?si=MP2LFfMNeWcc3LxT",
+        "title": "Video preview Tiggo Cross"
+      }
+    },
+    {
+      "id": 8,
+      "mainTitle": "CHERY TIGGO 5X",
+      "titleImage": {
+        "url": "https://cheryarjuna.co.id/wp-content/uploads/2024/09/tiggo5xchery-1024x576.jpg",
+        "altText": "cherry tiggo Cross",
+        "subtitle": "RISE TO A WHOLE NEW LEVEL",
+        "description": "Witness the perfect combination of timeless designs and unrivalled craftsmanship, ensuring elegance and quality."
+      },
+      "exteriorImages": [
+        {
+          "url": "https://cheryarjuna.co.id/wp-content/uploads/2024/06/520x275-tiggo-5x-champions.png",
+          "altText": "Tiggo series",
+          "subtitle": "Compact and sporty",
+          "description": "Gesit, lincah, bergerak cepat menuju tujuan."
+        },
+        {
+          "url": "https://cheryarjuna.co.id/wp-content/uploads/2024/06/Tiggo-5X-Headlight.jpg",
+          "altText": "Grill depan",
+          "subtitle": "Cute But Fiesty face",
+          "description": "Tidak untuk diremehkan."
+        },
+        {
+          "url": "https://cheryarjuna.co.id/wp-content/uploads/2024/06/Tiggo-5X-Rear-Parking-Sensor.jpg",
+          "altText": "Sunroof Elektrik",
+          "subtitle": "Design Belakang yang Compact",
+          "description": "Terlihat manis saat pertama bertemu"
+        },
+        {
+          "url": "https://cheryarjuna.co.id/wp-content/uploads/2024/06/Tiggo-5X-17-Inch-Black-Velg.jpg",
+          "altText": "Lampu belakang",
+          "subtitle": "17inch Black Velg",
+          "description": "Sporty Black Rims"
+        },
+        {
+          "url": "https://cheryarjuna.co.id/wp-content/uploads/2024/06/Tiggo-5X-ADAS.jpg",
+          "altText": "ADAS",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Dilengkapi 7 fitur ADAS dan pengamanan terbaik."
+        }
+      ],
+      "interiorImages": [
+        {
+          "url": "",
+          "altText": "Interior Modern",
+          "subtitle": "Kabin Luas dan Mewah",
+          "description": "Desain interior ergonomis dengan material premium."
+        },
+        {
+          "url": "",
+          "altText": "Infotainment",
+          "subtitle": "Layar Infotainment Canggih",
+          "description": "Dilengkapi layar sentuh besar dengan fitur konektivitas lengkap."
+        },
+        {
+          "url": "",
+          "altText": "Teknologi Cerdas",
+          "subtitle": "Sistem Operasi Berbasis AI",
+          "description": "Membantu pengendara dengan fitur otomatisasi pintar."
+        },
+        {
+          "url": "https://cheryarjuna.co.id/wp-content/uploads/2024/06/Tiggo-5X-Exterior.jpg",
+          "altText": "Kenyamanan dan Garansi",
+          "subtitle": "Garansi Eksklusif",
+          "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
+        },
+        {
+          "url": "",
+          "altText": "Performa Kendaraan",
+          "subtitle": "Kinerja Optimal",
+          "description": "204 HP, akselerasi 0-100 km/jam dalam 7 detik, jarak tempuh 450 km."
+        }
+      ],
+      "youtubeEmbed": {
+        "url": "https://www.youtube.com/embed/V9ItTkfJXHE?si=Aw7lO1JoYE0B-zZ_",
+        "title": "Video preview Tiggo 5X"
+      }
+    },
+    {
+      "id": 9,
+      "mainTitle": "J6",
+      "titleImage": {
+        "url": "https://cheryarjuna.co.id/wp-content/uploads/2024/11/Chery-J6-Ambara.jpg",
+        "altText": "cherry tiggo J6",
+        "subtitle": "BERKENDARA DENGAN ENERGI YANG TAK TERHENTIKAN",
+        "description": "Temukan perpaduan sempurna antara gaya dan fungsionalitas untuk petualangan Anda."
+      },
+      "exteriorImages": [
+        {
+          "url": "https://assets.pikiran-rakyat.com/crop/0x0:0x0/1200x675/photo/2024/11/23/3731043843.jpg",
+          "altText": "J6",
+          "subtitle": "Gagah dan Berani, Memberikan Kepercayaan Diri",
+          "description": "Menebas semua rintangan dengan gaya dan kualitas."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/j6/exterior/Two-tone%2019%20Inch%20Velg.webp",
+          "altText": "Grill depan",
+          "subtitle": "Velg Dwiwarna 19 Inci",
+          "description": "Elegan, Gagah, dan Berani."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/j6/exterior/Matrix%20Vision%20Rear%20Lamp.webp",
+          "altText": "Sunroof Elektrik",
+          "subtitle": "Design Bergaya Matrix Vision",
+          "description": "Kesan mewah dan unik, menjadi pusat perhatian."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/j6/exterior/Visual%20Algorithms.webp",
+          "altText": "Lampu belakang",
+          "subtitle": "Rangka Transparan 540 Derajat",
+          "description": "Teknologi kamera tercanggih. "
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/j6/safety/Battery%20Anatomy%20Diagram.webp",
+          "altText": "ADAS",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Dilengkapi dengan banyak fitur keselamatan serta keselamatan baterai."
+        }
+      ],
+      "interiorImages": [
+        {
+          "url": "",
+          "altText": "Interior Modern",
+          "subtitle": "Kabin Luas dan Mewah",
+          "description": "Desain interior ergonomis dengan material premium."
+        },
+        {
+          "url": "",
+          "altText": "Infotainment",
+          "subtitle": "Layar Infotainment Canggih",
+          "description": "Dilengkapi layar sentuh besar dengan fitur konektivitas lengkap."
+        },
+        {
+          "url": "",
+          "altText": "Teknologi Cerdas",
+          "subtitle": "Sistem Operasi Berbasis AI",
+          "description": "Membantu pengendara dengan fitur otomatisasi pintar."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/j6/918x597-Highlight-Specs-Desktop.png",
+          "altText": "Kenyamanan dan Garansi",
+          "subtitle": "Garansi Eksklusif",
+          "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
+        },
+        {
+          "url": "",
+          "altText": "Performa Kendaraan",
+          "subtitle": "Kinerja Optimal",
+          "description": "204 HP, akselerasi 0-100 km/jam dalam 7 detik, jarak tempuh 450 km."
+        }
+      ],
+      "youtubeEmbed": {
+        "url": "https://www.youtube.com/embed/0J9G1SSl1Gw?si=lV01JawLFguM-0Ir",
+        "title": "Video preview J6"
+      }
+    },
+    {
+      "id": 10,
+      "mainTitle": "JAECOO J7",
+      "titleImage": {
+        "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2Fjaecoo_j7_ice_438e838168.png&w=3840&q=75",
+        "altText": "Jaecoo J7",
+        "subtitle": "OFF-ROAD CAPABLE URBAN SUV",
+        "description": "Discover the ultimate in luxury and performance with our Premium Off-Road SUV, built to conquer any terrain with style and power."
+      },
+      "exteriorImages": [
+        {
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2Fj7_eksterior_123880817e.png&w=3840&q=75",
+          "altText": "J7",
+          "subtitle": "Off-Road Capable Urban SUV",
+          "description": "Paduan pas Antara Multifungsional, Gagah, dan Mewah."
+        },
+        {
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FRear_Bumper_Design_d15d850080.png&w=1080&q=75",
+          "altText": "Grill depan",
+          "subtitle": "Bold Rear Bumper Design",
+          "description": "Meningkatkan kesan Elegan dan Sporty."
+        },
+        {
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FPanoramic_Sunroof_4c008a077f.png&w=1080&q=75",
+          "altText": "Sunroof Elektrik",
+          "subtitle": "Panoramic Sunroof",
+          "description": "Berkendara dengan indah."
+        },
+        {
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2Fardis_208d462168.png&w=3840&q=75",
+          "altText": "Lampu belakang",
+          "subtitle": "All Road Drive Intelligent System (ARDIS)",
+          "description": "Teknologi terkini untuk medan apapun. "
+        },
+        {
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2Fchasis_jaecoo_88a6e0a8dc.png&w=3840&q=75",
+          "altText": "ADAS",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Rangka yang kokoh Serta ADAS."
+        }
+      ],
+      "interiorImages": [
+        {
+          "url": "",
+          "altText": "Interior Modern",
+          "subtitle": "Kabin Luas dan Mewah",
+          "description": "Desain interior ergonomis dengan material premium."
+        },
+        {
+          "url": "",
+          "altText": "Infotainment",
+          "subtitle": "Layar Infotainment Canggih",
+          "description": "Dilengkapi layar sentuh besar dengan fitur konektivitas lengkap."
+        },
+        {
+          "url": "",
+          "altText": "Teknologi Cerdas",
+          "subtitle": "Sistem Operasi Berbasis AI",
+          "description": "Membantu pengendara dengan fitur otomatisasi pintar."
+        },
+        {
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2Fjaecoo_j7_ice_438e838168.png&w=3840&q=75",
+          "altText": "Kenyamanan dan Garansi",
+          "subtitle": "Garansi Eksklusif",
+          "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
+        },
+        {
+          "url": "",
+          "altText": "Performa Kendaraan",
+          "subtitle": "Kinerja Optimal",
+          "description": "204 HP, akselerasi 0-100 km/jam dalam 7 detik, jarak tempuh 450 km."
+        }
+      ],
+      "youtubeEmbed": {
+        "url": "https://www.youtube.com/embed/qEfjAK4gVhU?si=EeTUwBo4e0hprMSR",
+        "title": "Video preview Jaecoo J7"
       }
     }
   ]
