@@ -2,7 +2,7 @@
   "articles": [
     {
       "id": 1,
-      "mainTitle": "Chery Omoda E5",
+      "mainTitle": "CHERY OMODA E5",
       "titleImage": {
         "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/hero-banner-desktop.webp",
         "altText": "Chery Omoda E5",
@@ -32,7 +32,7 @@
           "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-tingkat-keamanan-tinggi.webp",
           "altText": "Keamanan Tinggi",
           "subtitle": "Sistem Keamanan Canggih",
-          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik di kelasnya."
+          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik."
         },
         {
           "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/highlight-feature-image-desktop.webp",
@@ -80,43 +80,43 @@
     },
     {
       "id": 2,
-      "mainTitle": "Chery Omoda 5",
+      "mainTitle": "CHERY OMODA 5",
       "titleImage": {
         "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/hero-banner-desktop.webp",
         "altText": "Chery Omoda 5",
-        "subtitle": "Mobil Listrik Masa Depan",
-        "description": "Chery Omoda E5 menggabungkan desain inovatif, teknologi cerdas, dan performa tinggi dalam satu kendaraan."
+        "subtitle": "EMBRACE YOUR NEW JOURNEY",
+        "description": "Bersiaplah untuk mengalami perpaduan konsep estetika modern dengan performa maksimum di setiap perjalanan."
       },
       "exteriorImages": [
         {
           "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/highlight-specs-image-desktop.webp",
           "altText": "Chery Omoda E5",
-          "subtitle": "Tampak depan X-Future",
-          "description": "Tiap elemen di desain sedemikian rupa untuk memancarkan aura yang dinamis dan modern."
+          "subtitle": "Desain futuristik dan sporty dengan tema Cross F Future",
+          "description": "Menggabungkan konsep estetika modern dengan performa maksimal."
         },
         {
           "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/gallery/exterior/diamond-front-grill.webp",
-          "altText": "Tampilan Belakang",
-          "subtitle": "Desain Sporty nan Futuristik",
-          "description": "Light shadow streamline body design."
+          "altText": "Grill depan",
+          "subtitle": "Grill Depan Star Diamond",
+          "description": "Grill depan yang memberikan esensi keindahan."
         },
         {
-          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-struktur-kuat.webp",
-          "altText": "Struktur Kuat",
-          "subtitle": "Konstruksi Rangka Kuat",
-          "description": "Material bodi ringan namun tetap kokoh dan aman."
-        },
-        {
-          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-tingkat-keamanan-tinggi.webp",
-          "altText": "Keamanan Tinggi",
-          "subtitle": "Sistem Keamanan Canggih",
-          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik di kelasnya."
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/gallery/exterior/electric-sunroof-link.webp",
+          "altText": "Sunroof Elektrik",
+          "subtitle": "Sunroof Elektrik",
+          "description": "Terhubung melalui intelligent voice assistant."
         },
         {
           "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/gallery/exterior/led-tail-light.webp",
-          "altText": "Eco-Charging",
-          "subtitle": "Teknologi Baterai Next-Gen",
-          "description": "Nikmati petualangan seru dengan jarak tempuh 430 km dan torsi instan yang mencapai 340 nm."
+          "altText": "Lampu belakang",
+          "subtitle": "lampu belakang LED",
+          "description": "Lengkap dengan sequential turn lamp."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/safety/adas.webp",
+          "altText": "ADAS",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik."
         }
       ],
       "interiorImages": [
@@ -139,7 +139,7 @@
           "description": "Membantu pengendara dengan fitur otomatisasi pintar."
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/special-offer-image-desktop.webp",
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/special-offer-image-desktop.webp",
           "altText": "Kenyamanan dan Garansi",
           "subtitle": "Garansi Eksklusif",
           "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
@@ -152,8 +152,320 @@
         }
       ],
       "youtubeEmbed": {
-        "url": "https://www.youtube.com/embed/ClX8Fq5nxHU?si=Zyas5pxtHhRQ8uCF",
-        "title": "Video preview Chery Omoda E5"
+        "url": "https://www.youtube.com/embed/oGGIMmijc28?si=qNq1qY-UzxCCdBmx",
+        "title": "Video preview Chery Omoda 5"
+      }
+    },
+    {
+      "id": 3,
+      "mainTitle": "CHERY OMODA 5 GT",
+      "titleImage": {
+        "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5-gt/hero-banner-desktop.webp",
+        "altText": "Chery Omoda 5",
+        "subtitle": "EMBRACE YOUR NEW JOURNEY",
+        "description": "Bersiaplah untuk mengalami perpaduan konsep estetika modern dengan performa maksimum di setiap perjalanan."
+      },
+      "exteriorImages": [
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5-gt/highlight-specs-image-desktop.webp",
+          "altText": "Chery Omoda E5",
+          "subtitle": "Desain futuristik dan sporty dengan tema Cross F Future",
+          "description": "Menggabungkan konsep estetika modern dengan performa maksimal."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5-gt/gallery/exterior/diamond-front-grill.webp",
+          "altText": "Grill depan",
+          "subtitle": "Grill Depan Star Diamond",
+          "description": "Grill depan yang memberikan esensi keindahan."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5-gt/gallery/exterior/electric-sunroof-link.webp",
+          "altText": "Sunroof Elektrik",
+          "subtitle": "Sunroof Elektrik",
+          "description": "Terhubung melalui intelligent voice assistant."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5-gt/gallery/exterior/x-style-led-tail-light.webp",
+          "altText": "Lampu belakang",
+          "subtitle": "lampu belakang LED",
+          "description": "Lengkap dengan sequential turn lamp."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5-gt/safety/adas.webp",
+          "altText": "ADAS",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik."
+        }
+      ],
+      "interiorImages": [
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/interior/leather-steering-wheel.webp",
+          "altText": "Interior Modern",
+          "subtitle": "Kabin Luas dan Mewah",
+          "description": "Desain interior ergonomis dengan material premium."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-infotainment.webp",
+          "altText": "Infotainment",
+          "subtitle": "Layar Infotainment Canggih",
+          "description": "Dilengkapi layar sentuh besar dengan fitur konektivitas lengkap."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-teknologi-cerdas.webp",
+          "altText": "Teknologi Cerdas",
+          "subtitle": "Sistem Operasi Berbasis AI",
+          "description": "Membantu pengendara dengan fitur otomatisasi pintar."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5-gt/special-offer-image-desktop.webp",
+          "altText": "Kenyamanan dan Garansi",
+          "subtitle": "Garansi Eksklusif",
+          "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-performance.webp",
+          "altText": "Performa Kendaraan",
+          "subtitle": "Kinerja Optimal",
+          "description": "204 HP, akselerasi 0-100 km/jam dalam 7 detik, jarak tempuh 450 km."
+        }
+      ],
+      "youtubeEmbed": {
+        "url": "https://www.youtube.com/embed/7p1KhQLTU54?si=p998smoqu5WmF3nr",
+        "title": "Video preview Chery Omoda 5 GT"
+      }
+    },
+    {
+      "id": 4,
+      "mainTitle": "CHERY TIGGO 8 PRO MAX",
+      "titleImage": {
+        "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8-pro-max/hero-banner.jpeg",
+        "altText": "Chery Omoda 5",
+        "subtitle": "NIKMATI PENGALAMAN BERKENDARA MASA DEPAN",
+        "description": "Tiap detail di desain dengan presisi untuk memancarkan aura modern, sporty dan futuristik."
+      },
+      "exteriorImages": [
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8-pro-max/highlight-specs-image.png",
+          "altText": "Tiggo series",
+          "subtitle": "Aura Modern, Sporty dan Futuristik",
+          "description": "Desain modern, sporty dan futuristik."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8-pro-max/exterior/diamond-grille.png",
+          "altText": "Grill depan",
+          "subtitle": "Grill Depan Matrix Diamond",
+          "description": "Grill depan yang memberikan esensi keindahan."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8-pro-max/exterior/glossy-rims.png",
+          "altText": "Sunroof Elektrik",
+          "subtitle": "19in Glossy Sport Hub",
+          "description": "Desain premium dan fungsionalitas tambahan"
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8-pro-max/exterior/rear-parking-sensors.png",
+          "altText": "Lampu belakang",
+          "subtitle": "Memberikan Esensi First Class",
+          "description": "Dilengkapi dengan sensor parkir belakang."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8-pro-max/safety/adas.png",
+          "altText": "ADAS",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Dilengkapi 12 fitur ADAS dan pengamanan terbaik."
+        }
+      ],
+      "interiorImages": [
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/interior/leather-steering-wheel.webp",
+          "altText": "Interior Modern",
+          "subtitle": "Kabin Luas dan Mewah",
+          "description": "Desain interior ergonomis dengan material premium."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-infotainment.webp",
+          "altText": "Infotainment",
+          "subtitle": "Layar Infotainment Canggih",
+          "description": "Dilengkapi layar sentuh besar dengan fitur konektivitas lengkap."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-teknologi-cerdas.webp",
+          "altText": "Teknologi Cerdas",
+          "subtitle": "Sistem Operasi Berbasis AI",
+          "description": "Membantu pengendara dengan fitur otomatisasi pintar."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8-pro-max/photos/tiggo-photo-2.webp",
+          "altText": "Kenyamanan dan Garansi",
+          "subtitle": "Garansi Eksklusif",
+          "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
+        },
+        {
+          "url": "https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-performance.webp",
+          "altText": "Performa Kendaraan",
+          "subtitle": "Kinerja Optimal",
+          "description": "204 HP, akselerasi 0-100 km/jam dalam 7 detik, jarak tempuh 450 km."
+        }
+      ],
+      "youtubeEmbed": {
+        "url": "https://www.youtube.com/embed/uxs9TtI8C78?si=AlkiEom0_LeDnlko",
+        "title": "Video preview Tiggo 8 Pro Max"
+      }
+    },
+    {
+      "id": 5,
+      "mainTitle": "CHERY TIGGO 8",
+      "titleImage": {
+        "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/hero-banner-desktop.png",
+        "altText": "cherry tiggo 8",
+        "subtitle": "NIKMATI PENGALAMAN BERKENDARA MASA DEPAN",
+        "description": "Tiap detail di desain dengan presisi untuk memancarkan aura modern, sporty dan futuristik."
+      },
+      "exteriorImages": [
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/highlight-specs-image-desktop.png",
+          "altText": "Tiggo series",
+          "subtitle": "Aura Modern, Sporty dan Futuristik",
+          "description": "Desain modern, sporty dan futuristik."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/gallery-exterior/galaxy-front-face.png",
+          "altText": "Grill depan",
+          "subtitle": "Grill Depan Matrix Diamond",
+          "description": "Grill depan yang memberikan esensi keindahan."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/gallery-exterior/powerful-performance.png",
+          "altText": "Sunroof Elektrik",
+          "subtitle": "Desain Belakang yang Sporty",
+          "description": "Meningkatkan cool factor"
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/gallery-exterior/3-streamline-eff.png",
+          "altText": "Lampu belakang",
+          "subtitle": "3 Streamline EFF",
+          "description": "Mengurangi hambatan secara efisien."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/safety/adas.png",
+          "altText": "ADAS",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik. di kelasnya."
+        }
+      ],
+      "interiorImages": [
+        {
+          "url": "",
+          "altText": "Interior Modern",
+          "subtitle": "Kabin Luas dan Mewah",
+          "description": "Desain interior ergonomis dengan material premium."
+        },
+        {
+          "url": "",
+          "altText": "Infotainment",
+          "subtitle": "Layar Infotainment Canggih",
+          "description": "Dilengkapi layar sentuh besar dengan fitur konektivitas lengkap."
+        },
+        {
+          "url": "",
+          "altText": "Teknologi Cerdas",
+          "subtitle": "Sistem Operasi Berbasis AI",
+          "description": "Membantu pengendara dengan fitur otomatisasi pintar."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/gallery-exterior/powerful-performance.png",
+          "altText": "Kenyamanan dan Garansi",
+          "subtitle": "Garansi Eksklusif",
+          "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
+        },
+        {
+          "url": "",
+          "altText": "Performa Kendaraan",
+          "subtitle": "Kinerja Optimal",
+          "description": "204 HP, akselerasi 0-100 km/jam dalam 7 detik, jarak tempuh 450 km."
+        }
+      ],
+      "youtubeEmbed": {
+        "url": "https://www.youtube.com/embed/h6j_kCwcHbw?si=eAmmogwK-xbPshvw",
+        "title": "Video preview Tiggo 8"
+      }
+    },
+    {
+      "id": 6,
+      "mainTitle": "CHERY TIGGO 7 PRO",
+      "titleImage": {
+        "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/hero-banner-mobile.webp",
+        "altText": "cherry tiggo 7 pro",
+        "subtitle": "EMBRACE A NEW LEVEL OF REFINEMENT",
+        "description": "Setiap detail dibuat dengan teliti untuk memancarkan estetika kontemporer yang sporty, memancarkan aura yang luar biasa."
+      },
+      "exteriorImages": [
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/highlight-specs-image-desktop.webp",
+          "altText": "Tiggo series",
+          "subtitle": "Estetika kontemporer yang sporty,",
+          "description": "Desain modern dan sporty."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/gallery/exterior/fashion-light-lamp.webp",
+          "altText": "Grill depan",
+          "subtitle": "Lampu dengan Logo Tiggo",
+          "description": "Memberikan keunikan pada pengalaman."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/gallery/exterior/exterior-door-mirror-turn-signal.webp",
+          "altText": "Sunroof Elektrik",
+          "subtitle": "Kaca Spion Otomatis",
+          "description": "Praktis dengan auto retract system"
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/gallery/exterior/long-led-tail-lamp.webp",
+          "altText": "Lampu belakang",
+          "subtitle": "Desain Belakang yang Sporty",
+          "description": "Sporty dan Premium menjadi satu"
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/safety/adas.webp",
+          "altText": "ADAS",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik.."
+        }
+      ],
+      "interiorImages": [
+        {
+          "url": "",
+          "altText": "Interior Modern",
+          "subtitle": "Kabin Luas dan Mewah",
+          "description": "Desain interior ergonomis dengan material premium."
+        },
+        {
+          "url": "",
+          "altText": "Infotainment",
+          "subtitle": "Layar Infotainment Canggih",
+          "description": "Dilengkapi layar sentuh besar dengan fitur konektivitas lengkap."
+        },
+        {
+          "url": "",
+          "altText": "Teknologi Cerdas",
+          "subtitle": "Sistem Operasi Berbasis AI",
+          "description": "Membantu pengendara dengan fitur otomatisasi pintar."
+        },
+        {
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/special-offer-image-desktop.webp",
+          "altText": "Kenyamanan dan Garansi",
+          "subtitle": "Garansi Eksklusif",
+          "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
+        },
+        {
+          "url": "",
+          "altText": "Performa Kendaraan",
+          "subtitle": "Kinerja Optimal",
+          "description": "204 HP, akselerasi 0-100 km/jam dalam 7 detik, jarak tempuh 450 km."
+        }
+      ],
+      "youtubeEmbed": {
+        "url": "https://www.youtube.com/embed/nDxTjXvTDDM?si=4S1to32KgLv5D2Biw",
+        "title": "Video preview Tiggo 7 Pro"
       }
     }
   ]

@@ -42,10 +42,10 @@ aria-label="Main Navigation"
 
   <!-- Desktop Navigation -->
   <nav class="hidden md:flex gap-12">
-    <a href="/" @click="setPage('#beranda')" class="hover:text-red-500 duration-300">Beranda</a>
-    <a href="#about" @click="setPage('#about')" class="hover:text-red-500 duration-300">About</a>
-    <a href="#katalog" @click="setPage('#katalog')" class="hover:text-red-500 duration-300">Katalog</a>
-    <a href="#detail" @click="setPage('#detail')" class="hover:text-red-500 duration-300">Detail</a>
+    <a href="/" @click="setPage('/')" class="hover:text-red-500 duration-300">Beranda</a>
+    <a href="#about" @click="setPage('/')" class="hover:text-red-500 duration-300">About</a>
+    <a href="#katalog" @click="setPage('/')" class="hover:text-red-500 duration-300">Katalog</a>
+    <a href="#detail" @click="setPage('/')" class="hover:text-red-500 duration-300">Detail</a>
   </nav>
 
   <!-- Mobile Menu Button -->
@@ -60,9 +60,9 @@ aria-label="Main Navigation"
     class="fixed inset-0 bg-white flex flex-col items-center space-y-8 text-2xl pt-24 shadow-lg md:hidden"
   >
     <a href="/" @click="setPage('/')" class="hover:text-red-500 duration-300">Beranda</a>
-    <a href="#about" @click="setPage('#about')" class="hover:text-red-500 duration-300">About</a>
-    <a href="#katalog" @click="setPage('#katalog')" class="hover:text-red-500 duration-300">Katalog</a>
-    <a href="#detail" @click="setPage('#detail')" class="hover:text-red-500 duration-300">Detail</a>
+    <a href="#about" @click="setPage('/')" class="hover:text-red-500 duration-300">About</a>
+    <a href="#katalog" @click="setPage('/')" class="hover:text-red-500 duration-300">Katalog</a>
+    <a href="#detail" @click="setPage('/')" class="hover:text-red-500 duration-300">Detail</a>
     
     <!-- Close Button -->
     <button @click="open = false" class="absolute top-6 right-6">

@@ -1,0 +1,203 @@
+---
+// Astro Component for Car Showcase
+import { articles } from '../data/articles.json';
+const car = articles[4];
+import Main from "../layouts/main.astro";
+import Footer from "../shared/footer.astro";
+
+const exteriorFeatures = [
+  { img: car.exteriorImages[0], points: ["Lampu LED Otomatis", "Stylish Dynamic"], imgRight: false },
+  { img: car.exteriorImages[1], points: ["Tough", "Sporty", "Classy"], imgRight: true },
+  { img: car.exteriorImages[4], points: ["Rear Cross Traffic Alert", "Lane Change Assist", "Emergency Lane Keeping", "Blind Spot Detection", "dan banyak lagi"], imgRight: false },
+  { img: car.exteriorImages[2], points: ["Knalpot Ganda Chrome", "Pintu Bagasi elektrik"], imgRight: false },
+  { img: car.exteriorImages[3], points: ["Aerodynamic and Sleek"], imgRight: false },
+];
+
+const performanceSpecs = [
+  { icon: "fa-bolt", value: "194", label: "Tenaga Kuda", desc: "Mesin 1.6 TGDI", img: car.exteriorImages[0].url },
+{ icon: "fa-cogs", value: "290", label: "NM", desc: "Tarikan kuat.", img: car.exteriorImages[3].url },
+{ icon: "fa-road", value: "200", label: "Kilometer", desc: "Arriving on time and in style", img: car.exteriorImages[2].url },
+];
+
+const warrantyItems = [
+  { icon: "fa-shield-alt", title: "1 Tahun Gratis Asuransi", desc: "*Syarat dan ketentuan berlaku" },
+  { icon: "fa-tag", title: "Garansi Pembelian Kembali", desc: "70% untuk 1000 Pelanggan *Syarat dan ketentuan berlaku" },
+];
+---
+<Main title={car.mainTitle} description={car.titleImage.subtitle}>
+    <div class="bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen overflow-x-hidden shadow-md shadow-red-600">
+  
+      <!-- Hero Section - Bigger and Centered -->
+      <section class="container mx-auto py-40 px-4">
+        <div class="flex flex-col items-center justify-center text-center mb-12">
+        <h1 class="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400 mb-6">{car.mainTitle}</h1>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-4">{car.titleImage.subtitle}</p>
+        <p class="text-gray-400 max-w-2xl mx-auto">{car.titleImage.description}</p>
+        </div>
+        <div class="relative max-w-5xl mx-auto">
+        <div class="absolute -inset-6 bg-gradient-to-r from-red-600 to-red-800 rounded-lg opacity-30 blur-lg"></div>
+        <img src={car.titleImage.url} alt={car.titleImage.altText} class="relative rounded-lg w-full object-cover h-64 md:h-[500px] shadow-2xl transform hover:scale-[1.02] transition duration-500" />
+        </div>
+      </section>
+  
+<!-- Exterior Features - Zig-Zag Layout -->
+<section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black">
+  <div class="container mx-auto px-4">
+  <h2 class="text-5xl font-bold text-center mb-16 relative">
+    <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Power In Every Movement</span>
+  </h2>
+  {exteriorFeatures.map((feature, index) => (
+    <div class={`flex flex-col lg:flex-row items-center mb-20 gap-12 ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''}`}>
+    <div class="lg:w-1/2 relative order-1 lg:order-none">
+      <div class="absolute -inset-4 bg-gradient-to-r from-red-600 to-red-800 rounded-lg opacity-20 blur-lg"></div>
+      <img src={feature.img.url} alt={feature.img.altText} class="relative rounded-lg w-full h-80 object-cover shadow-xl transform transition duration-500 hover:scale-105" />
+    </div>
+    <div class="lg:w-1/2 space-y-5 order-2 lg:order-none">
+      <h3 class="text-2xl font-bold text-red-500">{feature.img.subtitle}</h3>
+      <p class="text-gray-300 text-lg max-w-lg">{feature.img.description}</p>
+      {feature.points.map(point => (
+      <div class="flex items-center gap-3 text-gray-400">
+        <i class="fas fa-check text-red-500"></i>
+        <span class="text-lg">{point}</span>
+      </div>
+      ))}
+    </div>
+    </div>
+  ))}
+  </div>
+</section>
+  
+      <!-- Performance & Warranty - Gradient Background -->
+      <section class="py-16 bg-gradient-to-b from-black via-gray-800 to-black relative">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center z-0" style={`background-image: url(${car.interiorImages[3].url}); background-blend-mode: overlay;`}></div>
+        <div class="container mx-auto px-4 relative z-10">
+          <div class="mb-20">
+            <h2 class="text-5xl font-bold text-center mb-12 relative">
+              <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Performa</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+              {performanceSpecs.map(spec => (
+                <div class="bg-gray-900/80 backdrop-blur-sm rounded-xl p-8 text-center transform transition duration-500 hover:scale-105 hover:shadow-xl relative overflow-hidden">
+                  <div class="absolute top-0 left-0 w-full h-32 opacity-20 bg-cover bg-center" style={`background-image: url(${spec.img});`}></div>
+                  <i class={`fas ${spec.icon} text-red-500 text-5xl mb-6`}></i>
+                  <div class="text-6xl font-bold text-red-500 mb-4">{spec.value}</div>
+                  <div class="text-xl font-semibold text-gray-300">{spec.label}</div>
+                  <p class="mt-4 text-gray-400">{spec.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div class="relative bg-cover bg-center h-full">
+            <h2 class="text-5xl font-bold text-center mb-12 relative">
+              <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Promo Eksklusif</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {warrantyItems.map(item => (
+                <div class="bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden relative group">
+                  <div class="absolute -inset-4 bg-gradient-to-r from-red-600 to-red-800 opacity-0 group-hover:opacity-20 blur-lg transition-opacity duration-300"></div>
+                  <div class="bg-red-500/20 p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                    <i class={`fas ${item.icon} text-red-500 text-2xl`}></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-center text-white mb-3">{item.title}</h3>
+                  <p class="text-gray-400 text-center">{item.desc}</p>
+                  <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-red-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  <!-- Interior Carousel -->
+  <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black" x-data="{ slides: [
+  { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/gallery-interior/premium-material.png', altText: 'Interior Modern', subtitle: 'Interior Premium dan Fitur Futuristik', description: 'Kelas atas dan berteknologi canggih' },
+  { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/gallery-interior/1st-class-cabin.png', altText: 'Infotainment', subtitle: 'Kabin First Class', description: 'dengan bahan premium.' },
+  { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/gallery-interior/ac-3rd-row.png', altText: 'Teknologi Cerdas', subtitle: 'AC di baris ke-3', description: '' },
+   { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/gallery-interior/panoramic-sunroof.png', altText: 'Teknologi Cerdas', subtitle: 'Panoramic Sunroof', description: '' },
+    { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/gallery-interior/dual-zone-ac.png', altText: 'Seats', subtitle: 'Air Conditioner', description: 'AC Dual Zone' }
+  ], currentIndex: 0, next() { this.currentIndex = (this.currentIndex + 1) % this.slides.length }, prev() { this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length }, init() { setInterval(() => this.next(), 5000) } }">
+  <div class="container mx-auto px-4">
+    <h2 class="text-5xl font-bold text-center mb-12 relative">
+      <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400 mb-10">Feel The First Class</span>
+    </h2>
+    <div class="relative h-72 lg:h-[500px] rounded-xl overflow-hidden shadow-2xl mb-10">
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-10"></div>
+        <template x-for="(slide, index) in slides" :key="index">
+        <div x-show="currentIndex === index" class="absolute inset-0 transition-opacity duration-500" x-transition>
+          <img :src="slide.url" :alt="slide.altText" class="w-full h-full object-cover" />
+          <div class="absolute bottom-0 left-0 p-6 z-20 max-w-lg">
+            <h3 class="text-2xl font-bold text-white mb-3" x-text="slide.subtitle"></h3>
+            <p class="text-gray-200 text-lg" x-text="slide.description"></p>
+          </div>
+        </div>
+      </template>
+      <button @click="prev()" class="absolute left-6 top-1/2 transform -translate-y-1/2 bg-red-600/30 hover:bg-red-600/50 text-white p-3 rounded-full z-20 transition duration-300"><i class="fas fa-chevron-left"></i></button>
+      <button @click="next()" class="absolute right-6 top-1/2 transform -translate-y-1/2 bg-red-600/30 hover:bg-red-600/50 text-white p-3 rounded-full z-20 transition duration-300"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    
+    <!-- Dots Navigation -->
+    <div class="flex justify-center gap-3 mb-6">
+      <template x-for="(slide, index) in slides" :key="index">
+        <button @click="currentIndex = index" class="w-4 h-4 rounded-full transition-all duration-300" :class="currentIndex === index ? 'bg-red-600 scale-125' : 'bg-gray-500 hover:bg-red-400'"></button>
+      </template>
+    </div>
+    
+    <!-- Thumbnail Navigation - Improved for Mobile -->
+    <div class="max-w-full mx-auto px-2">
+      <div class="flex justify-center items-center gap-2 sm:gap-3 md:gap-4 overflow-x-auto py-3 scrollbar-hide">
+        <template x-for="(slide, index) in slides" :key="index">
+          <button @click="currentIndex = index" 
+                  class="relative overflow-hidden rounded-lg h-12 w-16 sm:h-14 sm:w-20 md:h-16 md:w-24 transition duration-300 flex-shrink-0" 
+                  :class="currentIndex === index ? 'ring-2 ring-red-600 scale-105' : 'opacity-70 hover:opacity-100'">
+            <img :src="slide.url" :alt="`Thumbnail ${index + 1}`" class="w-full h-full object-cover" />
+          </button>
+        </template>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    /* Hide scrollbar but keep functionality */
+    .scrollbar-hide {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;  /* Chrome, Safari and Opera */
+    }
+  </style>
+  </section>
+  
+      <!-- Video Section -->
+      <section class="py-16 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-4">
+          <h2 class="text-5xl font-bold text-center mb-12 relative">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Preview Video</span>
+          </h2>
+          <div class="relative max-w-5xl mx-auto">
+            <div class="absolute -inset-6 bg-gradient-to-r from-red-600 to-red-800 rounded-lg opacity-20 blur-lg"></div>
+            <div class="relative aspect-w-16 rounded-xl overflow-hidden shadow-2xl">
+              <iframe src={car.youtubeEmbed.url} title={car.youtubeEmbed.title} class="absolute inset-0 w-full h-full" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    <style>
+      .aspect-w-16 { position: relative; padding-bottom: 56.25%; }
+      .aspect-w-16 iframe { position: absolute; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; }
+    </style>
+  
+    <script>
+      import Alpine from 'alpinejs';
+      declare global {
+        interface Window {
+          Alpine: typeof Alpine;
+        }
+      }
+      window.Alpine = Alpine;
+      Alpine.start();
+    </script>
+    <Footer />
+  </Main>
