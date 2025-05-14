@@ -39,6 +39,7 @@ const { title, description } = Astro.props;
  
 <!-- Alpine Core -->
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="canonical" href={`https://cherymalang.com${Astro.url.pathname}`} />
   </head>
   <body class="relative min-h-screen w-full overflow-auto">
     <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>

@@ -38,12 +38,13 @@ import Detail, { promoItems, brochureItems } from "./detail.astro";
         {promoItems.map((item) => (
           <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border-2 border-red-500 animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
             <img
-              class="w-auto h-full object-cover aspect-auto transition-all duration-300 group-hover:scale-105"
+              class="w-auto h-full object-cover aspect-auto transition-all duration-300 group-hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-600"
               src={item.imagePath}
               alt={item.title}
               loading="lazy"
               width="600"
               height="400"
+              tabindex="0"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
               <div class="p-4 text-white">
@@ -63,12 +64,13 @@ import Detail, { promoItems, brochureItems } from "./detail.astro";
           <a href={item.pdfPath} target="_blank" class="group block rounded-lg bg-white border border-gray-200 shadow-sm hover:shadow- hover:shadow-red-400 transition-all duration-300">
             <div class="relative w-full pt-[56.25%] bg-gray-100 rounded-t-lg overflow-hidden border-2 border-red-500 animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
               <img 
-                class="absolute inset-0 w-full h-full object-cover transition-all duration-300 group-hover:scale-105" 
+                class="absolute inset-0 w-full h-full object-cover transition-all duration-300 group-hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-600" 
                 src={item.thumbnailPath} 
                 alt={item.title} 
                 loading="lazy"
                 width="400"
                 height="300"
+                tabindex="0"
               />
             </div>
             <div class="p-4">

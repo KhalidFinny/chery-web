@@ -37,7 +37,7 @@ aria-label="Main Navigation"
 >
   <!-- Logo -->
   <a href="/">
-    <img :src="open ? '/logo.webp' : '/logo.webp'" alt="Logo Chery Malang" class="w-auto h-[50px] md:h-[60px] transition-all duration-300 hover:scale-105" width="120" height="60" />
+    <img :src="open ? '/logo.webp' : '/logo.webp'" alt="Logo Chery Malang" class="w-auto h-[50px] md:h-[60px] transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-600" width="120" height="60" tabindex="0" />
   </a>
 
   <!-- Desktop Navigation -->
@@ -49,7 +49,7 @@ aria-label="Main Navigation"
   </nav>
 
   <!-- Mobile Menu Button -->
-  <button @click="open = !open" class="md:hidden focus:outline-none">
+  <button @click="open = !open" class="md:hidden focus:outline-none focus:ring-2 focus:ring-red-600" aria-label="Buka Menu Navigasi">
     <i class="fas fa-bars"></i>
   </button>
 
