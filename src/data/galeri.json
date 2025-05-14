@@ -73,6 +73,12 @@
       "title": "Jaecoo J7",
       "pdfPath": "/brochures/price-list.pdf",
       "thumbnailPath": "/thumbnails/price-list.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Tiggo 8 CSH",
+      "pdfPath": "/brochures/price-list.pdf",
+      "thumbnailPath": "/thumbnails/price-list.jpg"
     }
   ]
 }

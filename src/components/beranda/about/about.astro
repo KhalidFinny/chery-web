@@ -3,7 +3,7 @@ import AboutMobile from "./about-mobile.astro";
 ---
 <div class="hidden md:grid grid-cols-12 gap-8 container px-10 mx-auto max-w-6xl bg-transparent min-h-screen">
   <div class="col-span-8">
-    <div class="w-16 h-1 bg-red-600"></div>
+    <div class="w-16 h-1 bg-gradient-to-r from-red-600 to-red-400 rounded-full mb-2 animate-fade-in"></div>
 
     <div class="flex items-center justify-between mt-8">
       <h2 class="font-urbanist text-6xl font-bold tracking-tight">
@@ -48,8 +48,8 @@ import AboutMobile from "./about-mobile.astro";
   </div>
 
   <div class="col-span-4 flex flex-col items-center">
-    <div class="relative aspect-[3/4] overflow-hidden mb-8 w-full border-2 border-black bg-black pt-10">
-      <img src="/gambar.png" alt="Profile picture" class="object-cover w-full h-auto" />
+    <div class="relative aspect-[3/4] overflow-hidden mb-8 w-full border-2 border-red-500 bg-black pt-10 shadow-lg animate-fade-in">
+      <img src="/gambar.png" alt="Profile picture" class="object-cover w-full h-auto transition-all duration-300 hover:scale-105" loading="lazy" width="300" height="400" />
       <div class="absolute top-4 right-4 w-8 h-8 bg-red-600"></div>
     </div>
     <div class="grid grid-cols-3 gap-2 w-full">

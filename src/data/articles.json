@@ -779,6 +779,84 @@
         "url": "https://www.youtube.com/embed/qEfjAK4gVhU?si=EeTUwBo4e0hprMSR",
         "title": "Video preview Jaecoo J7"
       }
+    },
+    {
+      "id": 11,
+      "mainTitle": "TIGGO 8 CSH",
+      "titleImage": {
+        "url": "https://cherybogor.id/wp-content/uploads/2025/05/Chery-Tiggo-8-CSH-Chery-Bogor-ID.jpg",
+        "altText": "Tiggo 8 csh",
+        "subtitle": "THE BEST HYBRID BETTER THAN EV",
+        "description": "The best hybrid better than ev, with best efficency, comfort, and technology."
+      },
+      "exteriorImages": [
+        {
+          "url": "https://cherybogor.id/wp-content/uploads/2025/05/Chery-Tiggo-8-CSH-Chery-Bogor-ID.jpg",
+          "altText": "Tiggo 8 csh",
+          "subtitle": "Mengusung konsep “Tiger Shape Conquer”",
+          "description": "Agresif dan stylish"
+        },
+        {
+          "url": "https://imgcdn.oto.com/large/gallery/exterior/153/3243/chery-tiggo-8-csh-rear-angle-view-790434.jpg",
+          "altText": "Rear Bumper",
+          "subtitle": "Sporty and Eco Friendly",
+          "description": "Dapatkan kepercayaan diri yang sporty dan ramah lingkungan."
+        },
+        {
+          "url": "https://imgcdn.oto.com/large/gallery/exterior/153/3243/chery-tiggo-8-csh-front-angle-low-view-459960.jpg",
+          "altText": "Sunroof Elektrik",
+          "subtitle": "Berkendara dengan indah",
+          "description": "Enjoy the ultimate driving experience."
+        },
+        {
+          "url": "https://asset.kompas.com/crops/9xqzdMZkOeRBm5ikVrMnKikmgDo=/0x11:1135x768/750x500/data/photo/2025/05/13/6822e433bc5e5.jpg",
+          "altText": "Lampu belakang",
+          "subtitle": "Kenyamanan yang tiada tara",
+          "description": "Dijamin kenyamanan first class yang memberi kenyamanan serta keamanan yang terbaik. "
+        },
+        {
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2Fchasis_jaecoo_88a6e0a8dc.png&w=3840&q=75",
+          "altText": "ADAS",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Rangka yang kokoh Serta ADAS."
+        }
+      ],
+      "interiorImages": [
+        {
+          "url": "",
+          "altText": "Interior Modern",
+          "subtitle": "Kabin Luas dan Mewah",
+          "description": "Desain interior ergonomis dengan material premium."
+        },
+        {
+          "url": "",
+          "altText": "Infotainment",
+          "subtitle": "Layar Infotainment Canggih",
+          "description": "Dilengkapi layar sentuh besar dengan fitur konektivitas lengkap."
+        },
+        {
+          "url": "",
+          "altText": "Teknologi Cerdas",
+          "subtitle": "Sistem Operasi Berbasis AI",
+          "description": "Membantu pengendara dengan fitur otomatisasi pintar."
+        },
+        {
+          "url": "https://asset.kompas.com/crops/AU438mo_he177VktFMai0OkPVFs=/160x173:1440x1027/750x500/data/photo/2025/05/13/6822e433e8c27.jpg",
+          "altText": "Kenyamanan dan Garansi",
+          "subtitle": "Garansi Eksklusif",
+          "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
+        },
+        {
+          "url": "",
+          "altText": "Performa Kendaraan",
+          "subtitle": "Kinerja Optimal",
+          "description": "204 HP, akselerasi 0-100 km/jam dalam 7 detik, jarak tempuh 450 km."
+        }
+      ],
+      "youtubeEmbed": {
+        "url": "https://www.youtube.com/embed/4XSwblLLIoU?si=h4gEoNFbRG3djMSu",
+        "title": "Video preview Jaecoo J7"
+      }
     }
   ]
 }

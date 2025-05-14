@@ -32,7 +32,7 @@ const warrantyItems = [
   <div class="bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen overflow-x-hidden shadow-md shadow-red-600">
 
     <!-- Hero Section - Bigger and Centered -->
-    <section class="container mx-auto py-40 px-4">
+    <section class="container mx-auto py-40 px-4 animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
       <div class="flex flex-col items-center justify-center text-center mb-12">
       <h1 class="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400 mb-6">{car.mainTitle}</h1>
       <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-4">{car.titleImage.subtitle}</p>
@@ -40,12 +40,12 @@ const warrantyItems = [
       </div>
       <div class="relative max-w-5xl mx-auto">
       <div class="absolute -inset-6 bg-gradient-to-r from-red-600 to-red-800 rounded-lg opacity-30 blur-lg"></div>
-      <img src={car.titleImage.url} alt={car.titleImage.altText} class="relative rounded-lg w-full object-cover h-64 md:h-[500px] shadow-2xl transform hover:scale-[1.02] transition duration-500" />
+      <img src={car.titleImage.url} alt={car.titleImage.altText} class="relative rounded-lg w-full object-cover h-64 md:h-[500px] shadow-2xl transform hover:scale-[1.02] transition duration-500 hover:shadow-xl" loading="lazy" width="900" height="500" />
       </div>
     </section>
 
     <!-- Exterior Features - Zig-Zag Layout -->
-    <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black">
+    <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
       <div class="container mx-auto px-4">
       <h2 class="text-5xl font-bold text-center mb-16 relative">
         <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Drive E-Future</span>
@@ -72,7 +72,7 @@ const warrantyItems = [
     </section>
 
     <!-- Performance & Warranty - Gradient Background -->
-    <section class="py-16 bg-gradient-to-b from-black via-gray-800 to-black relative">
+    <section class="py-16 bg-gradient-to-b from-black via-gray-800 to-black relative animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
       <div class="absolute inset-0 opacity-20 bg-cover bg-center z-0" style={`background-image: url(${car.interiorImages[3].url}); background-blend-mode: overlay;`}></div>
       <div class="container mx-auto px-4 relative z-10">
         <div class="mb-20">
@@ -113,7 +113,7 @@ const warrantyItems = [
     </section>
 
 <!-- Interior Carousel -->
-<section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black" x-data="{ slides: [
+<section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')" x-data="{ slides: [
 { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/interior/leather-steering-wheel.webp', altText: 'Interior Modern', subtitle: 'Setir berlapis kulit premium', description: 'dengan fitur multi fungsi' },
 { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/gallery/interior/passenger-seat-power-adjustment.webp', altText: 'Infotainment', subtitle: 'Bangku penumpang Premium', description: 'dengan pengaturan 4 langkah otomatis.' },
 { url: 'https://situswebsite.com/wp-content/uploads/2024/02/chery-omoda-e5-teknologi-cerdas.webp', altText: 'Teknologi Cerdas', subtitle: 'Intelligent Voice Assistant', description: 'Membantu pengendara dengan fitur otomatisasi pintar.' },

@@ -33,4 +33,15 @@ import MobileSelector from "./mobile-selector.astro"
     <i class="relative text-xl  text-red-500 fa-solid fa-chevron-right"></i>
   </button>
 </div>
-<MobileSelector />
+
+<!-- Mobile Car Selector -->
+<div class="sm:hidden flex overflow-x-auto space-x-4 p-2 animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
+    <template x-for="(car, index) in cars">
+      <button 
+        @click="setCar(index)"
+        class="px-4 py-2 bg-gradient-to-r from-red-600 to-red-400 text-white rounded-lg whitespace-nowrap transition-transform duration-300 hover:scale-105 shadow-md"
+        :class="index === currentCarIndex ? 'bg-red-800' : ''"
+        x-text="car.model">
+      </button>
+    </template>
+</div>

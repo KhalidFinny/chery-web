@@ -26,7 +26,7 @@ const performanceSpecs = [
     <div class="bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen overflow-x-hidden shadow-md shadow-red-600">
   
       <!-- Hero Section - Bigger and Centered -->
-      <section class="container mx-auto py-40 px-4">
+      <section class="container mx-auto py-40 px-4 animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
         <div class="flex flex-col items-center justify-center text-center mb-12">
         <h1 class="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400 mb-6">{car.mainTitle}</h1>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-4">{car.titleImage.subtitle}</p>
@@ -39,7 +39,7 @@ const performanceSpecs = [
       </section>
   
       <!-- Exterior Features - Zig-Zag Layout -->
-    <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black">
+    <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
         <div class="container mx-auto px-4">
         <h2 class="text-5xl font-bold text-center mb-16 relative">
           <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Smart Energy Powerfull Journey</span>
@@ -66,7 +66,7 @@ const performanceSpecs = [
       </section>
   
       <!-- Performance & Warranty - Gradient Background -->
-      <section class="py-16 bg-gradient-to-b from-black via-gray-800 to-black relative">
+      <section class="py-16 bg-gradient-to-b from-black via-gray-800 to-black relative animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
         <div class="absolute inset-0 opacity-20 bg-cover bg-center z-0" style={`background-image: url(${car.interiorImages[3].url}); background-blend-mode: overlay;`}></div>
         <div class="container mx-auto px-4 relative z-10">
           <div class="mb-20">
@@ -91,13 +91,7 @@ const performanceSpecs = [
       </section>
   
   <!-- Interior Carousel -->
-  <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black" x-data="{ slides: [
-  { url: 'https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ7_Interior_61d351c598.png&w=3840&q=75', altText: 'Interior Modern', subtitle: 'Interior Modern', description: 'Dengan bahan kulit premium' },
-  { url: 'https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FVentilated_seat_85f66c55e4.png&w=1080&q=75', altText: 'Infotainment', subtitle: 'Tempat Duduk Berlapis Kulit', description: 'Dilengkapi dengan ventilasi' }, 
-  { url: 'https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FWireless_Charging_bcb0ce399b.png&w=1080&q=75', altText: 'Teknologi Cerdas', subtitle: 'Center Console', description: 'Dengan Wireless Charging' },
-   { url: 'https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FKaca_313f32e0d8.png&w=1080&q=75', altText: 'Teknologi Cerdas', subtitle: 'Windshield Heads Up Display', description: '' },
-    { url: 'https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FHeadunit_9a7d0395dc.png&w=1080&q=75', altText: 'Seats', subtitle: 'Layar 14.8 inci', description: 'dengan Apple CarPlay dan Android Auto.' },
-  ], currentIndex: 0, next() { this.currentIndex = (this.currentIndex + 1) % this.slides.length }, prev() { this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length }, init() { setInterval(() => this.next(), 5000) } }">
+  <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
   <div class="container mx-auto px-4">
     <h2 class="text-5xl font-bold text-center mb-12 relative">
       <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400 mb-10">Comfy Everywhere you Go</span>

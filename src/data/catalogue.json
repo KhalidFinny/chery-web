@@ -119,7 +119,19 @@
             "value": "<a href='/jaecooj7'>Learn More</a>"
           }
         }
-      }             
+      },
+      {
+        "model": "CHERY Tiggo 8 CSH",
+        "image": "/tiggo8csh.webp",
+        "detail": {
+          "Harga": {
+            "value": "IDR 600.000.000"
+          },
+          "Button": {
+            "value": "<a href='/tiggo8csh'>Learn More</a>"
+          }
+        }
+      }
     ]
   }
   

@@ -1,23 +1,29 @@
 ---
 // Astro Component for Car Showcase
 import { articles } from '../data/articles.json';
-const car = articles[3];
+const car = articles[10];
 import Main from "../layouts/main.astro";
 import Footer from "../shared/footer.astro";
 
 
 const exteriorFeatures = [
-  { img: car.exteriorImages[0], points: ["Lampu LED Otomatis", "Lampu dengan fitur Welcome Home"], imgRight: false },
-  { img: car.exteriorImages[1], points: ["First Class and Sporty Feel"], imgRight: true },
+  { img: car.exteriorImages[0], points: ["Lampu LED Otomatis", "Redesigned front bumper with functional air curtains"], imgRight: false },
+  { img: car.exteriorImages[1], points: ["Rear Parking Sensors", "Load Capacity Rail"], imgRight: true },
   { img: car.exteriorImages[4], points: ["Rear Cross Traffic Alert", "Lane Change Assist", "Emergency Lane Keeping", "Blind Spot Detection", "dan banyak lagi"], imgRight: false },
   { img: car.exteriorImages[2], points: ["Desain premium, Fungsionalitas tambahan" , "Two Tone Alloy Wheel"], imgRight: false },
-  { img: car.exteriorImages[3], points: ["Sleek design tail lights", "Sensor Parkir"], imgRight: false },
+  { img: car.exteriorImages[3], points: [], imgRight: false },
 ];
 
 const performanceSpecs = [
-  { icon: "fa-bolt", value: "251", label: "Tenaga Kuda", desc: "Mesin 2.0 TGDI", img: car.exteriorImages[0].url },
-{ icon: "fa-cogs", value: "390", label: "NM", desc: "Torsi yang mampu menarik bulan.", img: car.exteriorImages[3].url },
-{ icon: "fa-road", value: "186", label: "Km/h", desc: "Arriving on time and in style", img: car.exteriorImages[2].url },
+  { icon: "fa-bolt", value: "243", label: "Tenaga Kuda", desc: "Turbocharged 1.5L hybrid", img: car.exteriorImages[0].url },
+{ icon: "fa-cogs", value: "215", label: "NM", desc: "0-60 sekejap mata.", img: car.exteriorImages[3].url },
+{ icon: "fa-road", value: "76", label: "Km/l", desc: "Rasa berjalan dari sabang sampai merauke", img: car.exteriorImages[2].url },
+];
+
+const warrantyItems = [
+  { icon: "fa-shield-alt", title: "1 Tahun Gratis Asuransi", desc: "*Syarat dan ketentuan berlaku" },
+  { icon: "fa-car", title: "Garansi Kendaraan", desc: "selama 6 tahun atau 150.000 km *tergantung mana yang lebih dahulu" },
+  { icon: "fa-wrench", title: "Servis Gratis", desc: "selama 4 tahun atau 60.000 km *tergantung mana yang lebih dahulu" },
 ];
 ---
 <Main title={car.mainTitle} description={car.titleImage.subtitle}>
@@ -40,7 +46,7 @@ const performanceSpecs = [
 <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
   <div class="container mx-auto px-4">
   <h2 class="text-5xl font-bold text-center mb-16 relative">
-    <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Enjoy your First Class</span>
+    <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Enjoy The Best Hybrid</span>
   </h2>
   {exteriorFeatures.map((feature, index) => (
     <div class={`flex flex-col lg:flex-row items-center mb-20 gap-12 ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''}`}>
@@ -83,7 +89,24 @@ const performanceSpecs = [
               ))}
             </div>
           </div>
+          <div class="relative bg-cover bg-center h-full">
+            <h2 class="text-5xl font-bold text-center mb-12 relative">
+              <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Promo Eksklusif</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {warrantyItems.map(item => (
+                <div class="bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden relative group">
+                  <div class="absolute -inset-4 bg-gradient-to-r from-red-600 to-red-800 opacity-0 group-hover:opacity-20 blur-lg transition-opacity duration-300"></div>
+                  <div class="bg-red-500/20 p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                    <i class={`fas ${item.icon} text-red-500 text-2xl`}></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-center text-white mb-3">{item.title}</h3>
+                  <p class="text-gray-400 text-center">{item.desc}</p>
+                  <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-red-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                </div>
+              ))}
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -143,7 +166,7 @@ const performanceSpecs = [
   </section>
   
       <!-- Video Section -->
-      <section class="py-16 bg-gradient-to-b from-black to-gray-900">
+      <section class="py-16 bg-gradient-to-b from-black to-gray-900 animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
         <div class="container mx-auto px-4">
           <h2 class="text-5xl font-bold text-center mb-12 relative">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Preview Video</span>
