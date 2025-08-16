@@ -41,10 +41,10 @@
       }
     },
     {
-      "model": "TIGGO 8",
+      "model": "TIGGO 8 CSH",
       "tagline": "Power in Every Movement",
-      "image": "/T8.webp",
-      "background": "/T8bg.webp",
+      "image": "https://cheryhayyu.co.id/wp-content/uploads/2025/05/T8-CSH-Green-Aurora.png",
+      "background": "/sksksksk.png",
       "stats": {
         "acceleration": {
           "label": "0-100 kmh",
@@ -61,27 +61,7 @@
       }
     },
     {
-      "model": "TIGGO CROSS",
-      "tagline": "Cross Wonderful Life",
-      "image": "/Tiggo-Cross.webp",
-      "background": "/Tcbg.webp",
-      "stats": {
-        "acceleration": {
-          "label": "0-100 kmh",
-          "value": "9.7 s"
-        },
-        "topSpeed": {
-          "label": "Kecepatan Maksimal",
-          "value": "190 kmh"
-        },
-        "Tenaga Kuda": {
-          "label": "Tenaga Kuda",
-          "value": "115 hp"
-        }
-      }
-    },
-    {
-      "model": "J6",
+      "model": "CHERYJ6",
       "tagline": "The Future of Mobility",
       "image": "/J6.webp",
       "background": "/j6-2.webp",

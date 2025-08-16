@@ -112,7 +112,11 @@ const warrantyItems = [
       </section>
   
   <!-- Interior Carousel -->
-  <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
+  <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')" x-data="{ slides: [
+  { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8-csh/best-technology/12-loudspeakers-front-headrest-speakers.webp', altText: 'Interior Modern', subtitle: 'Interior Premium dan Fitur Futuristik', description: 'Kelas atas dan berteknologi canggih' },
+  { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8-csh/best-technology/high-definition-central-console-screen.webp', altText: 'Teknologi Cerdas', subtitle: 'Konsol Kontrol pusat dengan layar 15.6 inci', description: '2.5K high-definition' },
+   { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8-csh/best-technology/540-panoramic-camera.webp', altText: 'Teknologi Cerdas', subtitle: '540 degree HD Panoramic Camera', description: '' },
+  ], currentIndex: 0, next() { this.currentIndex = (this.currentIndex + 1) % this.slides.length }, prev() { this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length }, init() { setInterval(() => this.next(), 5000) } }">
   <div class="container mx-auto px-4">
     <h2 class="text-5xl font-bold text-center mb-12 relative">
       <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400 mb-10">Feel The First Class</span>

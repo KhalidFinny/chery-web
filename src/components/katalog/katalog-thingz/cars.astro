@@ -1,6 +1,6 @@
       <!-- Image Container - Left side on desktop, Top on mobile -->
       <div class="w-full md:w-1/2 md:pr-8 z-10 pointer-events-auto">
-        <div class="md:ml-20 ml-0 relative shadow-red-200 hover:shadow-lg transition-shadow duration-300 ease-in-out border-2 border-red-500 rounded-lg animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
+        <figure class="md:ml-20 ml-0 relative shadow-red-200 hover:shadow-lg transition-shadow duration-300 ease-in-out border-2 border-red-500 rounded-lg">
           <img
             :src="item.image"
             :alt="item.model"
@@ -9,8 +9,8 @@
             width="500"
             height="300"
           />
-          <div class="absolute -top-2 -left-2 w-4 h-4 bg-red-600 rounded-full"></div>
-        </div>
+          <figcaption class="absolute -top-2 -left-2 w-4 h-4 bg-red-600 rounded-full"></figcaption>
+        </figure>
       </div>
       <!-- Text container - Right side on desktop, Bottom on mobile -->
       <div class="w-full md:w-1/2 md:pl-8 pt-6 md:pt-0 flex flex-col space-y-4 md:space-y-6 z-10 pointer-events-auto text-center md:text-left">

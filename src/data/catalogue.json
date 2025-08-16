@@ -2,7 +2,7 @@
     "katalog": [
       {
         "model": "CHERY Omoda E5",
-        "image": "/omoda-e5-3.webp",
+        "image": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-e5/CHERY-E5-Highlight-Specs-Desktop.png",
         "detail": {
           "Harga": {
             "value": "IDR 435.500.000"
@@ -14,7 +14,7 @@
       },
       {
         "model": "CHERY Omoda 5 GT",
-        "image": "/Omoda-5-GT.webp",
+        "image": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5-gt/highlight-specs-image-desktop.webp",
         "detail": {
           "Harga": {
             "value": "IDR 468.800.000"
@@ -25,20 +25,8 @@
         }
       },
       {
-        "model": "CHERY Omoda 5",
-        "image": "/Omoda-5.webp",
-        "detail": {
-          "Harga": {
-            "value": "IDR 356.800.000"
-          },
-          "Button": {
-            "value": "<a href='/omoda5'></a>"
-          }
-        }
-      },
-      {
         "model": "CHERY Tiggo 8ProMax",
-        "image": "/T8-Promax.webp",
+        "image": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8-pro-max/highlight-specs-image.png",
         "detail": {
           "Harga": {
             "value": "IDR 588.000.000"
@@ -49,20 +37,8 @@
         }
       },
       {
-        "model": "CHERY Tiggo 7Pro",
-        "image": "/Tiggo-7-Pro.webp",
-        "detail": {
-          "Harga": {
-            "value": "IDR 416.000.000"
-          },
-          "Button": {
-            "value": "<a href='/tiggo7p'>Learn More</a>"
-          }
-        }
-      },
-      {
         "model": "CHERY Tiggo 8",
-        "image": "/T8.webp",
+        "image": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8/hero-banner-desktop.png",
         "detail": {
           "Harga": {
             "value": "IDR 367.000.000"
@@ -74,7 +50,7 @@
       },
       {
         "model": "CHERY Tiggo Cross",
-        "image": "/Tiggo-Cross.webp",
+        "image": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-cross/highlighted-specs-image-deskstop.webp",
         "detail": {
           "Harga": {
             "value": "IDR 269.500.000"
@@ -85,23 +61,11 @@
         }
       },
       {
-        "model": "CHERY Tiggo 5X",
-        "image": "/Chery-Tiggo-5X.webp",
-        "detail": {
-          "Harga": {
-            "value": "IDR 279.000.000"
-          },
-          "Button": {
-            "value": "<a href='/tiggo5x'>Learn More</a>"
-          }
-        }
-      },
-      {
         "model": "CHERY J6",
-        "image": "/J6.webp",
+        "image": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/j6/918x597-Highlight-Specs-Desktop.png",
         "detail": {
           "Harga": {
-            "value": "IDR515.500.000"
+            "value": "IDR 515.500.000"
           },
           "Button": {
             "value": "<a href='/j6'>Learn More</a>"
@@ -110,7 +74,7 @@
       },
       {
         "model": "CHERY Jaecoo J7",
-        "image": "/jaecoo-7-2024.webp",
+        "image": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ7_shs_copy_6a45b76477.webp&w=3840&q=75",
         "detail": {
           "Harga": {
             "value": "IDR 509.000.000"
@@ -122,13 +86,61 @@
       },
       {
         "model": "CHERY Tiggo 8 CSH",
-        "image": "/tiggo8csh.webp",
+        "image": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-8-csh/highlight-specs-image-desktop.webp",
         "detail": {
           "Harga": {
-            "value": "IDR 600.000.000"
+            "value": "IDR 529.900.000"
           },
           "Button": {
             "value": "<a href='/tiggo8csh'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "CHERY Tiggo 9 CSH",
+        "image": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-9-csh/Desktop-Highlight-Specs.jpg",
+        "detail": {
+          "Harga": {
+            "value": "IDR 729.900.000"
+          },
+          "Button": {
+            "value": "<a href='/tiggo9'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "CHERY C5",
+        "image": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/C5/Highlight%20Specs.png",
+        "detail": {
+          "Harga": {
+            "value": "IDR 329.900.000"
+          },
+          "Button": {
+            "value": "<a href='/omoda5'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "JAECOO J8 ARDIS",
+        "image": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_Right_Side_Head_Up_edit_image_67b94a67d4.jpg&w=3840&q=75",
+        "detail": {
+          "Harga": {
+            "value": "IDR 700.400.000"
+          },
+          "Button": {
+            "value": "<a href='/jaecooj8'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "JAECOO J5",
+        "image": "https://cdn1-production-images-kly.akamaized.net/05qy5p6Kp5snwllAXJARWj1wBjk=/1280x720/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5101688/original/007639400_1737381841-This-week-in-motoring-18-800x480.jpg",
+        "detail": {
+          "Harga": {
+            "value": "IDR 350.000.000"
+          },
+          "Button": {
+            "value": "<a href='/jaecooj5'>Learn More</a>"
           }
         }
       }
