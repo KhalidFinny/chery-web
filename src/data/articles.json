@@ -80,40 +80,40 @@
     },
     {
       "id": 2,
-      "mainTitle": "CHERY OMODA 5",
+      "mainTitle": "CHERY OMODA C5",
       "titleImage": {
-        "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/hero-banner-desktop.webp",
-        "altText": "Chery Omoda 5",
+        "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/C5/special-offer-desktop.png",
+        "altText": "Chery Omoda C5",
         "subtitle": "EMBRACE YOUR NEW JOURNEY",
         "description": "Bersiaplah untuk mengalami perpaduan konsep estetika modern dengan performa maksimum di setiap perjalanan."
       },
       "exteriorImages": [
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/highlight-specs-image-desktop.webp",
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/C5/Highlight%20Specs.png",
           "altText": "Chery Omoda E5",
           "subtitle": "Desain futuristik dan sporty dengan tema Cross F Future",
           "description": "Menggabungkan konsep estetika modern dengan performa maksimal."
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/gallery/exterior/diamond-front-grill.webp",
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/c5/exterior/x-style-front-face.png",
           "altText": "Grill depan",
           "subtitle": "Grill Depan Star Diamond",
           "description": "Grill depan yang memberikan esensi keindahan."
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/gallery/exterior/electric-sunroof-link.webp",
-          "altText": "Sunroof Elektrik",
-          "subtitle": "Sunroof Elektrik",
-          "description": "Terhubung melalui intelligent voice assistant."
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/c5/exterior/electric-power-tailgate.png",
+          "altText": "Electric Power Tailgate",
+          "subtitle": "Electric Power Tailgate",
+          "description": "Nikmati kemudahan dengan pintu bagasi elektrik."
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/gallery/exterior/led-tail-light.webp",
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/c5/exterior/full-led-rear-lamp-with-sequential-turning-light.png",
           "altText": "Lampu belakang",
           "subtitle": "lampu belakang LED",
           "description": "Lengkap dengan sequential turn lamp."
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/safety/adas.webp",
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/c5/safety/6-airbags.png",
           "altText": "ADAS",
           "subtitle": "Sistem Keamanan Canggih",
           "description": "Dilengkapi fitur ADAS dan pengamanan terbaik."
@@ -139,7 +139,7 @@
           "description": "Membantu pengendara dengan fitur otomatisasi pintar."
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/special-offer-image-desktop.webp",
+          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/C5/special-offer-desktop.png",
           "altText": "Kenyamanan dan Garansi",
           "subtitle": "Garansi Eksklusif",
           "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
@@ -152,8 +152,8 @@
         }
       ],
       "youtubeEmbed": {
-        "url": "https://www.youtube.com/embed/oGGIMmijc28?si=qNq1qY-UzxCCdBmx",
-        "title": "Video preview Chery Omoda 5"
+        "url": "https://www.youtube.com/embed/uxJkhM5ZvsY?si=7q5Y1S66E7-EQG4T",
+        "title": "Video preview Chery Omoda C5"
       }
     },
     {
@@ -392,40 +392,40 @@
     },
     {
       "id": 6,
-      "mainTitle": "CHERY TIGGO 7 PRO",
+      "mainTitle": "JAECOO J8 ARDIS",
       "titleImage": {
-        "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/hero-banner-mobile.webp",
-        "altText": "cherry tiggo 7 pro",
-        "subtitle": "EMBRACE A NEW LEVEL OF REFINEMENT",
-        "description": "Setiap detail dibuat dengan teliti untuk memancarkan estetika kontemporer yang sporty, memancarkan aura yang luar biasa."
+        "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_Right_Side_Head_Up_edit_image_67b94a67d4.jpg&w=3840&q=75",
+        "altText": "jaecoo j8 ardis",
+        "subtitle": "First class of off-road",
+        "description": "J8 ARDIS adalah SUV off-road yang memiliki desain yang sporty dan modern, dengan performa yang luar biasa."
       },
       "exteriorImages": [
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/highlight-specs-image-desktop.webp",
-          "altText": "Tiggo series",
-          "subtitle": "Estetika kontemporer yang sporty,",
-          "description": "Desain modern dan sporty."
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_AWD_Left_Front_30_Exterior_c16d169a84.png&w=3840&q=75",
+          "altText": "J8 ARDIS",
+          "subtitle": "Best Choice for Off-Road",
+          "description": "J8 ARDIS adalah SUV off-road first class."
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/gallery/exterior/fashion-light-lamp.webp",
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_AWD_Front_Grille_a6d23f1b35.png&w=1080&q=75",
           "altText": "Grill depan",
-          "subtitle": "Lampu dengan Logo Tiggo",
+          "subtitle": "Waterfall grill design",
           "description": "Memberikan keunikan pada pengalaman."
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/gallery/exterior/exterior-door-mirror-turn-signal.webp",
-          "altText": "Sunroof Elektrik",
-          "subtitle": "Kaca Spion Otomatis",
-          "description": "Praktis dengan auto retract system"
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_AWD_Handle_0145b621cf.png&w=1080&q=75",
+          "altText": "Hidden Door Handles",
+          "subtitle": "Hidden Door Handle",
+          "description": "Praktis dan stylish"
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/gallery/exterior/long-led-tail-lamp.webp",
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_AWD_Waistline_2293e72a2b.png&w=1080&q=75",
           "altText": "Lampu belakang",
-          "subtitle": "Desain Belakang yang Sporty",
+          "subtitle": "Strong through the waistline",
           "description": "Sporty dan Premium menjadi satu"
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/safety/adas.webp",
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_up_view_rotate_73299b8661.webp&w=3840&q=75",
           "altText": "ADAS",
           "subtitle": "Sistem Keamanan Canggih",
           "description": "Dilengkapi fitur ADAS dan pengamanan terbaik."
@@ -451,7 +451,7 @@
           "description": "Membantu pengendara dengan fitur otomatisasi pintar."
         },
         {
-          "url": "https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/special-offer-image-desktop.webp",
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_AWD_Left_Front_30_Exterior_c16d169a84.png&w=3840&q=75",
           "altText": "Kenyamanan dan Garansi",
           "subtitle": "Garansi Eksklusif",
           "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
@@ -464,8 +464,8 @@
         }
       ],
       "youtubeEmbed": {
-        "url": "https://www.youtube.com/embed/nDxTjXvTDDM?si=4S1to32KgLv5D2Biw",
-        "title": "Video preview Tiggo 7 Pro"
+        "url": "https://www.youtube.com/embed/DFyOT1wOQ2Y?si=Y6TIwdCntVxl_JQS",
+        "title": "Video preview J8 ARDIS"
       }
     },
     {
@@ -856,6 +856,84 @@
       "youtubeEmbed": {
         "url": "https://www.youtube.com/embed/4XSwblLLIoU?si=h4gEoNFbRG3djMSu",
         "title": "Video preview Jaecoo J7"
+      }
+    },
+    {
+      "id": 12,
+      "mainTitle": "JAECOO J8 ARDIS",
+      "titleImage": {
+        "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_SHS_ARDIS_Right_Side_Head_Up_fb32be5393.png&w=3840&q=75",
+        "altText": "jaecoo j8 ardis",
+        "subtitle": "First class of off-road",
+        "description": "J8 ARDIS adalah SUV off-road yang memiliki desain yang sporty dan modern, dengan performa yang luar biasa."
+      },
+      "exteriorImages": [
+        {
+          "url": "https://cms.jaecoo.id/uploads/JJ_8_SHS_ARDIS_green_7c4c38e2c6.webp",
+          "altText": "J8 ARDIS",
+          "subtitle": "Best Choice for Off-Road",
+          "description": "J8 ARDIS adalah SUV off-road first class."
+        },
+        {
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_SHS_ARDIS_Front_Grille_d1bdf60b58.png&w=1080&q=75",
+          "altText": "Grill depan",
+          "subtitle": "Waterfall grill design",
+          "description": "Memberikan keunikan pada pengalaman."
+        },
+        {
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_Handle_e00f41e484.jpg&w=1080&q=75",
+          "altText": "Hidden Door Handles",
+          "subtitle": "Hidden Door Handle",
+          "description": "Praktis dan stylish"
+        },
+        {
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FWaistline_f9c962404f.webp&w=1080&q=75",
+          "altText": "Lampu belakang",
+          "subtitle": "Strong through the waistline",
+          "description": "Sporty dan Premium menjadi satu"
+        },
+        {
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_SHS_up_view_f2707a9735.jpg&w=3840&q=75",
+          "altText": "ADAS",
+          "subtitle": "Sistem Keamanan Canggih",
+          "description": "Dilengkapi fitur ADAS dan pengamanan terbaik."
+        }
+      ],
+      "interiorImages": [
+        {
+          "url": "",
+          "altText": "Interior Modern",
+          "subtitle": "Kabin Luas dan Mewah",
+          "description": "Desain interior ergonomis dengan material premium."
+        },
+        {
+          "url": "",
+          "altText": "Infotainment",
+          "subtitle": "Layar Infotainment Canggih",
+          "description": "Dilengkapi layar sentuh besar dengan fitur konektivitas lengkap."
+        },
+        {
+          "url": "",
+          "altText": "Teknologi Cerdas",
+          "subtitle": "Sistem Operasi Berbasis AI",
+          "description": "Membantu pengendara dengan fitur otomatisasi pintar."
+        },
+        {
+          "url": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_SHS_ARDIS_Left_Front_30_e8629fb069.webp&w=3840&q=75",
+          "altText": "Kenyamanan dan Garansi",
+          "subtitle": "Garansi Eksklusif",
+          "description": "Seumur hidup untuk motor & baterai, serta 1 tahun asuransi."
+        },
+        {
+          "url": "",
+          "altText": "Performa Kendaraan",
+          "subtitle": "Kinerja Optimal",
+          "description": "204 HP, akselerasi 0-100 km/jam dalam 7 detik, jarak tempuh 450 km."
+        }
+      ],
+      "youtubeEmbed": {
+        "url": "https://www.youtube.com/embed/EQIueitClvY?si=Tzhw9mo7_h_V4DI6",
+        "title": "Video preview J8 SHS ARDIS"
       }
     }
   ]

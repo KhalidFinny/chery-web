@@ -77,7 +77,7 @@
         "image": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ7_shs_copy_6a45b76477.webp&w=3840&q=75",
         "detail": {
           "Harga": {
-            "value": "IDR 509.000.000"
+            "value": "IDR 510.400.000"
           },
           "Button": {
             "value": "<a href='/jaecooj7'>Learn More</a>"
@@ -128,7 +128,7 @@
             "value": "IDR 700.400.000"
           },
           "Button": {
-            "value": "<a href='/jaecooj8'>Learn More</a>"
+            "value": "<a href='/j8ardis'>Learn More</a>"
           }
         }
       },
@@ -141,6 +141,18 @@
           },
           "Button": {
             "value": "<a href='/jaecooj5'>Learn More</a>"
+          }
+        }
+      },
+      {
+        "model": "JAECOO J8 SHS ARDIS",
+        "image": "https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_SHS_ARDIS_Right_Side_Head_Up_fb32be5393.png&w=3840&q=75",
+        "detail": {
+          "Harga": {
+            "value": "IDR 850.000.000"
+          },
+          "Button": {
+            "value": "<a href='/j8shsardis'>Learn More</a>"
           }
         }
       }

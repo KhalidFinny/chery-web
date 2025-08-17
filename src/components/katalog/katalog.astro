@@ -15,8 +15,9 @@ import Nav from './katalog-thingz/nav.astro';
       </h2>
     </div>
   </div>
+  
   <div
-  x-data=`{
+  x-data={`{
     katalog: ${JSON.stringify(katalog.katalog)},
     currentIndex: 0,
     showDetails: false,
@@ -36,30 +37,27 @@ import Nav from './katalog-thingz/nav.astro';
       let diffX = this.touchEndX - this.touchStartX;
       let diffY = this.touchEndY - this.touchStartY;
 
-      if (Math.abs(diffX) > Math.abs(diffY)) { // Horizontal swipe
-        if (diffX < -50) this.next(); // Swipe left
-        if (diffX > 50) this.prev();  // Swipe right
+      if (Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX < -50) this.next();
+        if (diffX > 50) this.prev();
       } 
     }
-  }`
+  }`}
   @touchstart="touchStartX = $event.changedTouches[0].screenX; touchStartY = $event.changedTouches[0].screenY"
   @touchend="touchEndX = $event.changedTouches[0].screenX; touchEndY = $event.changedTouches[0].screenY; handleSwipe()"
-  class="relative bg-white rounded-2xl shadow-red-200 shadow-md md:min-w-[500px] min-w-full min-h-[500px] overflow-hidden"
->
+  class="relative bg-white rounded-2xl shadow-red-200 shadow-md md:min-w-[500px] min-w-full min-h-[700px] md:min-h-[600px] overflow-hidden"
+  >
 
-  <template x-for="(item, index) in katalog" :key="index">
-    <div
-      x-show="currentIndex === index"
-      x-cloak
-      x-transition:enter="transition-transform duration-300"
-      x-transition:enter-start="translate-x-full"
-      x-transition:enter-end="translate-x-0"
-      x-transition:leave="transition-transform duration-300"
-      x-transition:leave-start="translate-x-0"
-      x-transition:leave-end="-translate-x-full"
-      class="flex flex-col md:flex-row items-center justify-between absolute inset-0 px-4 py-20 md:p-8"
-    >
-      <Cars/>
-    </div>
-  </template>
-  <Nav/>
+    <template x-for="(item, index) in katalog" :key="index">
+      <div
+        x-show="currentIndex === index"
+        x-cloak
+        class="flex flex-col md:flex-row items-center justify-between absolute inset-0 px-4 py-8 md:p-8"
+      >
+        <Cars/>
+      </div>
+    </template>
+    
+    <Nav/>
+  </div>
+</section>

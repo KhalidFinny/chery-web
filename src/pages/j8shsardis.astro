@@ -1,32 +1,25 @@
 ---
 // Astro Component for Car Showcase
 import { articles } from '../data/articles.json';
-const car = articles[5];
+const car = articles[11];
 import Main from "../layouts/main.astro";
 import Footer from "../shared/footer.astro";
 
 
 const exteriorFeatures = [
-  { img: car.exteriorImages[0], points: ["Lampu LED", "DRL LED"], imgRight: false },
-  { img: car.exteriorImages[1], points: ["Fitur Asik dan Menarik"], imgRight: true },
+  { img: car.exteriorImages[0], points: ["Penampilan tangguh"], imgRight: false },
+  { img: car.exteriorImages[1], points: ["Grill yang memberikan kesan kuat"], imgRight: true },
   { img: car.exteriorImages[4], points: ["Rear Cross Traffic Alert", "Lane Change Assist", "Emergency Lane Keeping", "Blind Spot Detection", "dan banyak lagi"], imgRight: false },
-  { img: car.exteriorImages[2], points: ["Lampu sein LED", "Retract automatis"], imgRight: false },
-  { img: car.exteriorImages[3], points: ["Bagasi elektrik" , "Desain lampu belakang yang sporty"], imgRight: false },
+  { img: car.exteriorImages[2], points: ["Memberikan desain yang stylish dan rapi"], imgRight: false },
+  { img: car.exteriorImages[3], points: ["Side profile yang gagah" , "Desain lampu belakang yang sporty"], imgRight: false },
 ];
 
 const performanceSpecs = [
-  { icon: "fa-bolt", value: "155", label: "Tenaga Kuda", desc: "Mesin 1.5 TCI", img: car.exteriorImages[0].url },
-{ icon: "fa-cogs", value: "230", label: "NM", desc: "Tarikan ringan dan kuat.", img: car.exteriorImages[3].url },
-{ icon: "fa-road", value: "215", label: "Km/h", desc: "Arriving on time and in style", img: car.exteriorImages[2].url },
+  { icon: "fa-bolt", value: "395", label: "Tenaga Kuda", desc: "Mesin 1.5 TCI", img: car.exteriorImages[0].url },
+{ icon: "fa-cogs", value: "650", label: "NM", desc: "Tarikan ringan dan kuat.", img: car.exteriorImages[3].url },
+{ icon: "fa-road", value: "5.4 Detik", label: "0-100", desc: "Arriving on time and in style", img: car.exteriorImages[2].url },
 ];
 
-const warrantyItems = [
-  { icon: "fa-road", title: "Gratis 1 Tahun Roadside Assistance", desc: "*dengan opsi untuk diperpanjang" },
-  { icon: "fa-engine-warning", title: "Garansi Mesin", desc: "Hingga 1.000.000Km  atau 10 Tahun *Tergantung mana yang tercapai dulu " },
-  { icon: "fa-car", title: "Garansi 6 Tahun", desc: "Hingga 150.000Km  atau 6 Tahun *Tergantung mana yang tercapai dulu " },
-  { icon: "fa-wrench", title: "Gratis Suku Cadang", desc: "Hingga 60.000Km  atau 4 Tahun *Tergantung mana yang tercapai dulu " },
-  { icon: "fa-shield-alt", title: "Gratis Service", desc: "Hingga 60.000Km  atau 4 Tahun *Tergantung mana yang tercapai dulu " },
-];
 ---
 <Main title={car.mainTitle} description={car.titleImage.subtitle}>
     <div class="bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen overflow-x-hidden shadow-md shadow-red-600">
@@ -48,7 +41,7 @@ const warrantyItems = [
     <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
         <div class="container mx-auto px-4">
         <h2 class="text-5xl font-bold text-center mb-16 relative">
-          <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Build for Elite</span>
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">First Class Off-Road</span>
         </h2>
         {exteriorFeatures.map((feature, index) => (
           <div class={`flex flex-col lg:flex-row items-center mb-20 gap-12 ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''}`}>
@@ -91,34 +84,14 @@ const warrantyItems = [
               ))}
             </div>
           </div>
-          <div class="relative bg-cover bg-center h-full">
-            <h2 class="text-5xl font-bold text-center mb-12 relative">
-              <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Promo Eksklusif</span>
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {warrantyItems.map(item => (
-                <div class="bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden relative group">
-                  <div class="absolute -inset-4 bg-gradient-to-r from-red-600 to-red-800 opacity-0 group-hover:opacity-20 blur-lg transition-opacity duration-300"></div>
-                  <div class="bg-red-500/20 p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
-                    <i class={`fas ${item.icon} text-red-500 text-2xl`}></i>
-                  </div>
-                  <h3 class="text-xl font-bold text-center text-white mb-3">{item.title}</h3>
-                  <p class="text-gray-400 text-center">{item.desc}</p>
-                  <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-red-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
   
   <!-- Interior Carousel -->
   <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black" x-data="{ slides: [
-  { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/gallery/interior/seat-electric-adjustment.webp', altText: 'Interior Modern', subtitle: 'Pengaturan Bangku Elektrik', description: 'Kelas atas dan berteknologi canggih' },
-  { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/gallery/interior/inc-central-control.webp', altText: 'Infotainment', subtitle: 'Kontrol Pusat', description: 'dengan tampilan HD' },
-  { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/gallery/interior/dynamic-tech-interior.webp', altText: 'Teknologi Cerdas', subtitle: 'Teknologi Interior Dinamis', description: '' },
-   { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/gallery/interior/electric-panoramic-sunroof.webp', altText: 'Teknologi Cerdas', subtitle: 'Panoramic Sunroof', description: '' },
-    { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/tiggo/product-types/tiggo-7-pro/gallery/interior/7-inch-lcd-master.webp', altText: 'Seats', subtitle: 'Master Cluster', description: 'dengan Layar LED 7 inci' },
+  { url: 'https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_Black_Interior_Soft_Comfortable_Copilot_aec79e2dfc.webp&w=1080&q=75', altText: 'Interior Modern', subtitle: 'Zero Gravity Seat', description: 'Kelas atas dan berteknologi canggih' },
+  { url: 'https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_Black_7f553a48a8.webp&w=1080&q=75', altText: 'Infotainment', subtitle: 'Crystal Drive Mode Selector', description: '' },
+  { url: 'https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_Black_Copilot_View_Man_e0314903d5.webp&w=1080&q=75', altText: 'Headrest Speaker', subtitle: 'Teknologi Interior Dinamis', description: ' premium 14-speaker Sony sound system' },
   ], currentIndex: 0, next() { this.currentIndex = (this.currentIndex + 1) % this.slides.length }, prev() { this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length }, init() { setInterval(() => this.next(), 5000) } }">
   <div class="container mx-auto px-4">
     <h2 class="text-5xl font-bold text-center mb-12 relative">

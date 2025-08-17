@@ -1,31 +1,25 @@
 ---
 // Astro Component for Car Showcase
 import { articles } from '../data/articles.json';
-const car = articles[1];
+const car = articles[5];
 import Main from "../layouts/main.astro";
 import Footer from "../shared/footer.astro";
 
 
 const exteriorFeatures = [
-  { img: car.exteriorImages[0], points: ["Seamless Horizon DRL", "Pengatur kaca spion elektrik dengan fitur auto folding"], imgRight: false },
-  { img: car.exteriorImages[1], points: ["Memberi kesan fun and sporty", "Lampu LED Headlamp dengan fitur auto turn on"], imgRight: true },
-  { img: car.exteriorImages[4], points: ["6 Airbags", "Lane Change Assist", "Emergency Lane Keeping", "Blind Spot Detection", "dan banyak lagi"], imgRight: false },
-  { img: car.exteriorImages[2], points: ["Kemudahan dalam mengakses bagasi"], imgRight: false },
-  { img: car.exteriorImages[3], points: ["Desain lampu belakang yang sporty"], imgRight: false },
+  { img: car.exteriorImages[0], points: ["Penampilan tangguh"], imgRight: false },
+  { img: car.exteriorImages[1], points: ["Grill yang memberikan kesan kuat"], imgRight: true },
+  { img: car.exteriorImages[4], points: ["Rear Cross Traffic Alert", "Lane Change Assist", "Emergency Lane Keeping", "Blind Spot Detection", "dan banyak lagi"], imgRight: false },
+  { img: car.exteriorImages[2], points: ["Memberikan desain yang stylish dan rapi"], imgRight: false },
+  { img: car.exteriorImages[3], points: ["Side profile yang gagah" , "Desain lampu belakang yang sporty"], imgRight: false },
 ];
 
 const performanceSpecs = [
-  { icon: "fa-bolt", value: "145", label: "Tenaga Kuda", desc: "Mesin 1.5 TCI", img: car.exteriorImages[0].url },
-{ icon: "fa-cogs", value: "230", label: "NM", desc: "Torsi yang terbaik", img: car.exteriorImages[3].url },
-{ icon: "fa-road", value: "190", label: "Km/h", desc: "A-B dalam waktu singkat", img: car.exteriorImages[2].url },
+  { icon: "fa-bolt", value: "248", label: "Tenaga Kuda", desc: "Mesin 1.5 TCI", img: car.exteriorImages[0].url },
+{ icon: "fa-cogs", value: "385", label: "NM", desc: "Tarikan ringan dan kuat.", img: car.exteriorImages[3].url },
+{ icon: "fa-road", value: "205", label: "Km/h", desc: "Arriving on time and in style", img: car.exteriorImages[2].url },
 ];
 
-const warrantyItems = [
-  { icon: "fa-shield-alt", title: "Gratis Servis", desc: "Hingga 60.000Km  atau 4 Tahun *Tergantung mana yang tercapai dulu " },
-  { icon: "fa-engine", title: "Garansi Mesin", desc: "Hingga 1.000.000Km  atau 10 Tahun *Tergantung mana yang tercapai dulu " },
-  { icon: "fa-car", title: "Garansi Kendaraan", desc: "Hingga 150.000Km  atau 6 Tahun *Tergantung mana yang tercapai dulu " },
-  { icon: "fa-wrench", title: "Gratis Suku Cadang", desc: "Hingga 60.000Km  atau 4 Tahun *Tergantung mana yang tercapai dulu " },
-];
 ---
 <Main title={car.mainTitle} description={car.titleImage.subtitle}>
     <div class="bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen overflow-x-hidden shadow-md shadow-red-600">
@@ -42,32 +36,33 @@ const warrantyItems = [
         <img src={car.titleImage.url} alt={car.titleImage.altText} class="relative rounded-lg w-full object-cover h-64 md:h-[500px] shadow-2xl transform hover:scale-[1.02] transition duration-500 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-red-600" loading="lazy" width="900" height="500" tabindex="0" />
         </div>
       </section>
-<!-- Exterior Features - Zig-Zag Layout -->
-<section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
-  <div class="container mx-auto px-4">
-  <h2 class="text-5xl font-bold text-center mb-16 relative">
-    <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Cross F Future</span>
-  </h2>
-  {exteriorFeatures.map((feature, index) => (
-    <div class={`flex flex-col lg:flex-row items-center mb-20 gap-12 ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''}`}>
-    <div class="lg:w-1/2 relative order-1 lg:order-none">
-      <div class="absolute -inset-4 bg-gradient-to-r from-red-600 to-red-800 rounded-lg opacity-20 blur-lg"></div>
-      <img src={feature.img.url} alt={feature.img.altText} class="relative rounded-lg w-full h-80 object-cover shadow-xl transform transition duration-500 hover:scale-105 mx-auto" loading="lazy" width="800" height="400" />
-    </div>
-    <div class="lg:w-1/2 space-y-5 order-2 lg:order-none">
-      <h3 class="text-2xl font-bold text-red-500">{feature.img.subtitle}</h3>
-      <p class="text-gray-300 text-lg max-w-lg">{feature.img.description}</p>
-      {feature.points.map(point => (
-      <div class="flex items-center gap-3 text-gray-400">
-        <i class="fas fa-check text-red-500"></i>
-        <span class="text-lg">{point}</span>
-      </div>
-      ))}
-    </div>
-    </div>
-  ))}
-  </div>
-</section>
+  
+      <!-- Exterior Features - Zig-Zag Layout -->
+    <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
+        <div class="container mx-auto px-4">
+        <h2 class="text-5xl font-bold text-center mb-16 relative">
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">First Class Off-Road</span>
+        </h2>
+        {exteriorFeatures.map((feature, index) => (
+          <div class={`flex flex-col lg:flex-row items-center mb-20 gap-12 ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''}`}>
+          <div class="lg:w-1/2 relative order-1 lg:order-none">
+            <div class="absolute -inset-4 bg-gradient-to-r from-red-600 to-red-800 rounded-lg opacity-20 blur-lg"></div>
+            <img src={feature.img.url} alt={feature.img.altText} class="relative rounded-lg w-full h-80 object-cover shadow-xl transform transition duration-500 hover:scale-105 mx-auto" loading="lazy" />
+          </div>
+          <div class="lg:w-1/2 space-y-5 order-2 lg:order-none">
+            <h3 class="text-2xl font-bold text-red-500">{feature.img.subtitle}</h3>
+            <p class="text-gray-300 text-lg max-w-lg">{feature.img.description}</p>
+            {feature.points.map(point => (
+            <div class="flex items-center gap-3 text-gray-400">
+              <i class="fas fa-check text-red-500"></i>
+              <span class="text-lg">{point}</span>
+            </div>
+            ))}
+          </div>
+          </div>
+        ))}
+        </div>
+      </section>
   
       <!-- Performance & Warranty - Gradient Background -->
       <section class="py-16 bg-gradient-to-b from-black via-gray-800 to-black relative animate-fade-in" x-intersect="$el.classList.add('animate-slide-up')">
@@ -89,44 +84,24 @@ const warrantyItems = [
               ))}
             </div>
           </div>
-          <div class="relative bg-cover bg-center h-full">
-            <h2 class="text-5xl font-bold text-center mb-12 relative">
-              <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400">Promo Eksklusif</span>
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {warrantyItems.map(item => (
-                <div class="bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden relative group">
-                  <div class="absolute -inset-4 bg-gradient-to-r from-red-600 to-red-800 opacity-0 group-hover:opacity-20 blur-lg transition-opacity duration-300"></div>
-                  <div class="bg-red-500/20 p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
-                    <i class={`fas ${item.icon} text-red-500 text-2xl`}></i>
-                  </div>
-                  <h3 class="text-xl font-bold text-center text-white mb-3">{item.title}</h3>
-                  <p class="text-gray-400 text-center">{item.desc}</p>
-                  <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-red-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
   
   <!-- Interior Carousel -->
   <section class="py-16 bg-gradient-to-b from-black via-gray-900 to-black" x-data="{ slides: [
-  { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/c5/interior/futuristic-sunvisor-with-vanity-mirror-light.png', altText: 'Interior Modern', subtitle: 'Sunvisor futuristik', description: 'Dengan cermin rias dan lampu' },
-  { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/c5/interior/ultra-efficient-air-conditioning-filter.png', altText: 'Infotainment', subtitle: 'PM0.3', description: 'Filter pendingin udara sangat efisien.' },
-  { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/gallery/interior/front-armrest.webp', altText: 'Teknologi Cerdas', subtitle: 'Sandaran Tangan yang Nyaman', description: 'Dilengkapi dengan kotak pendingin.' },
-   { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/c5/interior/apple-car-play-android-auto-sync.png', altText: 'Teknologi Cerdas', subtitle: 'Mendukung Koneksi Android Auto dan Apple Car Play', description: '' },
-    { url: 'https://cheryidn.sgp1.cdn.digitaloceanspaces.com/prod/product-models/omoda/product-types/omoda-5/gallery/interior/front-acoustic-glass.webp', altText: 'Seats', subtitle: 'Rasakan Kenyamanan Premium', description: '' }
+  { url: 'https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_Black_Interior_Soft_Comfortable_Copilot_aec79e2dfc.webp&w=1080&q=75', altText: 'Interior Modern', subtitle: 'Zero Gravity Seat', description: 'Kelas atas dan berteknologi canggih' },
+  { url: 'https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_Black_7f553a48a8.webp&w=1080&q=75', altText: 'Infotainment', subtitle: 'Crystal Drive Mode Selector', description: '' },
+  { url: 'https://jaecoo.id/_next/image?url=https%3A%2F%2Fcms.jaecoo.id%2Fuploads%2FJ8_Black_Copilot_View_Man_e0314903d5.webp&w=1080&q=75', altText: 'Headrest Speaker', subtitle: 'Teknologi Interior Dinamis', description: ' premium 14-speaker Sony sound system' },
   ], currentIndex: 0, next() { this.currentIndex = (this.currentIndex + 1) % this.slides.length }, prev() { this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length }, init() { setInterval(() => this.next(), 5000) } }">
   <div class="container mx-auto px-4">
     <h2 class="text-5xl font-bold text-center mb-12 relative">
-      <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400 mb-10">Kenyamanan Premium</span>
+      <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400 mb-10">Ultimate Family Comfort</span>
     </h2>
     <div class="relative h-72 lg:h-[500px] rounded-xl overflow-hidden shadow-2xl mb-10">
       <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-10"></div>
         <template x-for="(slide, index) in slides" :key="index">
         <div x-show="currentIndex === index" class="absolute inset-0 transition-opacity duration-500" x-transition>
-          <img :src="slide.url" :alt="slide.altText" class="w-full h-full object-cover" />
+          <img :src="slide.url" :alt="slide.altText" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy" width="900" height="500" />
           <div class="absolute bottom-0 left-0 p-6 z-20 max-w-lg">
             <h3 class="text-2xl font-bold text-white mb-3" x-text="slide.subtitle"></h3>
             <p class="text-gray-200 text-lg" x-text="slide.description"></p>
