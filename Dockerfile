@@ -11,20 +11,14 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# Stage 2: The Final, Lightweight Production Image
-FROM node:18-alpine
+# Stage 2: The Final, Lightweight Nginx Image
+FROM nginx:alpine
 
-# Create a non-root user for security
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-USER appuser
+# FIX: Copy the static assets from the `dist/client` directory
+COPY --from=builder /usr/src/app/dist/client /usr/share/nginx/html
 
-# Set the working directory
-WORKDIR /usr/src/app
+# Expose the standard HTTP port
+EXPOSE 80
 
-# Copy only the necessary production files and dependencies
-COPY --chown=appuser:appgroup --from=builder /usr/src/app/node_modules ./node_modules
-COPY --chown=appuser:appgroup --from=builder /usr/src/app/ecosystem.config.js .
-COPY --chown=appuser:appgroup --from=builder /usr/src/app/dist ./dist
-
-# The production command to start your application
-CMD ["/usr/src/app/node_modules/.bin/pm2-runtime", "start", "ecosystem.config.js"]
+# The command to start Nginx in the foreground
+CMD ["nginx", "-g", "daemon off;"]

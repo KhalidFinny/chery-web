@@ -5,6 +5,9 @@ import node from "@astrojs/node";
 export default defineConfig({
   integrations: [tailwind()],
   adapter: node({
-    mode: "middleware"
-  })
+    mode: "middleware",
+  }),
+  server: {
+    host: true
+  }
 });
