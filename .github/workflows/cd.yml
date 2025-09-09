@@ -20,11 +20,13 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: 2233
           script: |
-            cd /github/chery-web
-            sudo git pull
-            sudo git status
+            echo "Navigating to deployment directory..."
+            cd /github/chery-web            
+            echo "Pulling latest code from Git..."
+            git pull
             
-            sudo rm -rf dist
-            npm i
-            npm run build
-            pm2 restart all
+            cd /github
+            echo "Rebuilding and restarting the chery-web service..."
+            # The --build flag forces a rebuild on the server
+            # The --no-deps flag ensures only this service is affected
+            docker compose up -d --build --no-deps chery-web
