@@ -25,7 +25,6 @@ WORKDIR /usr/src/app
 COPY --chown=appuser:appgroup --from=builder /usr/src/app/node_modules ./node_modules
 COPY --chown=appuser:appgroup --from=builder /usr/src/app/ecosystem.config.js .
 COPY --chown=appuser:appgroup --from=builder /usr/src/app/dist ./dist
-COPY --chown=appuser:appgroup --from=builder /usr/src/app/run-server.js .
 
 # The production command to start your application
 CMD ["/usr/src/app/node_modules/.bin/pm2-runtime", "start", "ecosystem.config.js"]
