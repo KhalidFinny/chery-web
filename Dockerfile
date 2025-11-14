@@ -1,6 +1,4 @@
-# File: Dockerfile
-
-# Stage 1: The Build Environment
+# Stage 1: Build Astro static site
 FROM node:18-alpine AS builder
 
 WORKDIR /usr/src/app
@@ -11,14 +9,12 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# Stage 2: The Final, Lightweight Nginx Image
+# Stage 2: Serve static files with Nginx
 FROM nginx:alpine
 
-# FIX: Copy the static assets from the `dist/client` directory
-COPY --from=builder /usr/src/app/dist/client /usr/share/nginx/html
+# Copy Astro's static output
+COPY --from=builder /usr/src/app/dist /usr/share/nginx/html
 
-# Expose the standard HTTP port
 EXPOSE 80
 
-# The command to start Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
