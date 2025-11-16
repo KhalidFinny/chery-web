@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  rakaiseto:
+    networks:
+      - chery-web-network
+    image: ghcr.io/khalidfinny/chery-web:latest
+    container_name: chery-web
+    restart: always
+    ports:
+      - "127.0.0.1:21002:80"
+networks:
+  chery-web-network:
